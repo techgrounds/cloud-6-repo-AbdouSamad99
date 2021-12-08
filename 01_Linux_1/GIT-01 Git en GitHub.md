@@ -49,7 +49,10 @@ Bijvoorbeeld aanpassingen die getest en goedgekeurd zijn in de “Develop” bra
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Eerste 2 dagen super trage laptop. 3e dag Leenlaptop van Techgrounds. Alles opnieuw installeren en opstarten in nieuwe laptop
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+Gelukt Git te downloaden
+
+
+![Git-Bestand](https://user-images.githubusercontent.com/95620804/145224212-a875aec5-7832-40f1-8eb3-8a1e9853e910.jpg)
