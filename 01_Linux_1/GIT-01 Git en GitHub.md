@@ -10,17 +10,25 @@ Alle versies van het bestand of project worden bewaard, in plaats van alleen de 
 -**Gecentraliseerde versiebeheersysteem:**
 Deze systemen, zoals CVS, Subversion en Perforce, hebben één centrale server waarop alle versies van de bestanden staan
 en een aantal werkstations die de bestanden daar van ophalen (check out). Vele jaren was dit de standaard voor versiebeheer.
+
 -**Een repository** kan je zien als de hoofdmap van je project. Hierin staan alle bestanden van je project en de historie van wijzigingen die je hebt gedaan.
+
 -**Main / Master:** Dit is de HOOFDBRANCH, oftewel de “productversie” van je project. Nieuwe code die is getest en goedgekeurd, wordt samengevoegd met de Master branch.
 **"Master"** wordt vandaag de dag **"Main"** genoemd.
+
 -**Branch:** Aparte plek binnen je repository, waar je bijvoorbeeld nieuwe code kan testen, zonder dat te hoeven doen op de “productversie”.
 Een branch in Git is simpelweg een lichtgewicht verplaatsbare verwijzing naar een van deze commits. De standaard branch-naam in Git is master.
 Als je commits begint te maken, krijg je een master -branch die wijst naar de laatste commit die je gemaakt hebt.
+
 -**Commit:** Git commando dat veranderingen toevoegt aan je lokale repository.
+
 -**Push:** Git commando om aanpassingen naar je (remote) repository te sturen, die staat op GitHub.
+
 -**Pull:** Git commando om aanpassingen van je (remote) repository naar je lokale bestanden te sturen.
+
 -**Merge:** Git commando om aanpassingen van een branch samen te voegen met een andere branch.
 Bijvoorbeeld aanpassingen die getest en goedgekeurd zijn in de “Develop” branch samenvoegen met de “Master” branch.
+
 -**Fork:** Een fork is een kopie van een repository. Hierdoor kan je werken aan een project van iemand anders, zonder het origineel aan te passen.
 
 
