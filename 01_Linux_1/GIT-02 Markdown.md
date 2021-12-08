@@ -41,6 +41,10 @@ verschil tussen WYSIWYM en WYSIWYG: https://docs.zettlr.com/en/concepts/wysiwym/
 
 Downloaden VS Code: https://code.visualstudio.com/docs/?dv=win
 
+Markdown (Basic writing and formatting syntax):
+
+https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
 
 ### Ervaren problemen
 Geen
