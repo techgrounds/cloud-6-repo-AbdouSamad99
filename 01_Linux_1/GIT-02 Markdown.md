@@ -46,6 +46,8 @@ Downloaden VS Code: https://code.visualstudio.com/docs/?dv=win
 Geen
 
 ### Resultaat
-Het is mij gelukt (zie printscreen)
+Het is mij gelukt (zie printscreen & mijn md-bestand)
 
 <img width="518" alt="Document van AbdouSamad in VS CODE EDITOR" src="https://user-images.githubusercontent.com/95620804/145216681-8f0976d4-cfbc-4bed-b1fa-4373d9f0b970.png">
+[doc_AbdouSamadVS_CODE.md](https://github.com/techgrounds/cloud-6-repo-AbdouSamad99/files/7676343/doc_AbdouSamadVS_CODE.md)
+
