@@ -26,9 +26,17 @@ bijv (mkdir myfolder) zo maakt ie een directory=folder aan genaamd (myfolder). D
 
 echo =
 
+cat It reads data from the file and gives their content as output. It will show content of given filename.
+
+bijv: To view a single file: **cat (spatie) filename** =It will show content of given filename
+
+To view multiple files: **cat file1 file2** =This will show the content of file1 and file2.
+
 ## Opdracht
-1. 
-Gebruik een command om enkel de zin met het woord 'techgrounds' te lezen.
+1. 1. Middels echo command een nieuwe zin maken in je textfile met het woord 'techgrounds' erin via CLI. 
+
+
+2. Gebruik een command om enkel de zin met het woord 'techgrounds' te lezen.
 
 Gebruik **(echo)** command om een nieuwe zin in je textfile met het woord 'techgrounds' te zetten via de CLI.
 **cat** command gevolgd door **spatie** en naam (textfile) gevolgd door spatie en dan (|) spatie en dan **grep**
@@ -36,16 +44,17 @@ Gebruik **(echo)** command om een nieuwe zin in je textfile met het woord 'techg
 gevolgd door spatie en dan (het woordje dat je zoekt)
 
 
-2. Lees de textfile met de zin met techgrounds gefilterd en verplaats de uitkomst naar een nieuw bestand genaamd 'techgrounds.txt'.
+3. Lees de textfile met de zin met techgrounds gefilterd en verplaats de uitkomst naar een nieuw bestand genaamd 'techgrounds.txt'.
 
 (zie printscreen)
 
 
 ### Gebruikte bronnen
-1. Middels echo command een nieuwe zin maken in je textfile met het woord 'techgrounds' erin via CLI. 
+
+https://www.geeksforgeeks.org/cat-command-in-linux-with-examples/
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+
 
 ### Resultaat
 Zie printscreen!
