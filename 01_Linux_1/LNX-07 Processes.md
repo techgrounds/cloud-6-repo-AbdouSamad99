@@ -1,7 +1,7 @@
 # [Onderwerp]
 Processen in Linux kun je onderverdelen in 3 categorien:
 
-1. Deamons. 
+1. Deamons.
 
 2. Services.
 
