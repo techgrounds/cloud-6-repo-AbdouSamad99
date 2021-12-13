@@ -5,9 +5,14 @@
 
 - Twee protocols die in laag 4 ‘leven’ is TCP en UDP. Deze protocols zijn verantwoordelijk voor het transport van internet pakketten. 
 
+- Protocols die ‘leven’ in hogere lagen van het OSI-model hebben meestal specifieke toepassingen. HTTP(s) of SSH zijn enkele voorbeelden van hogere level protocols.
+
+- Onderdeel van de afspraken die wij gemaakt hebben over protocols is dat deze meestal een ‘standaard poort’ hebben. Voor SSH is dit poort 22.
+
 
 
 ## Key-terms
+
 -1 **Protocol:** Een set met regels over de manier waarop 2 apparaten met elkaar communiceren. 
 In een protocol staat hoe bepaalde boodschappen moeten worden verzonden en hoe ontvangen boodschappen moeten worden verwerkt.
 Een protocol is een beschrijving van de wijze waarop apparaten en computerprogramma’s onderling communiceren (voorbeeld: http).
@@ -62,17 +67,17 @@ Hiermee is het opzetten van de verbinding voltooid.
 
   Dit maakt dit **protocol onbetrouwbaar**, maar wel **veel sneller**.
   
-- **Fire and forget:**
+- **Fire and forget:** Op lokale netwerken kunnen applicaties **Fire-and-Forget-berichten** verzenden via UDP (User Datagram Protocol).
+
+**UDP** is verbindingsloos en vereist geen synchronisatie tussen zender en ontvanger.
 
 **UDP** wordt veel gebruikt in omstandigheden waar **snelheid belangrijker** is dan **"Verbinding"**. Zoals de **video** data van een **Zoom-call**.
 
-- Protocols die ‘leven’ in hogere lagen van het OSI-model hebben meestal specifieke toepassingen. HTTP(s) of SSH zijn enkele voorbeelden van hogere level protocols.
-
-- Onderdeel van de afspraken die wij gemaakt hebben over protocols is dat deze meestal een ‘standaard poort’ hebben. Voor SSH is dit poort 22.
 
 - **HTTP:** Afkorting van **'Hypertext Transfer Protocol'**. Een protocol dat nodig is om websites te kunnen bekijken en zorgt voor de communicatie
 
 tussen een browser en een server. In een url staat vaak 'http://'. Men hoeft dit niet zelf te typen, de browser vult het automatisch in.
+
 
 - **SSH:** staat voor Secure Shell, ook wel "shell" genoemd, en is een hulpmiddel om op een versleutelde manier op een andere computer of server in te loggen
 
@@ -172,12 +177,17 @@ In de TCP-header staan metadata over het TCP-segment, zoals de bronpoort en de b
 
 naar de andere is de belangrijkste rol ervan. TCP en IP zijn samen de twee protocollen die het internet beheersen.
 
-In de RFC-normen (Request for Comment), document nummer 793, wordt het Transmission Control Protocol gedefinieerd door de Internet Engineering Task Force (IETF)
+**TCP/IP-adressering** Internetadressen zoals IP (internetprotocol) hebben een volledig mechanisme en zijn een van de meest voorkomende.
+
+TCP daarentegen heeft niet één ingewikkeld adresseringssysteem nodig. TCP maakt alleen gebruik van nummers, ook wel "poorten" genoemd,
+
+die geleverd worden door het apparaat waar het momenteel aan werkt. Dit is om te bepalen waar de verzendende en ontvangende pakketten zich bevinden voor welke dienst.
+
 
 
 ### 3. Begrijp hoe een HTTPS TCP/IP-pakket opgebouwd is.
 
-Transmission Control Protocol heeft 4 lagen, namelijk de netwerkinterface-laag, de toepassingslaag, de transportlaag en de internetlaag.
+**Transmission Control Protocol** heeft **4 lagen**, namelijk de netwerkinterface-laag, de toepassingslaag, de transportlaag en de internetlaag.
 
 De beschrijvingen en functies van deze lagen staan hieronder vermeld:
 
@@ -226,7 +236,10 @@ De transportlaag voor TCP biedt een betrouwbare datatransmissie met een betrouwb
 6. https://www.speedcheck.org/nl/wiki/tcp-ip/
 7. https://mefics.org/nl/wat-is-tcp-three-way-handshake-wat-zijn-syn-ack-pakketten/
 8. https://www.seniorweb.nl/computerwoordenboek/h/http
-9. 
+9. https://www.hipex.io/wat-is-ssh/
+10. In de RFC-normen (Request for Comment), document nummer 793, wordt het Transmission Control Protocol gedefinieerd door de Internet Engineering Task Force (IETF)
+11. 
+
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
