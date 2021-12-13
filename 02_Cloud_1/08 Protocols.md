@@ -92,9 +92,11 @@ en communicatie te maken **tussen twee computers of servers.**
 
 ## Opdracht
 
+
 ### 1. Wat is een OSI model met protocols
 
-1: De fysieke laag
+1: **De fysieke laag**
+
 De fysieke laag omvat alle fysieke bekabeling die tussen de netwerkcomponenten hangt.
 Deze laag maakt de fysieke connectie tussen de netwerken mogelijk,
 zij bevat alle gegevens van een LAN- en WAN-netwerk die nodig zijn om een connectie te verwezenlijken.
@@ -104,54 +106,55 @@ zij bevat alle gegevens van een LAN- en WAN-netwerk die nodig zijn om een connec
 **2: De datalinklaag**
 
 De datalinklaag verzorgt de communicatie tussen verschillende hardware binnen een netwerk.
-
 Alle hardware apparatuur heeft een MAC of hardware adres die over de datalinklaag kunnen communiceren.
-
 Bijvoorbeeld switches werken op deze laag door middel van de ethernet techniek. De data die verstuurd worden over laag 2, worden ook wel **frames** genoemd.
 
 **3: De netwerklaag**
 
 De netwerklaag maakt het mogelijk om data te verzenden tussen verschillende netwerken.
-
 Daarnaast zorgt de netwerk laag ervoor dat er gerouteerd kan worden binnen een netwerk.
-
 Het protocol dat draait op deze laag is het Internet Protocol, ook wel bekend als (IP).
-
 Routers werken op de netwerklaag en kunnen dus IP adressen maken. Deze virtuele adressen kunnen pakketjes ontvangen en verzenden.
-
 De data die verstuurd wordt over laag 3, worden ook wel pakketjes genoemd.
 
 **4: De transportlaag**
 
 De transportlaag houdt zich bezig met de transmissie van data tussen twee eindgebruikers met behulp van foutcontrole, hertransmissie en timing.
-
 Laag 4 draagt zorg voor de juiste timing en de correctheid van de datatransmissie zodat de 'upper layers' 5, 6 en 7 hier geen rekening mee hoeven te houden.
-
 De belangrijkste protocollen waar de transportlaag gebruik van maakt zijn TCP en UDP.
 
 **5: De sessielaag**
 
 De sessielaag verzorgt de sessies van netwerkprogramma's.
-
 Deze laag crëert, onderhoudt en verbreekt sessies tussen twee programma's.
 
 **6: De presentatielaag**
 
 Laag 6 van het OSI model is de presentatielaag. De presentatielaag zorgt voor de encryptie en compressie van dataverkeer.
-
 De presentatielaag is daarnaast ook een vertaallaag en die communicatie vertaalt tussen bijvoorbeeld besturingssystemen en programma's.
-
 Omdat sommige programma's dezelfde taal spreken en geen vertaling nodig hebben, wordt laag 6 niet altijd gebruikt.
 
 **7: De applicatielaag**
 
 De applicatielaag wordt gebruikt door netwerk-applicaties zoals FTP clients, e-mail programma's en interne systemen.
-
 Deze systemen werken op de applicatielaag omdat ze gebruik maken van protocollen die draaien die ook compatible zijn met deze laag. Denk bijvoorbeeld aan FTP, HTTP, SMTP.
 
 
 
-### 2. Structuur van een HTTPS TCP/IP-pakket
+### 2. Structuur van een HTTPS & TCP/IP-pakket
+
+
+**HTTPS** staat voor **HyperText Transfer Protocol Secure** en is een beveiligde verbinding waarmee je op het internet kan surfen.
+Als website-eigenaar kan je zelf bepalen of de bezoekers via een HTTPS verbinding of een HTTP verbinding ontvangen worden.
+Het verschil is dat **HTTPS** simpelweg **veiliger** is **dan** een **HTTP verbinding.**
+
+Een **HTTPS-verbinding** wordt beveiligd door TLS (Transport Layer Security) of SSL (Secure Sockets Layer). Dit encryptieprotocol versleutel alle communicatie tussen de 
+server en de bezoeker. Zo kan gevoelige informatie zoals adresgegevens, bankgegevens of inloggegevens niet gestolen worden. HTTPS gebruikt een beveiligd SSL-certificaat van 
+een externe leverancier om verbindingen te beveiligen. Het SSL-certificaat zorgt voor een versleutelde verbinding tussen een browser en een server, die de communicatielaag 
+tussen de twee beschermt.
+Overstappen naar HTTPS is relatief eenvoudig. De eerste stap is het toevoegen van een geldig SSL-certificaat aan je website. Je betaalt hiervoor meestal een jaarlijkse 
+vergoeding. Er bestaan verschillende SSL-certificaten.
+
 
 **Wat is een TCP/IP-pakket:** Een TCP/IP-pakket, TCP-pakket of TCP/IP-datagram is een IPv4- of een IPv6-datagram waarmee een TCP-segment over een IP-netwerk verstuurd wordt.
 
@@ -217,13 +220,52 @@ De transportlaag voor TCP biedt een betrouwbare datatransmissie met een betrouwb
 
 ### 4. Begrijp wie bepaalt welke protocols wij gebruiken en wat je zelf moet doen om een nieuw protocol te introduceren.
 
+- De **standaardiseringscommissies** houden zich bezig met het 
+goedkeuren/bekrachtigen van Protocollen om communicatie tussen componenten, 
+ongeacht de leverancier van die component, mogelijk te maken. 
+
+- Er zijn verschillende organisaties die **standaarden** formaliseren. De belangrijkste op dit gebied zijn:
+
+**IEEE** - Amerikaans instituut van Ingenieurs, bepaald technische standaarden
+**IETF** - Internationale organisatie die internet standaarden bepaalt
+**ISO** - Internationale standaardisatie organisatie
+**ITU** - International organisatie die telecomstandaarden bepaalt
+
+RFC: De **internetstandaarden** worden via een Request For Comments (RFC) gepubliceerd. 
+
 
 ### 5. Identificeer op zijn minst één protocol per OSI-laag.
 
+<img width="800" alt="OSI-Model" src="https://user-images.githubusercontent.com/95620804/145841818-efc1c6bf-22ef-4b6a-97f8-e1ab8ee2e0ba.png">
+
+Internetprotocollen volgens het TCP/IP-model:
+
+Toepassingslaag:	DNS · FTP · Gopher · HTTP · HTTPS · IMAP · IRC · NNTP · POP3 · RTP · SIP · SMTP · SNMP · SSH · TLS/SSL · Telnet · UUCP · XMPP
+Transportlaag:	DCCP · SCTP · TCP · UDP
+Netwerklaag:	ICMP · IGMP · IPv4 · IPv6 · RARP
+Datalinklaag:	ARP · ATM · Ethernet · FDDI · PPP · Token ring · Wifi
 
 
 ### 6. Facebook was recent een lange tijd niet beschikbaar. Ontdek waarom. Tip: **BGP.**
 
+kwam door een wijziging bij de backbonerouters voor zijn datacenters.
+de oorzaak lag bij configuratiewijzigingen met betrekking tot BGP-peering.
+Die zou maken dat de Facebook-netwerken niet meer bereikbaar waren via de routingtables en de beheerders dus niet meer op afstand de routers konden benaderen om het probleem 
+te fixen. Systeembeheerders moesten daarom fysiek bij de routers komen om wijzigingen door te voeren, maar die zouden niet de juiste kennis daarvoor hebben, waarbij het 
+gebrek aan communicatie de kennisoverdracht zou bemoeilijken.
+
+Facebook past BGP op zijn eigen wijze op grote schaal toe in de netwerken van zijn datacenters.
+BGP staat voor Border Gateway Protocol en is het protocol dat de netwerkcommunicatie tussen netwerken van Autonomous Systems regelt. Via BGP adverteren netwerken zich met 
+prefixes op internet, zodat deze bereikbaar zijn met routingtables. Door de update bij zijn backbonerouters stopte Facebook met zich aankondigen, waardoor netwerken 
+wereldwijd niet meer reageerden op DNS-queries met betrekking tot Facebook en zijn diensten. Dit leidde op zijn beurt tot verdere problemen omdat clients wereldwijd de 
+nameservers van Facebook bleven benaderen, met een stortvloed aan DNS-verkeer tot gevolg, waardoor DNS-resolvers overbelast konden raken. Ook nam het verkeer naar andere 
+diensten toe, zoals Twitter. De uitval duurde uiteindelijk zo'n zes uur.
+
+Zonder BGP-routes naar Facebooks netwerk zouden de eigen dns-servers van Facebook onbereikbaar zijn. 
+
+Uit een verklaring van Facebook-ingenieurs bleek dat een wijziging in de configuratie van het BGP de problemen heeft veroorzaakt. Door een wijziging achter de schermen 
+ontstond er een probleem met de interne communicatie van Facebooks datacenters, waardoor de werking van de hele netwerkinfrastructuur overkop ging. Of anders gezegd: Facebook 
+heeft per ongeluk in één klap wereldwijd al zijn wegwijzers weggenomen
 
 
 
@@ -237,8 +279,16 @@ De transportlaag voor TCP biedt een betrouwbare datatransmissie met een betrouwb
 7. https://mefics.org/nl/wat-is-tcp-three-way-handshake-wat-zijn-syn-ack-pakketten/
 8. https://www.seniorweb.nl/computerwoordenboek/h/http
 9. https://www.hipex.io/wat-is-ssh/
-10. In de RFC-normen (Request for Comment), document nummer 793, wordt het Transmission Control Protocol gedefinieerd door de Internet Engineering Task Force (IETF)
-11. 
+10. https://www.speedcheck.org/nl/wiki/tcp-ip/#tcp%2Fip-adressering
+11. https://www.webbouwers.com/wat-is-https/
+12. https://webadvisor.be/wat-is-https-website/
+13. https://tweakers.net/nieuws/187706/facebook-downtime-kwam-door-configuratiefout-backbonerouters.html
+14. https://androidworld.nl/nieuws/wat-veroorzaakte-de-grote-facebook-storing-bgp-routing-uitgelegd
+15. https://www.security.nl/posting/723711#posting723733
+16. 
+17. 
+18. In de RFC-normen (Request for Comment), document nummer 793, wordt het Transmission Control Protocol gedefinieerd door de Internet Engineering Task Force (IETF)
+19. 
 
 
 ### Ervaren problemen
