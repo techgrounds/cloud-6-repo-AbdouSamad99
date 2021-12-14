@@ -55,19 +55,19 @@ Het paar van de regio **North Central US** is bijvoorbeeld **South Central US**.
 
 **4. Waarom zou je een regio boven een andere verkiezen?**
 
-Omdat elke Azure-regio specifieke eigenschappen heeft. De keuze voor de juiste regio is dan ook erg belangrijk.
+Omdat elke Azure-regio specifieke eigenschappen heeft. De keuze voor de juiste regio is dan ook erg belangrijk. 
 Dit zijn onder andere **beschikbare services**, **capaciteit**, **beperkingen** en **soevereiniteit**:
 
 **- Beschikbare services:** Services die in elke regio worden geïmplementeerd, verschillen op basis van verschillende factoren. 
 
-**Soevereiniteit:** Bepaalde regio's zijn toegewezen aan specifieke soevereine entiteiten. Hoewel alle regio's Azure-regio's zijn,
+**- Soevereiniteit:** Bepaalde regio's zijn toegewezen aan specifieke soevereine entiteiten. Hoewel alle regio's Azure-regio's zijn,
 zijn deze soevereine regio's volledig geïsoleerd van de rest van Azure.  Elke regio heeft een maximale capaciteit.
 Dit kan van invloed zijn op welke typen abonnementen welke typen services kunnen implementeren en onder welke omstandigheden.
 
-**Beperkingen:** Bepaalde beperkingen worden opgelegd aan de implementatie van services in bepaalde regio's.
+**- Beperkingen:** Bepaalde beperkingen worden opgelegd aan de implementatie van services in bepaalde regio's.
 Sommige regio's zijn bijvoorbeeld alleen beschikbaar als doel van een back-up of failover. 
 
-**Soevereiniteit:** Bepaalde regio's zijn toegewezen aan specifieke soevereine entiteiten. Hoewel alle regio's Azure-regio's zijn,
+**- Soevereiniteit:** Bepaalde regio's zijn toegewezen aan specifieke soevereine entiteiten. Hoewel alle regio's Azure-regio's zijn,
 zijn deze soevereine regio's volledig geïsoleerd van de rest van Azure. 
 
 ### Gebruikte bronnen
@@ -81,4 +81,4 @@ zijn deze soevereine regio's volledig geïsoleerd van de rest van Azure.
 Geen Problemen.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+Zie opdrachten!
