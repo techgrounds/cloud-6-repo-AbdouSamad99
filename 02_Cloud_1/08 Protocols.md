@@ -90,10 +90,10 @@ wordt verstuurd encrypt is en hierdoor voor buitenstaanders onmogelijk is om com
 en communicatie te maken **tussen twee computers of servers.**
 
 
-## Opdracht
+## Opdrachten
 
 
-### 1. Wat is een OSI model met protocols
+### Opdracht 1. Wat is een OSI model met protocols
 
 1: **De fysieke laag**
 
@@ -140,9 +140,14 @@ De applicatielaag wordt gebruikt door netwerk-applicaties zoals FTP clients, e-m
 Deze systemen werken op de applicatielaag omdat ze gebruik maken van protocollen die draaien die ook compatible zijn met deze laag. Denk bijvoorbeeld aan FTP, HTTP, SMTP.
 
 
+### Opdracht 2. Structuur van een HTTPS & TCP/IP-pakket
 
-### 2. Structuur van een HTTPS & TCP/IP-pakket
+**Internetprotocollen volgens het TCP/IP-model:**
 
+Toepassingslaag:	DNS · FTP · Gopher · HTTP · HTTPS · IMAP · IRC · NNTP · POP3 · RTP · SIP · SMTP · SNMP · SSH · TLS/SSL · Telnet · UUCP · XMPP
+Transportlaag:	DCCP · SCTP · TCP · UDP
+Netwerklaag:	ICMP · IGMP · IPv4 · IPv6 · RARP
+Datalinklaag:	ARP · ATM · Ethernet · FDDI · PPP · Token ring · Wifi
 
 **HTTPS** staat voor **HyperText Transfer Protocol Secure** en is een beveiligde verbinding waarmee je op het internet kan surfen.
 Als website-eigenaar kan je zelf bepalen of de bezoekers via een HTTPS verbinding of een HTTP verbinding ontvangen worden.
@@ -156,69 +161,62 @@ Overstappen naar HTTPS is relatief eenvoudig. De eerste stap is het toevoegen va
 vergoeding. Er bestaan verschillende SSL-certificaten.
 
 
-**Wat is een TCP/IP-pakket:** Een TCP/IP-pakket, TCP-pakket of TCP/IP-datagram is een IPv4- of een IPv6-datagram waarmee een TCP-segment over een IP-netwerk verstuurd wordt.
-
+**Wat is een TCP/IP-pakket:**
+Een TCP/IP-pakket, TCP-pakket of TCP/IP-datagram is een IPv4- of een IPv6-datagram waarmee een TCP-segment over een IP-netwerk verstuurd wordt.
 Een client en een server kunnen elkaar met TCP/IP-pakketten via de netwerklaag gegevens toesturen.
 
 TCP/IP-pakketten moeten flexibel zijn omdat het Transmission Control Protocol voor een breed scala aan netwerktoepassingen gebruikt wordt.
-
 Omdat TCP/IP-pakketten over praktisch alle soorten computernetwerken getransporteerd worden,
-
 moeten de eigenschappen van de pakketten aangepast kunnen worden aan de eisen die de datalinklaag stelt aan een netwerkverbinding.
+
+Het internetprotocol is feitelijk een samenbundeling van een enorme hoeveelheid van kleinere standaardprotocollen. Het internetprotocol wordt ook wel TCP/IP genoemd.
+Zowel TCP als IP zijn weer afzonderlijke standaardprotocollen, die maar een beperkt onderdeel van het internetprotocol vormen.
+In feite is TCP/IP een soort afkorting voor een verzameling of familie protocollen, hoewel men het vaak het TCP/IP-protocol noemt.
 
 
 **Structuur van een TCP/IP-pakket (zie foto):** Een TCP/IP-pakket bestaat uit een IP-header met een lengte van vijf of tien 32 bits woorden en een TCP-segment.
 
 Het TCP-segment bestaat uit een TCP-header en een gegevensblok met een variabele lengte.
-
 In de informatica wordt het TCP-segment de payload van het IP-pakket of IP-datagram genoemd.
-
 In de TCP-header staan metadata over het TCP-segment, zoals de bronpoort en de bestemmingspoort, een checksum en de lengte van het blok met de gegevens.
 
-
-**Functionaliteit van een TCP/IP-pakket:** Transmission Control Protocol (TCP) werkt met het Internet Protocol (IP). Het verzenden van datapakketten van de ene computer
-
+**Functionaliteit van een TCP/IP-pakket:**
+Transmission Control Protocol (TCP) werkt met het Internet Protocol (IP). Het verzenden van datapakketten van de ene computer
 naar de andere is de belangrijkste rol ervan. TCP en IP zijn samen de twee protocollen die het internet beheersen.
 
-**TCP/IP-adressering** Internetadressen zoals IP (internetprotocol) hebben een volledig mechanisme en zijn een van de meest voorkomende.
-
+**TCP/IP-adressering** 
+Internetadressen zoals IP (internetprotocol) hebben een volledig mechanisme en zijn een van de meest voorkomende.
 TCP daarentegen heeft niet één ingewikkeld adresseringssysteem nodig. TCP maakt alleen gebruik van nummers, ook wel "poorten" genoemd,
-
 die geleverd worden door het apparaat waar het momenteel aan werkt. Dit is om te bepalen waar de verzendende en ontvangende pakketten zich bevinden voor welke dienst.
 
 
+### Opdracht 3. Begrijp hoe een HTTPS TCP/IP-pakket opgebouwd is.
 
-### 3. Begrijp hoe een HTTPS TCP/IP-pakket opgebouwd is.
+**Verschil tussen OSI-Model en TCP/IP-Model**
+Een zichtbaar verschil is dat TCP/IP-model minder lagen heeft; vaak vier, maar er zijn ook vijflaagse modellen. Alleen de OSI transport- en netwerklaag
+zijn in TCP/IP behouden, de overige lagen zijn samengevoegd in twee groepen.
 
-**Transmission Control Protocol** heeft **4 lagen**, namelijk de netwerkinterface-laag, de toepassingslaag, de transportlaag en de internetlaag.
-
+**Transmission Control Protocol**
+TCP heeft **4 lagen**, namelijk de netwerkinterface-laag, de toepassingslaag, de transportlaag en de internetlaag.
 De beschrijvingen en functies van deze lagen staan hieronder vermeld:
 
 **Netwerkinterface-laag**
-
 Deze bestaat uit de datalinklaag die verantwoordelijk is voor het opsporen en corrigeren van mogelijke fouten en de fysieke laag
-
 die de fysieke overdracht van bittransmissie met procedurele, elektrische, mechanische en functionele middelen activeert.
 
 **Toepassingslaag**
-
 Deze laag biedt een set interfaces voor applicaties die toegang krijgt tot netwerkdiensten die applicaties direct ondersteunen.
-
 Elke applicatie-entiteit in TCP bestaat uit een aantal functies die nodig zijn voor de ondersteuning van gedistribueerde communicatiediensten.
 
 **Transportlaag**
-
 Deze laag zorgt ervoor dat de door de ontvanger verzonden gegevens dezelfde bits zijn die aan de afzender worden geleverd (end-to-end communicatie).
-
 De transportlaag voor TCP biedt een betrouwbare datatransmissie met een betrouwbare verbindingsgerichte datastroom.
 
 ![OSI-Model   TCP_IP-Pakket](https://user-images.githubusercontent.com/95620804/145803428-710ae117-385f-4e1f-b418-fb5ce20ddc55.gif)
 
 
 
-
-
-### 4. Begrijp wie bepaalt welke protocols wij gebruiken en wat je zelf moet doen om een nieuw protocol te introduceren.
+### Opdracht 4. Begrijp wie bepaalt welke protocols wij gebruiken en wat je zelf moet doen om een nieuw protocol te introduceren.
 
 - De **standaardiseringscommissies** houden zich bezig met het 
 goedkeuren/bekrachtigen van Protocollen om communicatie tussen componenten, 
@@ -233,20 +231,103 @@ ongeacht de leverancier van die component, mogelijk te maken.
 
 RFC: De **internetstandaarden** worden via een Request For Comments (RFC) gepubliceerd. 
 
+### Opdracht 5. Wat moet je zelf moet doen om een nieuw protocol te introduceren?
 
-### 5. Identificeer op zijn minst één protocol per OSI-laag.
+?????
+
+
+### Opdracht 6. Identificeer op zijn minst één protocol per OSI-laag.
+
+**7. Application layer (Toepassingslaag)**
+**Functie:** Protocollen voor directe uitwisseling met de applicatie.
+
+Voorbeeld van Toepassingslaagprotocol:
+
+- **HTTP:** Hypertext Transfer Protocol (protocol voor de communicatie tussen een webbrowser en -server):
+is het protocol voor de communicatie tussen een webclient (meestal een webbrowser of een app) en een webserver.
+Dit protocol wordt niet alleen veel op het wereldwijde web gebruikt, maar ook op lokale netwerken (we spreken dan van een intranet).
+In HTTP is vastgelegd welke vragen (de Engelse term hiervoor is requests) een cliënt aan een server kan stellen en welke antwoorden (de Engelse term is responses) een
+webserver daarop kan teruggeven. Elke vraag bevat een URL die naar een webcomponent of een statisch object zoals een webpagina of plaatje verwijst.
+
+- **IRCP:** Internet Relay Chat Protocol (meestal afgekort tot IRC) is een toepassingslaagprotocol voor een op tekst gebaseerd chatsysteem. Het is voornamelijk bedoeld voor 
+groepsgewijze communicatie, maar laat ook directe communicatie tussen twee personen toe. Het chatten gebeurt vaak met gebruik van internetjargon.
+
+**6. Presentation layer (Presentatielaag)**
+**Functie:** Formatteert en structureert data t.b.v. applicatie-interpretatie.
+
+Voorbeeld van Toepassingslaagprotocol:
+
+- **AFP:** Apple Filing Protocol (voorheen AppleTalk Filing Protocol) is een propriëtair netwerkprotocol om bestanden te delen, ontwikkeld voor Mac OS X en Mac OS.
+
+**5. Session layer (Sessielaag)**
+**Funtie:** Start, onderhoudt en beëindigt sessies tussen applicaties.
+
+Voorbeeld van Sessielaagprotocol:
+
+**- SAP:** Session Announcement Protocol (SAP) is een protocol dat wordt gebruikt om het formaat te definiëren en de informatie te beschrijven
+die wordt uitgewisseld tijdens een multicast-conferentiesessie.
+
+**- NetBIOS:** is de afkorting voor Network Basic Input Output System. NetBIOS is een datacommunicatieprotocol waarmee systemen binnen een LAN met elkaar kunnen communiceren.
+Het is ongeschikt voor het internet, aangezien routers dit protocol niet kunnen doorsturen. Om NetBIOS toch te gebruiken over het internet moet het verpakt worden
+in het TCP/IP protocol. NetBIOS wordt tegenwoordig niet of nauwelijks meer gebruikt.
+
+
+**4. Transport layer (Transportlaag)**
+**Functie:** Segmentatie, volgordelijkheid van de data-segmenten en foutcorrectie.
+
+Voorbeeld van Transportlaagprotocol:
+
+**- TCP:** Het Transmission Control Protocol (TCP) is een verbindingsgeoriënteerd protocol dat veel gebruikt wordt voor gegevensoverdracht over netwerkverbindingen op het 
+internet en op computernetwerken zoals local area networks en thuisnetwerken. TCP heeft als kenmerken dat het gegevens in een datastroom kan versturen, waarbij de garantie 
+wordt geleverd dat de gegevens aankomen zoals ze verstuurd werden, en eventuele communicatiefouten, zowel in de gegevens zelf als in de volgorde van de gegevens kunnen 
+worden opgevangen. 
+
+**- UDP:** Het User Datagram Protocol (UDP) is een van de basisprotocollen van het internet. Het protocol opereert op hetzelfde niveau als TCP. 
+Het UDP protocol biedt geen garantie dat de gegevens daadwerkelijk aankomen, wat bij TCP wel het geval is. UDP wordt veel gebruikt bij toepassingen waar het snel overdragen van 
+de gegevens en een korte reactietijd zeer belangrijk is, en het minder erg is dat er gegevens verloren kunnen gaan, zoals bij telefonie, videoconferencing
+
+**3. Network layer (Netwerklaag)**
+Functie: Logische adressering, route-informatie
+
+Voorbeeld van Netwerklaagprotocol:
+
+**- PPP:** Point-to-Point Protocol (PPP) is een communicatieprotocol dat wordt gebruikt om een verbinding tot stand te brengen tussen twee computers,
+bijvoorbeeld een PC van een gebruiker en de inbelserver van diens internetprovider. PPP werd oorspronkelijk veel gebruikt bij inbelverbindingen,
+waarbij de communicatie over de telefoonlijn plaatsvindt, maar ook voor breedbandverbindingen wordt het toegepast.
+
+**- ICMP:** Het Internet Control Message Protocol (ICMP) is een onderdeel van het Internetprotocol (IP). Het wordt vooral gebruikt door besturingssystemen voor het sturen
+van foutmeldingen, bijvoorbeeld om te melden dat een bepaalde netwerkvoorziening niet beschikbaar is, of dat een bepaalde host of router niet bereikbaar is.
+Men zou ICMP kunnen beschrijven als het protocol dat de administratie van een netwerk verzorgt; het laat gebruikers toe problemen uit te pluizen,
+en stelt TCP/IP-implementaties in staat om foutberichten te sturen naar communicatiepartners.
+
+**2. Data link layer (Datalinklaag)**
+
+Voorbeeld van datalinklaagprotocol:
+
+**- ARP:** Het address resolution protocol (ARP) is een protocol binnen TCP/IP dat computers - die allemaal op hetzelfde subnetwerk (meer specifiek: LAN) zijn
+aangesloten - in staat stelt het unieke hardware-adres (MAC-adres) van een andere PC binnen dat netwerk te leren, aan de hand van het IP-adres van deze PC.
+Stel dat computer A verbinding wil maken met computer B, waarvan het IP-adres bekend is bij computer A maar zijn hardware-adres niet. Computer A zendt daarvoor
+een ARP-bericht op het netwerk. Dit ARP-bericht wordt uitgestuurd als een broadcast. Een broadcast houdt in dat een ontvangstadres (laag 2) gebruikt wordt dat aangeeft dat 
+het bericht feitelijk door iedere op dat netwerk aangesloten computer moet worden ontvangen. Het ARP-bericht bevat het IP-adres van computer B. Uitsluitend computer B zal 
+zijn eigen IP-adres herkennen, en zal op grond daarvan het bericht beantwoorden, met daarin zijn hardware-adres (ook wel MAC-adres genoemd).
+Op dat moment is het ARP-protocol klaar want A heeft het hardware-adres van B.
+
+**1. Physical layer (Fysieke laag)**
+**Functie:** De dataframes worden in de fysieke laag omgezet in een fysiek signaal en verzonden via de koperkabel, glasvezelkabel of door de lucht.
+Als het pakket is aangekomen worden de headers van het pakket uitgepakt (decapsulation). Met de informatie uit de headers weten de lagen
+hoe het pakket uitgepakt en weergegeven moet worden.
+
+Voorbeeld van Fysieke laag Protocol:
+**- DSL:** oftewel digital subscriber line is een digitale datacommunicatietechniek die een relatief hoge datasnelheid mogelijk maakt
+over een twisted-pair-koperdraadverbinding. In het algemeen wordt voor deze verbinding een normale telefoonkabel gebruikt,
+die van de telefoon(wijk)centrale naar de gebruiker loopt.
+
 
 <img width="800" alt="OSI-Model" src="https://user-images.githubusercontent.com/95620804/145841818-efc1c6bf-22ef-4b6a-97f8-e1ab8ee2e0ba.png">
 
-Internetprotocollen volgens het TCP/IP-model:
-
-Toepassingslaag:	DNS · FTP · Gopher · HTTP · HTTPS · IMAP · IRC · NNTP · POP3 · RTP · SIP · SMTP · SNMP · SSH · TLS/SSL · Telnet · UUCP · XMPP
-Transportlaag:	DCCP · SCTP · TCP · UDP
-Netwerklaag:	ICMP · IGMP · IPv4 · IPv6 · RARP
-Datalinklaag:	ARP · ATM · Ethernet · FDDI · PPP · Token ring · Wifi
 
 
-### 6. Facebook was recent een lange tijd niet beschikbaar. Ontdek waarom. Tip: **BGP.**
+### Opdracht 7. Facebook was recent een lange tijd niet beschikbaar. Ontdek waarom. Tip: **BGP.**
 
 kwam door een wijziging bij de backbonerouters voor zijn datacenters.
 de oorzaak lag bij configuratiewijzigingen met betrekking tot BGP-peering.
@@ -285,10 +366,12 @@ heeft per ongeluk in één klap wereldwijd al zijn wegwijzers weggenomen
 13. https://tweakers.net/nieuws/187706/facebook-downtime-kwam-door-configuratiefout-backbonerouters.html
 14. https://androidworld.nl/nieuws/wat-veroorzaakte-de-grote-facebook-storing-bgp-routing-uitgelegd
 15. https://www.security.nl/posting/723711#posting723733
-16. 
+16. https://www.techtarget.com/searchunifiedcommunications/definition/Session-Announcement-Protocol-SAP
 17. 
-18. In de RFC-normen (Request for Comment), document nummer 793, wordt het Transmission Control Protocol gedefinieerd door de Internet Engineering Task Force (IETF)
+18. 
 19. 
+20. In de RFC-normen (Request for Comment), document nummer 793, wordt het Transmission Control Protocol gedefinieerd door de Internet Engineering Task Force (IETF)
+21. 
 
 
 ### Ervaren problemen
