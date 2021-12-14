@@ -23,10 +23,9 @@ De fysieke component bestaat uit meer dan 200 fysieke datacenters, gerangschikt 
 
 **1. Wat is een Azure Region?**
 
-Een **Azure-regio** Een regio is een set datacenters die is geïmplementeerd in een op basis van latentie gedefinieerde perimeter en verbonden via een toegewezen regionaal netwerk. 
-
-is een set datacenters, geïmplementeerd binnen een door latentie gedefinieerde perimeter en verbonden via een speciaal regionaal netwerk met lage latentie.
-Met meer wereldwijde regio's dan welke andere cloudprovider dan ook, biedt Azure klanten de flexibiliteit om applicaties te implementeren waar ze dat nodig hebben.
+Een **Azure-regio** Een Azure regio is een set datacenters die is geïmplementeerd in een op basis van latentie gedefinieerde perimeter
+en verbonden via een toegewezen regionaal netwerk. Met meer wereldwijde regio's dan welke andere cloudprovider dan ook,
+biedt Azure klanten de flexibiliteit om applicaties te implementeren waar ze dat nodig hebben.
 Een Azure-regio heeft discrete prijzen en servicebeschikbaarheid.
 
 **LOCATIES (REGIO’S) VAN MICROSOFT AZURE** 
