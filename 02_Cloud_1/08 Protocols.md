@@ -349,7 +349,6 @@ ontstond er een probleem met de interne communicatie van Facebooks datacenters, 
 heeft per ongeluk in één klap wereldwijd al zijn wegwijzers weggenomen
 
 
-
 ### Gebruikte bronnen
 1. https://onlinemarketingagency.nl/marketingtermen/protocol/
 2. https://www.encyclo.nl/begrip/protocol
@@ -367,11 +366,8 @@ heeft per ongeluk in één klap wereldwijd al zijn wegwijzers weggenomen
 14. https://androidworld.nl/nieuws/wat-veroorzaakte-de-grote-facebook-storing-bgp-routing-uitgelegd
 15. https://www.security.nl/posting/723711#posting723733
 16. https://www.techtarget.com/searchunifiedcommunications/definition/Session-Announcement-Protocol-SAP
-17. 
-18. 
-19. 
-20. In de RFC-normen (Request for Comment), document nummer 793, wordt het Transmission Control Protocol gedefinieerd door de Internet Engineering Task Force (IETF)
-21. 
+17. https://www.qquest.nl/beheer/osi-model/
+
 
 
 ### Ervaren problemen
