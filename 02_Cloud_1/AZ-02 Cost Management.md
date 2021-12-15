@@ -1,8 +1,12 @@
 # [Onderwerp]
 [Geef een korte beschrijving van het onderwerp]
 
+
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+-  OPEX uitgaven:
+-  CAPEX uitgaven:
+-  Cost Management + Billing tool:
+-  Cloud pass: is jouw eigen Azure omgeving. is niet echt de juiste benaming. Het betekent gewoon jouw eigen Azure-account.
 
 ## Opdracht
 ### Gebruikte bronnen
@@ -15,7 +19,11 @@
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Casper legt ons het volgende uit:
+
+- Wij hebben allemaal een `Pay-as-you-go` subscription. Pas als je een VM gaat aanzetten gaan er kosten komen.
+- Techgrounds had Cloud Pass voor iedereen aangevraagd maar nog niet ontvangen daarom zie je in de opdrachten de benaming CLOUD PASS. Cloud Pass is in Microsoft taal.
+Maar overal waar Cloud Pass staat in de opdrachten betekent gewoon je account/subscription.
 
 ### Resultaat
 [Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
