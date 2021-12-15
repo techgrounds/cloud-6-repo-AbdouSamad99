@@ -1,14 +1,9 @@
 # PROTOCOL
 - Een netwerk protocol is een afspraak die wij mensen gemaakt hebben over hoe computers met elkaar communiceren.
-
 - Deze afspraken maken het mogelijk dat het Internet kan bestaan, zonder dat je voor iedere verbinding een andere standaard moet aanhouden.
-
 - Twee protocols die in laag 4 ‘leven’ is TCP en UDP. Deze protocols zijn verantwoordelijk voor het transport van internet pakketten. 
-
 - Protocols die ‘leven’ in hogere lagen van het OSI-model hebben meestal specifieke toepassingen. HTTP(s) of SSH zijn enkele voorbeelden van hogere level protocols.
-
 - Onderdeel van de afspraken die wij gemaakt hebben over protocols is dat deze meestal een ‘standaard poort’ hebben. Voor SSH is dit poort 22.
-
 
 
 ## Key-terms
@@ -29,7 +24,12 @@ Het O-model is een verzameling afspraken over de manier van communiceren tussen 
 Dit model deelt de communicatie in zeven lagen. Daarom wordt dit ook wel het Zevenlagenmodel genoemd.
 
 ##### De zeven lagen zijn (van laagste naar hoogste laag):
+- Eigen woorden: De OSI-lagen van een OSI-Model is handig voor troubleshouting. Je begint dan bij eerste laag naar boven.
+bijv: webservice/website werkt niet. wat ga ik doen? Conform OSI-Model. Laag 1 fysiek? zit kabeltje er wel in? Hardware kapot??
+vervolgens laag 2 kijken of daar issues zijn. dan laag 3 etc. Totdat probleem is opgelost.
+Je hebt ook een TCP/IP model en ligt dichter bij de waarheid dan een OSI-Model.
 
+**De zeven lagen zijn (van laagste naar hoogste laag):**
 **Laag 1:** Fysieke laag: Spanning (Volt) en stroomsterkte (Ampère), timing, medium.
 **Laag 2:** Datalinklaag: Foutcorrectie, flow control
 **Laag 3:** Netwerklaag: Adressering, routing
@@ -213,7 +213,6 @@ Deze laag zorgt ervoor dat de door de ontvanger verzonden gegevens dezelfde bits
 De transportlaag voor TCP biedt een betrouwbare datatransmissie met een betrouwbare verbindingsgerichte datastroom.
 
 ![OSI-Model   TCP_IP-Pakket](https://user-images.githubusercontent.com/95620804/145803428-710ae117-385f-4e1f-b418-fb5ce20ddc55.gif)
-
 
 
 ### Opdracht 4. Begrijp wie bepaalt welke protocols wij gebruiken en wat je zelf moet doen om een nieuw protocol te introduceren.
