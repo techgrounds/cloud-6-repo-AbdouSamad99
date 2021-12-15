@@ -233,7 +233,16 @@ RFC: De **internetstandaarden** worden via een Request For Comments (RFC) gepubl
 
 ### Opdracht 5. Wat moet je zelf moet doen om een nieuw protocol te introduceren?
 
-?????
+Als je een nieuw protocol wilt introduceren dan kijk je eerst in de lijst welke poorten er al wel of niet bezet zijn door andere standaardprotocollen.
+Stel bijv. poort 80 is al bezet, dan moet je kijken welke poort er nog niet bezet is en daar ga je dan je protocol in bouwen (Binnen jouw eigen netwerk).
+Dus bijv poortnummer 127 is vrij, dan bouw je eerst een protocol en een applicatie die in staat is om te kunnen luisteren naar jouw protocol binnen jouw netwerk.
+Dus een eigen netwerk waarin iedereen kan communiceren binnen jouw protocol. Wanneer je denkt dat uw protocol goed is en de hele wereld dit nodig heeft,
+dan klop je aan bij een van die standaardiseringscommissie. Je geeft bij hen aan wat voor protocol je hebt bedacht en wat ie doet/kan en op welke poort die zit
+en de naam van je protocol. Dan kijkt de standaardiseringscommissie er naar en gaan ze (democratisch) bepalen of het wel of niet nodig/handig is.
+Er kunnen maanden overheen gaan. Er komt bijv een briefmeeting enz. Dan krijg je een brief met antwoord dat protocol wel/niets toevoegt en de poort.
+Als het niets toevoegd volgens hen dan geven ze dat dus aan in de brief en dat ze de poort vrij willen houden voor in de toekomst.
+Als het wel een toegevoegde waarde heeft dan wordt het geaccepteerd en wordt het gestandaardiseerd. Of het vervolgens wel of niet gebruikt wordt,
+is afhankelijk van de markt. Wanneer het veelvuldig wordt gebruikt dan kunnen mensen/bedrijven uw protocol overnemen.
 
 
 ### Opdracht 6. Identificeer op zijn minst één protocol per OSI-laag.
@@ -367,7 +376,7 @@ heeft per ongeluk in één klap wereldwijd al zijn wegwijzers weggenomen
 15. https://www.security.nl/posting/723711#posting723733
 16. https://www.techtarget.com/searchunifiedcommunications/definition/Session-Announcement-Protocol-SAP
 17. https://www.qquest.nl/beheer/osi-model/
-
+18. https://www.ietf.org/about/participate/get-started/#participatinginmeetings
 
 
 ### Ervaren problemen
