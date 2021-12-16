@@ -17,8 +17,8 @@ U moet uw uitgaven plannen aan het begin van een project of budgetperiode.
 - Technisch personeel: technische expertise en personeel voor het installeren, implementeren en beheren van de systemen in het datacenter en op de DR-locatie.
 
 # OPEX:
-**Operating expenditures** (=Bedrijfskosten/uitgaven) zijn doorlopende kosten van het zakendoen. Het consumeren van clouddiensten in een pay-as-you-go-model
-kan kwalificeren als operationele uitgave. U betaalt bijvoorbeeld voor een dienst of product terwijl u het gebruikt, d.w.z. pay-as-you-go-prijzen.
+**Operating expenditures** (=Bedrijfskosten/uitgaven) zijn doorlopende kosten van het zakendoen. Het consumeren van clouddiensten in een **pay-as-you-go-model**
+kan kwalificeren als operationele uitgave. U betaalt bijvoorbeeld voor een dienst of product terwijl u het gebruikt, d.w.z. **pay-as-you-go-prijzen**.
 
 **Operationele uitgaven (OpEx)**
 - Geen kosten vooraf, maar u betaalt voor de dienst/het product terwijl u het gebruikt.
