@@ -19,7 +19,8 @@ Hierdoor wordt Capital Expenditure (CapEx) vervangen voor Operational Expenditur
 ## Key-terms
 
 - **SLA (Service Level Agreement):** De Azure Service Level Agreement (SLA) beschrijft Microsofts commitment voor uptime en connectiviteit voor de verschillende Azure Services.
-m.a.w: In SLA's (Service Level Agreement) worden de toezeggingen van Microsoft voor uptime en connectiviteit beschreven. [klik hier](https://azure.microsoft.com/nl-nl/support/legal/sla/summary/) om de **SLA-overzicht** voor alle Azure-services te bekijken.
+m.a.w: In SLA's (Service Level Agreement) worden de toezeggingen van Microsoft voor uptime en connectiviteit beschreven.
+[klik hier](https://azure.microsoft.com/nl-nl/support/legal/sla/summary/) om de **SLA-overzicht** voor alle Azure-services te bekijken.
 - [**6 advantages of the cloud:**](https://github.com/AbdouSamad99/cloud-6-repo-AbdouSamad99/blob/main/beschrijvingen/6%20advantages%20of%20the%20cloud.md)
 - [**Consumption-based model:**](https://github.com/AbdouSamad99/cloud-6-repo-AbdouSamad99/blob/main/beschrijvingen/consumption-based%20model.md)
 
@@ -80,6 +81,8 @@ _Zie ook:_ [link 1](https://github.com/AbdouSamad99/cloud-6-repo-AbdouSamad99/bl
 1. https://docs.microsoft.com/nl-nl/learn/modules/fundamental-azure-concepts/benefits-of-cloud-computing
 
 2. https://docs.microsoft.com/en-us/azure/architecture/framework/cost/design-price
+3. https://azure.microsoft.com/nl-nl/support/legal/sla/
+4. https://azure.microsoft.com/nl-nl/support/legal/sla/summary/ 
 
 ### Ervaren problemen
 Geen Problemen
