@@ -53,38 +53,35 @@ In het onderstaande diagram wordt de stroom waarschuwingen weergegeven:
 
 **3. Maak een alert aan waarmee je eigen Cloud Pass *(lees **subscription**)* kan monitoren.**
 
-1. In Azure portal, click on Monitor. 
+**1. Stappenplan:** [Klik hier](https://docs.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-metric)
 
-
-2. Click Alerts then click + New alert rule.
-
-
+**(zie foto 1)**
 <img width="960" alt="Alert rule aangemaakt" src="https://user-images.githubusercontent.com/95620804/146216931-68d58ee3-30e5-4f13-8950-67af45c03fe8.png">
+
+**(Zie foto 2)**
+<img width="960" alt="Alert Rule AbdouSamad" src="https://user-images.githubusercontent.com/95620804/146333460-fd13b41b-5d23-48db-81ac-0911764d1d8f.png">
 
 
 **4. Begrijp de opties die Azure aanbiedt om je uitgaven in te zien**
 
 
+
+
 ### Gebruikte bronnen
 
-1 en 2 zijn om een Alert te maken:
-
-1. https://www.google.com/search?q=how+to+create+an+alert+that+allows+you+to+monitor+your+own+Cloud+Pass&rlz=1C1UEAD_nlNL983NL984&oq=how+to+create+an+alert+that+allows+you+to+monitor+your+own+Cloud+Pass&aqs=chrome..69i57.8825j0j15&sourceid=chrome&ie=UTF-8
-
-2. https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/alertsV2
-3. https://www.azureguru.org/capex-vs-opex/
-4. https://docs.microsoft.com/nl-nl/azure/architecture/framework/cost/overview
-5. https://tutorialsdojo.com/azure-capex-vs-opex/
-6. https://www.inspark.nl/grip-op-microsoft-azure-kosten/
-7. https://azure.microsoft.com/nl-nl/pricing/tco/calculator/
+1. https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/alertsV2
+2. https://www.azureguru.org/capex-vs-opex/
+3. https://docs.microsoft.com/nl-nl/azure/architecture/framework/cost/overview
+4. https://tutorialsdojo.com/azure-capex-vs-opex/
+5. https://www.inspark.nl/grip-op-microsoft-azure-kosten/
+6. https://azure.microsoft.com/nl-nl/pricing/tco/calculator/
+7. https://docs.microsoft.com/nl-nl/azure/cost-management-billing/understand/download-azure-daily-usage
 8. https://docs.microsoft.com/nl-nl/azure/cost-management-billing/cost-management-billing-overview
 9. https://docs.microsoft.com/nl-nl/azure/cost-management-billing/cost-management-billing-overview#understand-cost-management
 10. https://docs.microsoft.com/nl-nl/azure/cost-management-billing/costs/cost-mgt-best-practices#visibility
 11. https://azure.microsoft.com/nl-nl/free/
 12. https://docs.microsoft.com/nl-nl/azure/azure-monitor/alerts/alerts-overview
 13. https://docs.microsoft.com/nl-nl/azure/azure-monitor/alerts/alerts-metric
-14. https://docs.microsoft.com/nl-nl/azure/cost-management-billing/understand/download-azure-daily-usage
-15. 
 
 
 ### Ervaren problemen
