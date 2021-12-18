@@ -1,6 +1,8 @@
 # Azure Virtual Machines
 
-De Service waarmee je VMs kan maken in Azure heet (zeer toepasselijk) Azure Virtual Machines. Je kan deze VMs gebruiken voor alles waar je een fysieke server voor zou gebruiken. Omdat ze in een datacenter van Microsoft staan, kan je er alleen verbinding mee maken via het internet. Verbinding met een remote Linux-machine maak je met het Secure Shell (ssh) protocol. Voor een verbinding met Windows machines gebruik je het Remote Desktop Protocol (RDP).
+De Service waarmee je VMs kan maken in Azure heet (zeer toepasselijk) Azure Virtual Machines. Je kan deze VMs gebruiken voor alles waar je een fysieke server voor zou
+gebruiken. Omdat ze in een datacenter van Microsoft staan, kan je er alleen verbinding mee maken via het internet. **Verbinding** met een **remote Linux-machine** maak je met het
+**Secure Shell (ssh) protocol**. Voor een **verbinding** met **Windows machines** gebruik je het **Remote Desktop Protocol (RDP)**.
 
 Om een VM aan te maken moet je een image selecteren. Een image is een soort blauwdruk voor je machine. Het bevat onder andere een template voor het OS.
 
@@ -8,11 +10,13 @@ VMs komen in verschillende sizes. Elke size heeft een andere hoeveelheid vCPUs, 
 
 Voor de OS disk (de root volume) kan je kiezen uit Premium SSD, Standard SSD en Standard HDD. Je hebt ook de optie om extra Data disks toe te voegen.
 
-Je kan optioneel je VM beveiligen met een NIC network security group. Het wordt aangeraden om network security groups te configureren op subnet niveau (en dus niet op instance niveau) waar mogelijk, maar soms heb je een allow/deny rule nodig op een specifieke instance, dus de optie is er. In elk geval kan je firewalls dus buiten de instance regelen, en hoef je niet binnen de VM nog een extra firewall te configureren.
+Je kan optioneel je VM beveiligen met een NIC network security group. Het wordt aangeraden om network security groups te configureren op subnet niveau (en dus niet op
+instance niveau) waar mogelijk, maar soms heb je een allow/deny rule nodig op een specifieke instance, dus de optie is er. 
+In elk geval kan je firewalls dus buiten de instance regelen, en hoef je niet binnen de VM nog een extra firewall te configureren.
 
-Met Custom Data kan je een cloud-init script, config file of andere data meegeven tijdens het opstarten van de VM. Hiermee kan je automatisch servers configureren zonder zelf in te loggen.
+Met Custom Data kan je een cloud-init script, config file of andere data meegeven tijdens het opstarten van de VM. 
+Hiermee kan je automatisch servers configureren zonder zelf in te loggen.
 User data is een nieuwe versie van Custom data. Het grootste verschil is dat user data beschikbaar blijft gedurende de hele levensduur van de VM.
-
 
 De prijs van een Azure VM hangt af van de size, de image, de regio waar hij in staat, het aantal minuten dat hij aan staat, en het type betaling dat je doet.
 Pay-as-you-go is de duurste optie, maar ook het meest flexibel.
@@ -21,7 +25,21 @@ Spot instances zijn over het algemeen het goedkoopst, maar de availability hangt
 
 
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+- **SSH** staat voor **Secure Shell**, ook wel **"shell"** genoemd, en is een hulpmiddel om op een versleutelde manier op een andere computer of server in te loggen 
+en op afstand op andere computers of servers commando's uit te voeren.
+Dit gebeurt via een shell.
+  - Deze manier van software is erg veilig, omdat de data die over de verbinding wordt verstuurd encrypt is en hierdoor 
+  voor buitenstaanders onmogelijk is om commando's of wachtwoorden te achterhalen.
+  - Kwaadwillenden werken via het aftappen van de internetverbinding. Als er gebruik wordt gemaakt van SSH is dit niet mogelijk, 
+  omdat de verbinding met behulp van SSH is versleuteld.
+  - **SSH** is dus een **netwerkprotocol** waarmee het door **cryptografische versleuteling** mogelijk wordt om op een **veilige manier** 
+  gegevens uit te wisselen en communicatie te maken **tussen twee computers of servers.** [**Klik hier**](https://www.hipex.io/wat-is-ssh/) **voor extra info.**
+
+- **image:** Om een VM aan te maken moet je een image selecteren. Een image is een soort blauwdruk voor je machine.
+  Het bevat onder andere een template voor het OS.
+  - het legt alle gegevens vast die de virtuele machine zal bevatten. Alle gegevens, het schijvensysteem wordt in image (=beeld) opgeslagen.
+  Zelfs het besturingssysteem wordt met een gespecialiseerde methode in image (=beeld) vastgelegd. [**Klik hier**](https://www.c-sharpcorner.com/UploadFile/42ddd2/introduction-to-azure-vm-image-and-vhd-azure-deep-dive-c/) **voor extra info.**
+
 
 ## Opdracht
 
@@ -98,9 +116,11 @@ Hiermee kan je automatisch servers configureren zonder zelf in te loggen.
 
 ### Gebruikte bronnen
 
-1. https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal
-2. https://docs.microsoft.com/nl-nl/azure/virtual-machines/linux/quick-create-portal
-3. https://docs.microsoft.com/en-us/azure/virtual-machines/custom-data
+1. https://www.hipex.io/wat-is-ssh/
+2. https://www.c-sharpcorner.com/UploadFile/42ddd2/introduction-to-azure-vm-image-and-vhd-azure-deep-dive-c/
+3. https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal
+4. https://docs.microsoft.com/nl-nl/azure/virtual-machines/linux/quick-create-portal
+5. https://docs.microsoft.com/en-us/azure/virtual-machines/custom-data
 
 ### Ervaren problemen
 
