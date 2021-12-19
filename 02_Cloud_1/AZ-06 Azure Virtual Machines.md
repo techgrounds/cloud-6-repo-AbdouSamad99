@@ -53,9 +53,9 @@ Dit gebeurt via een shell.
   Als deze geïnstalleerd is, kun je een wachtwoord of SSH-key aanmaken om in te loggen.
   Vervolgens kun je contact zoeken met andere systemen, zoals de server, een andere computer of de webhost.
   Het is hierbij wel van belang dat jouw webhost SSH ondersteunt.
-  - **SSH-Programma's:** Er bestaan verschillende SSH-programma's voor een groot aantal besturingssystemen. De **bekendste versie** is **OpenSSH**, 
-  een Open Source implementatie die door de programmeurs van het OpenBSD-project ontwikkeld wordt. 
-  **Andere bekende** programma's zijn **PuTTY, WinSCP , Fsecure en SecureCRT.**
+  - **SSH-Programma's:** **(= Secure Shell-cliënt)** Er bestaan verschillende SSH-programma's voor een groot aantal besturingssystemen. 
+  De **bekendste versie** is **OpenSSH**, een Open Source implementatie die door de programmeurs van het OpenBSD-project ontwikkeld wordt. 
+  **Andere bekende** programma's **(= Secure Shell-cliënt)** zijn **PuTTY, WinSCP , Fsecure en SecureCRT.**
   
 - **image:** Om een VM aan te maken moet je een image selecteren. Een image is een soort blauwdruk voor je machine.
   Het bevat onder andere een template voor het OS.
