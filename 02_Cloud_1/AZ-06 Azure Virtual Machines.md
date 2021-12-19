@@ -25,6 +25,18 @@ Spot instances zijn over het algemeen het goedkoopst, maar de availability hangt
 
 
 ## Key-terms
+- **SSH** Secure Shell (kortweg: SSH) is een protocol uit de toepassingslaag van de TCP/IP-protocolgroep. De term ssh werd gemakshalve ook gebruikt 
+  voor het clientprogramma dat het protocol toepast (het serverprogramma heet sshd, 'Secure Shell daemon'). SSH vervangt oudere protocollen zoals telnet, 
+  rlogin, en rsh/rexec door een beveiligbare variant daarvan. De standaard poort van SSH is 22.
+  
+  - SSH maakt het mogelijk om op een **versleutelde manier** in te loggen op een andere computer, en op afstand commando's op de andere computer uit te voeren via een shell.
+  Omdat ssh met **encryptie** werkt, is het voor eventuele afluisteraars, die de (internet)verbinding aftappen, 
+  zo goed als **onmogelijk** om **wachtwoorden of commando's** te **achterhalen.**
+
+  - Een groot voordeel van SSH is dat ook authenticatie met een publiek/geheim sleutelpaar (public/private key) mogelijk is. Hierdoor is het mogelijk om SSH-toepassingen
+  geautomatiseerd te gebruiken zonder dat er een wachtwoord in de code hoeft te staan. Ook kan op elk systeem dat de publieke sleutel kent, aangemeld worden door het gebruik
+  van de geheime sleutel. Als de eigenaar van de geheime sleutel het wachtwoord van die sleutel wijzigt, heeft dit geen gevolgen voor het sleutelpaar. [**Klik hier**](https://nl.wikipedia.org/wiki/Secure_Shell) **voor extra info.**
+
 - **SSH** staat voor **Secure Shell**, ook wel **"shell"** genoemd, en is een hulpmiddel om op een versleutelde manier op een andere computer of server in te loggen 
 en op afstand op andere computers of servers commando's uit te voeren.
 Dit gebeurt via een shell.
@@ -35,6 +47,16 @@ Dit gebeurt via een shell.
   - **SSH** is dus een **netwerkprotocol** waarmee het door **cryptografische versleuteling** mogelijk wordt om op een **veilige manier** 
   gegevens uit te wisselen en communicatie te maken **tussen twee computers of servers.** [**Klik hier**](https://www.hipex.io/wat-is-ssh/) **voor extra info.**
 
+- **Hoe gebruik je SSH?**
+  - SSH is een handig hulpmiddel wanneer je werkt met onveilige verbindingen.
+  Om dit programma te gebruiken, moet je echter eerst een **SSH-cliënt downloaden** via Windows.
+  Als deze geïnstalleerd is, kun je een wachtwoord of SSH-key aanmaken om in te loggen.
+  Vervolgens kun je contact zoeken met andere systemen, zoals de server, een andere computer of de webhost.
+  Het is hierbij wel van belang dat jouw webhost SSH ondersteunt.
+  - **SSH-Programma's:** Er bestaan verschillende SSH-programma's voor een groot aantal besturingssystemen. De **bekendste versie** is **OpenSSH**, 
+  een Open Source implementatie die door de programmeurs van het OpenBSD-project ontwikkeld wordt. 
+  **Andere bekende** programma's zijn **PuTTY, WinSCP , Fsecure en SecureCRT.**
+  
 - **image:** Om een VM aan te maken moet je een image selecteren. Een image is een soort blauwdruk voor je machine.
   Het bevat onder andere een template voor het OS.
   - het legt alle gegevens vast die de virtuele machine zal bevatten. Alle gegevens, het schijvensysteem wordt in image (=beeld) opgeslagen.
@@ -117,10 +139,11 @@ Hiermee kan je automatisch servers configureren zonder zelf in te loggen.
 ### Gebruikte bronnen
 
 1. https://www.hipex.io/wat-is-ssh/
-2. https://www.c-sharpcorner.com/UploadFile/42ddd2/introduction-to-azure-vm-image-and-vhd-azure-deep-dive-c/
-3. https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal
-4. https://docs.microsoft.com/nl-nl/azure/virtual-machines/linux/quick-create-portal
-5. https://docs.microsoft.com/en-us/azure/virtual-machines/custom-data
+2. https://nl.wikipedia.org/wiki/Secure_Shell
+3. https://www.c-sharpcorner.com/UploadFile/42ddd2/introduction-to-azure-vm-image-and-vhd-azure-deep-dive-c/
+4. https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal
+5. https://docs.microsoft.com/nl-nl/azure/virtual-machines/linux/quick-create-portal
+6. https://docs.microsoft.com/en-us/azure/virtual-machines/custom-data
 
 ### Ervaren problemen
 
