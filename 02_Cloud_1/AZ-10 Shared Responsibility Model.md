@@ -14,13 +14,24 @@ Hoeveel verantwoordelijkheden bij de klant liggen is ook afhankelijk van wat voo
 **Toch blijven er verantwoordelijkheden die altijd voor de klant zijn.**
 
 
+<img width="488" alt="Shared Responsibility Model" src="https://user-images.githubusercontent.com/95620804/146947619-9d3cf9d7-01b4-484e-9c92-7acd2f5d56fb.png">
 
 
 **De Cloud provider extra** biedt extra services aan waarmee je je eigen verantwoordelijkheden makkelijker kan beheren.
 
-## Key-terms
-datacenter:
 
+## Key-terms
+- **Datacenter:** Een datacenter is een industrieel, hoogbeveiligd pand, gebouwd met één doel: zorgen dat computerservers met digitale applicaties altijd blijven draaien, 
+365 dagen per jaar, 7 dagen per week, 24 uur per dag. Een storing in het datacenter zou er bijvoorbeeld voor kunnen zorgen dat je even niet kunt betalen met je bankpas. 
+Omdat professionele datacenters gebruik maken van de laatste innovaties op het gebied van data infrastructuur, koeling, stroomvoorziening en beveiliging, 
+gebeurt dit gelukkig vrijwel nooit. Al deze systemen zijn redundant, wat betekent dat ze meervoudig zijn uitgevoerd en dat uitval van een van deze systemen 
+kan worden opgevangen met een reserve verbinding.
+
+  Datacenters kunnen multi-tenant of single tenant zijn. De eerste categorie wordt ook wel colocatie datacenters genoemd en dit zijn colocatie aanbieders 
+  die er hun business model van hebben gemaakt om andere bedrijven te faciliteren; zij verhuren datacenter ruimte. 
+  Single tenant datacenters daarentegen faciliteren alleen in de behoeften van het eigen bedrijf. 
+  Denk bijvoorbeeld aan een bank of overheidsdienst die haar eigen IT-infrastructuur in-house verzorgt. 
+  Deze datacenters worden daarom ook wel bedrijfsdatacenters genoemd.
 
 ## Opdracht
 **Bestudeer:**
@@ -56,6 +67,7 @@ en identiteiten, on-premises resources en de cloudonderdelen die u controleert (
 ### Gebruikte bronnen
 1. https://docs.microsoft.com/nl-nl/azure/security/fundamentals/shared-responsibility
 2. https://azure.microsoft.com/en-us/resources/shared-responsibility-for-cloud-computing/
+3. https://www.dutchdatacenters.nl/datacenters/wat-is-een-datacenter/
 
 ### Ervaren problemen
 
