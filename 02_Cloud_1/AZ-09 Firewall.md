@@ -59,7 +59,9 @@ Zoals je eerder geleerd hebt zijn er twee soorten firewalls: **stateless, en sta
 
 
 ### Gebruikte bronnen
-[Plaats hier de bronnen die je hebt gebruikt.]
+
+1. https://docs.microsoft.com/nl-nl/azure/firewall/tutorial-hybrid-ps
+2. 
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
