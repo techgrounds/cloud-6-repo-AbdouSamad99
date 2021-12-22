@@ -116,7 +116,8 @@ NAT zorgt ervoor dat een router altijd een uniek IP(v4)-adres kan toekennen aan 
 - **Whois-check:** Whois (uitspraak: who is) is een protocol om gegevens van een domeinnaam of IP-adres te achterhalen door middel van een query/vraag aan een database. 
 In een whois staan meestal de naam en contactgegevens van de eigenaar, de provider en nameservers van de DNS-servers.
 Traditioneel werden whois-zoekopdrachten gedaan met het whois command line-programma (IETF standaard RFC3912) , 
-maar tegenwoordig zijn er ook veel websites die deze service bieden.
+maar tegenwoordig zijn er ook veel websites die deze service bieden. [**Klik hier**](https://nl.wikipedia.org/wiki/Whois) **voor extra info.**
+
   - Voorbeeld hoe whois-zoekopdrachten uitgevoerd worden met het _whois_ command line-programma: 
   
   <img width="415" alt="Whois Command" src="https://user-images.githubusercontent.com/95620804/147071603-642d23c7-10b9-4588-bcb4-cf11793c553e.png">
@@ -159,9 +160,10 @@ maar tegenwoordig zijn er ook veel websites die deze service bieden.
 5. https://www.ziggo.nl/klantenservice/internet-wifi/ipv6-bij-ziggo
 6. https://nl.wikipedia.org/wiki/Hexadecimaal
 7. https://www.voipzeker.nl/alles-over-bellen-met-voip/nat.html
-8. 
+8. https://nl.wikipedia.org/wiki/Whois
 9. 
 10. 
+11. 
 
 
 ### Ervaren problemen
