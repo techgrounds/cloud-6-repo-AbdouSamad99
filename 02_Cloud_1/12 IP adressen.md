@@ -122,34 +122,50 @@ maar tegenwoordig zijn er ook veel websites die deze service bieden. [**Klik hie
   
   <img width="415" alt="Whois Command" src="https://user-images.githubusercontent.com/95620804/147071603-642d23c7-10b9-4588-bcb4-cf11793c553e.png">
 
-  
-
-
-
 
 ## Opdracht
 
 - Ontdek wat je publieke IP adres is van je laptop en mobiel op wifi
   - Hoe kun je IP-adressen opzoeken?
-    - De eenvoudigste manier om het openbare IP-adres van je router op te vragen, is door te zoeken op 'Wat is mijn IP-adres?' bij Google. 
+    - De eenvoudigste manier om het openbare IP-adres van je router op te vragen, is door te zoeken op 'Wat is mijn IP-adres?' bij Google.
     Google toont je het antwoord bovenaan de pagina.
     
     Andere websites laten je dezelfde informatie zien: zij kunnen je openbare IP-adres zien omdat je router, door de site te bezoeken, een verzoek heeft gedaan 
     en dus de informatie weergeeft. Sites zoals **WhatIsMyIP.com** en **IPLocation** gaan nog een stapje verder door de naam van je internetprovider in je plaats te tonen.
+    
+    **publieke IP adres is van mijn laptop via wifi**
+    
+    <img width="821" alt="Publieke IP Laptop via Wifi" src="https://user-images.githubusercontent.com/95620804/147079969-2c4cf209-1fa1-46fb-9765-bda49d391be7.png">
+    
+    **publieke IP adres is van mijn Mobiel via wifi**
+    
+    ![Publieke IP Mobiel via Wifi](https://user-images.githubusercontent.com/95620804/147080080-dd3e9f9d-02cc-48e3-888a-79686537819a.jpg)
 
 
 - Ontdek wat je publieke IP adres is op je mobiel via mobiel internet (als mogelijk)
+  
+   **publieke IP adres is van mijn Mobiel via mobiele data**
+   
+   ![Publieke IP Mobiel via mobiel data](https://user-images.githubusercontent.com/95620804/147080345-9c0f7f45-41b5-4769-9e50-3871994fef1f.jpg)
 
 
 
 - Maak een VM in je cloud met een publiek IP. Maak verbinding met deze VM.
 
+  **VM in Cloud met Publiek IP en verbinding gemaakt met VM (zie foto)**
+
+  <img width="960" alt="VM in Cloud met Publiek IP en verbinding gemaakt met VM" src="https://user-images.githubusercontent.com/95620804/147085012-603f3d22-3cdc-4f7c-b996-917d464732f0.png">
+
 
 - Verwijder het publieke IP adres van je VM. Begrijp wat er gebeurt met je verbinding.
-
-- Vergeet niet de VMs te verwijderen en alle extra resources te verwijderen nadat je klaar bent.
-
-
+  
+  **Stap 1 Publiek IP verwijderen van VM (zie foto)**
+  
+  <img width="888" alt="Stap 1 Publiek IP verwijderen" src="https://user-images.githubusercontent.com/95620804/147085168-39d291af-1d87-43a2-89c8-661c4f8ffa4f.png">
+  
+  **Stap 2 Publiek IP verwijderd en aangetoond (zie foto)**
+  
+  <img width="954" alt="Stap 2 Publiek IP verwijderd en aangetoond" src="https://user-images.githubusercontent.com/95620804/147085190-c5fc9096-3663-4298-8d42-98dd5802e849.png">
 
 
 ### Gebruikte bronnen
@@ -161,14 +177,13 @@ maar tegenwoordig zijn er ook veel websites die deze service bieden. [**Klik hie
 6. https://nl.wikipedia.org/wiki/Hexadecimaal
 7. https://www.voipzeker.nl/alles-over-bellen-met-voip/nat.html
 8. https://nl.wikipedia.org/wiki/Whois
-9. 
-10. 
-11. 
+9. https://www.vecozo.nl/controle-ip-adressen/veel-gestelde-vragen/uw-ip-adres-opzoeken/
+10. https://whatismyipaddress.com/
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Geen
 
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+Zie Opdracht!
