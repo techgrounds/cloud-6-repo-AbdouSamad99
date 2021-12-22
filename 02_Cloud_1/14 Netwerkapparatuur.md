@@ -46,7 +46,12 @@ heeft één of meerdere cloud equivalenten.
 
 
 ### Gebruikte bronnen
-[Plaats hier de bronnen die je hebt gebruikt.]
+
+1. https://www.netinbag.com/nl/internet/what-are-network-devices.html
+2. 
+
+
+
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
