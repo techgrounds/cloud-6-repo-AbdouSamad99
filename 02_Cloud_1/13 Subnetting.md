@@ -105,6 +105,9 @@ overbelasting van het netwerk op te lossen is door het TCP/IP-netwerk op te spli
   
 
 ## Opdracht
+**Benodigdheden:**
+- https://app.diagrams.net/
+- Een subnet calculator
 
 Maak een netwerkarchitectuur die voldoet aan de volgende eisen:
   - 1 private subnet dat alleen van binnen het LAN bereikbaar is. Dit subnet moet minimaal 15 hosts kunnen plaatsen.
