@@ -22,6 +22,13 @@ Azure heeft twee managed oplossingen voor load balancing naar een fleet van serv
 ## Key-terms
 [Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
 
+
+
+
+
+
+
+
 ## Opdracht
 
 **Opdracht 1:**
