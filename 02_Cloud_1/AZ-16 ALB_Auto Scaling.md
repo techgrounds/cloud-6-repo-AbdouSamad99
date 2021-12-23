@@ -88,10 +88,17 @@ Azure heeft twee managed oplossingen voor load balancing naar een fleet van serv
 
 
 ### Gebruikte bronnen
-[Plaats hier de bronnen die je hebt gebruikt.]
+
+1. https://www.youtube.com/watch?v=qSESjWhr4QU
+2. 
+
+
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+
+
+
 
 ### Resultaat
 [Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
