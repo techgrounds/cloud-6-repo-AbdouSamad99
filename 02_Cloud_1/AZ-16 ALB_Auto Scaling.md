@@ -90,7 +90,10 @@ Azure heeft twee managed oplossingen voor load balancing naar een fleet van serv
 ### Gebruikte bronnen
 
 1. https://www.youtube.com/watch?v=qSESjWhr4QU
-2. 
+2. https://docs.microsoft.com/nl-nl/azure/load-balancer/load-balancer-overview
+3. https://azure.microsoft.com/nl-nl/blog/how-to-load-balance-internal-servers/
+4. https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-virtual-network#code-try-0
+5. 
 
 
 
