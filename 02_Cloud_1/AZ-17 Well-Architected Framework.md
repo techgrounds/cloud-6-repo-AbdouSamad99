@@ -79,7 +79,7 @@ Jij, als cloud engineer, moet met deze Well-Architected Framework een applicatie
 3. https://www.cloudwithchris.com/blog/azure-well-architected-framework/
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Geen
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+Zie Opdracht
