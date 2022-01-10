@@ -5,6 +5,12 @@
 [Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
 
 ## Opdracht
+
+Waar is X voor?
+Hoe past X / vervangt X in een klassieke setting?
+Hoe kan ik X combineren met andere diensten?
+Wat is het verschil tussen X en andere gelijksoortige diensten?
+
 ### Gebruikte bronnen
 [Plaats hier de bronnen die je hebt gebruikt.]
 
