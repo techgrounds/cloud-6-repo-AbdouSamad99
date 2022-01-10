@@ -2,8 +2,25 @@
 **Azure Content Delivery Network (CDN)** biedt ontwikkelaars een globale oplossing voor het snel leveren van inhoud met hoge bandbreedte door de inhoud op strategische, 
 fysieke knooppunten in de hele wereld in de cache op te slaan. Azure CDN kan ook dynamische inhoud versnellen die niet in de cache kan worden opgeslagen.
 
+Een netwerk voor contentlevering (CDN) is een gedistribueerd netwerk van servers dat webinhoud efficiënt aan gebruikers kan leveren. 
+CDN's slaan inhoud in de cache op op edge-servers dicht bij eindgebruikers om de latentie te minimaliseren.
+
+CDN's worden gewoonlijk gebruikt voor het leveren van statische inhoud, zoals afbeeldingen, opmaakmodellen, documenten, scripts op de client en HTML-pagina's. 
+De belangrijkste voordelen van het gebruik van een CDN zijn lagere latentie en snellere levering van inhoud aan gebruikers, ongeacht de geografische locatie 
+ten opzichte van het datacenter waar de toepassing wordt gehost. CDN's kunnen ook bijdragen aan een vermindering van de belasting van een webtoepassing, 
+omdat de toepassing geen aanvragen voor de inhoud hoeft te onderhouden die in het CDN wordt gehost.
+
+In Azure is het Azure Content Delivery Network een globale CDN-oplossing voor de levering van inhoud met een hoge bandbreedte die wordt gehost in Azure of 
+op een andere locatie. Met het Azure CDN kunt u openbaar toegankelijke objecten die zijn geladen uit Azure Blob-opslag, een webtoepassing, virtuele machine of 
+een openbaar toegankelijke webserver, in de cache opslaan.
+
+![Foto 1 CDN](https://user-images.githubusercontent.com/95620804/148756193-7237d000-9f95-4fa7-bb39-af3ac556408f.png)
+
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+- **CDN:** Een CDN, of **Content Delivery Network**, is een wereldwijd netwerk van servers die met elkaar in verbinding staan. 
+  Het doel van deze server is het (tijdelijk) opslaan van de statische content van jouw website, waardoor er wereldwijd kopieën van jouw content beschikbaar zijn. 
+  Zo kan een websitebezoeker deze data ontvangen van de server die het dichtst bij gelegen is, wat snellere laadtijden oplevert. 
+  Momenteel gaat meer dan de helft van het internetverkeer via een CDN en dit percentage stijgt nog altijd. [**Klik hier**](https://www.sdim.nl/helpcentrum/begrippenlijst/cdn/) **voor extra info.**
 
 ## Opdracht
 
@@ -50,9 +67,10 @@ helpt de laadtijd van apps te verkorten en bespaart zo databandbreedte, geweldig
 ### Gebruikte bronnen
 1. https://docs.microsoft.com/nl-nl/azure/cdn/cdn-overview
 2. https://azure.microsoft.com/nl-nl/services/cdn/#overview
+3. https://docs.microsoft.com/nl-nl/azure/architecture/best-practices/cdn
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+
