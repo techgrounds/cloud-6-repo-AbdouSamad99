@@ -50,7 +50,6 @@ Stap 4: Na het maken van Storage Account kun je Azure File Share aanmaken
 2. https://docs.microsoft.com/nl-nl/azure/storage/files/storage-how-to-create-file-share?tabs=azure-portal
 3. https://docs.microsoft.com/nl-nl/azure/storage/files/storage-files-networking-overview
 4. https://cloud.netapp.com/blog/azure-anf-blg-azure-files-the-basics-and-a-quick-deployment-guide#H_H1
-5. 
 
 ### Ervaren problemen
 
