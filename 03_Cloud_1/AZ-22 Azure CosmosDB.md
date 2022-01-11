@@ -37,16 +37,24 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
 ## Opdracht
 
 
-Waar kan ik deze dienst vinden in de console?
-Hoe zet ik deze dienst aan?
-Hoe kan ik deze dienst koppelen aan andere resources?
+**Waar kan ik deze dienst vinden in de console?**
+
+
+**Hoe zet ik deze dienst aan?**
+
+https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal
+
+**Hoe kan ik deze dienst koppelen aan andere resources?**
+
+
 
 
 ### Gebruikte bronnen
 1. https://docs.microsoft.com/nl-nl/azure/cosmos-db/introduction
 2. https://www.tottadatalab.nl/2017/10/11/wat-betekent-nosql/
 3. https://intercept.cloud/nl/nieuws/duidelijkheid-over-de-azure-sla/
-4. 
+4. https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal
+5. 
 
 
 
