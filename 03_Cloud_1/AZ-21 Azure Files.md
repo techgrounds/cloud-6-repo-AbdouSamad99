@@ -53,6 +53,8 @@ Stap 4: Na het maken van Storage Account kun je Azure File Share aanmaken
 
 ### Ervaren problemen
 
+Heel erg duur. Ik heb waarschijnlijk tijdens het configureren een onnodige (overbodige) dure optie gekozen.
 
 ### Resultaat
 
+Resourcegroup verwijderd om de kosten niet verder op te laten lopen.
