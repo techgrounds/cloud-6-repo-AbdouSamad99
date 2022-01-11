@@ -8,6 +8,10 @@ Daarnaast kunnen **SMB Azure-bestandsaandelen** in de cache worden opgeslagen op
 in de buurt waar de gegevens worden gebruikt.
 
 ## Key-terms
+
+- **Azure Files:** is een Azure File Storage-service die u kunt gebruiken om een file share (=bestandsdeling) in de cloud te maken. Het is gebaseerd op
+  het SMB-protocol (Server Message Block) en stelt u in staat om bestanden op afstand of on-premises via API te openen via versleutelde communicatie. [Klik hier](https://cloud.netapp.com/blog/azure-anf-blg-azure-files-the-basics-and-a-quick-deployment-guide#H_H1) voor extra info.
+
 - **Storage account name:** de naam van de opslagaccountresource die moet worden gemaakt. Deze naam moet globaal uniek zijn, maar anders kan elke naam die u wenst. 
   De naam van het opslagaccount wordt gebruikt als servernaam wanneer u een Azure-bestands delen via SMB opbergt.
 
@@ -45,7 +49,8 @@ Stap 4: Na het maken van Storage Account kun je Azure File Share aanmaken
 1. https://docs.microsoft.com/nl-nl/azure/storage/files/storage-files-introduction
 2. https://docs.microsoft.com/nl-nl/azure/storage/files/storage-how-to-create-file-share?tabs=azure-portal
 3. https://docs.microsoft.com/nl-nl/azure/storage/files/storage-files-networking-overview
-4. 
+4. https://cloud.netapp.com/blog/azure-anf-blg-azure-files-the-basics-and-a-quick-deployment-guide#H_H1
+5. 
 
 ### Ervaren problemen
 
