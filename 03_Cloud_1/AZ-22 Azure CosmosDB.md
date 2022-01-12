@@ -102,6 +102,13 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
 
 **Hoe zet ik deze dienst aan?**
 
+- Stap 1  
+  <img width="655" alt="Stap 1 Kies API bij maken van Cosmos DB" src="https://user-images.githubusercontent.com/95620804/149123053-0e4946af-52f0-445f-82f5-41ff81aa86e8.png">
+
+- Stap 2  **Capacity Mode:** Gekozen voor **Serverless** (goedkoper) en bij **Backup storage redundancy:** gekozen voor **Locally-redundant backup storage**
+  <img width="427" alt="Stap 2 Create Cosmos DB Account" src="https://user-images.githubusercontent.com/95620804/149123069-da93f98a-863b-45a5-9c98-0c7c3b790773.png">
+  
+
 https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal
 
 ### Belangrijkste voordelen
