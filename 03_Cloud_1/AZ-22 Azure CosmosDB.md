@@ -45,15 +45,52 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
 - **SLA:** De **Azure Service Level Agreement** (SLA) beschrijft Microsofts commitment voor **uptime** en **connectiviteit** voor de verschillende Azure Services.
   Elke Azure service heeft een eigen **SLA** met daaraan verbonden voorwaarden, beperkingen en diensttegoed (service credits). [**klik hier**](https://azure.microsoft.com/en-us/support/legal/sla/cosmos-db/v1_4/) **voor extra info.**
 
+
+- **Locally-redundant Storage:** Lokaal redundante opslag (LRS) kopieert uw gegevens driemaal synchroon binnen één fysieke locatie in het primaire regio (gebied). 
+  LRS is de minst dure replicatieoptie, maar wordt niet aanbevolen voor toepassingen die hoge beschikbaarheid of duurzaamheid vereisen. 
+  Lokaal redundante opslag (LRS) repliceert uw gegevens drie keer binnen één datacenter in de primaire regio.
+  
+  In het volgende diagram ziet u hoe uw gegevens worden gerepliceerd in één datacenter met LRS:
+  ![locally-redundant-storage](https://user-images.githubusercontent.com/95620804/149097168-ed61af9e-6479-4863-9fc6-9bf0aec57c2c.png)
+
+
+- **Zone-redundant Storage:** zone-redundante opslag (ZRS) worden uw gegevens synchroon gekopieerd in drie Azure availability zones (=Azure-beschikbaarheidszones)
+  in de primaire regio. 
+  Elke beschikbaarheidszone is een afzonderlijke fysieke locatie met onafhankelijke energie, koeling en netwerken. Voor toepassingen waarvoor hoge beschikbaarheid vereist is,
+  raadt Microsoft aan ZRS te gebruiken in de primaire regio en deze ook te repliceren naar een secundaire regio.
+  
+  In het volgende diagram ziet u hoe uw gegevens worden gerepliceerd in de beschikbaarheidszones in de primaire regio met ZRS:
+  ![zone-redundant-storage](https://user-images.githubusercontent.com/95620804/149097224-4ed2f56f-a95b-4a6b-aa19-3ca6681a32cb.png)
+
+  
+
+- **Geo-redundant Storage:** GEO-redundante opslag (GRS) worden uw gegevens driemaal synchroon gekopieerd op één fysieke locatie in het primaire gebied met behulp van LRS.
+  Vervolgens worden uw gegevens asynchroon gekopieerd naar één fysieke locatie in het secundaire gebied. 
+  In het secundaire gebied worden uw gegevens driemaal synchroon gekopieerd met LRS.
+  
+  In het volgende diagram ziet u hoe uw gegevens worden gerepliceerd met GRS of RA-GRS:
+  ![geo-redundant-storage](https://user-images.githubusercontent.com/95620804/149097627-a6b2adbc-3de6-4def-802a-f66fdb93d2cd.png)
+
+  
+- **Geo-zone-redundant Storage:** Met GZRS (Geo-zone-redundant storage)  worden uw gegevens synchroon gekopieerd in drie Azure-beschikbaarheidszones 
+  in de primaire regio met ZRS. Vervolgens worden uw gegevens asynchroon gekopieerd naar één fysieke locatie in het secundaire gebied. 
+  In het secundaire gebied worden uw gegevens driemaal synchroon gekopieerd met LRS.
+  
+  In het volgende diagram ziet u hoe uw gegevens worden gerepliceerd met GRS of RA-GRS:  
+  ![geo-zone-redundant-storage](https://user-images.githubusercontent.com/95620804/149097800-c877023f-864f-4d8c-a3cc-c89f46c911e1.png)
+
+  
+
 ## Opdracht
 
 
 **Waar kan ik deze dienst vinden in de console?**
 - Een Azure Cosmos DB-account maken:
-  1. Selecteer in het menu **Azure Portal** of de startpaginade optie **Een resource maken**.
-  2. Zoek op de pagina **Nieuw** naar **Azure Cosmos DB** en selecteer deze.
-  3. Selecteer op de pagina Azure Cosmos DB de **optie Maken**.
-  4. **Voer** op de pagina Azure Cosmos DB-account maken de **basisinstellingen in** voor het nieuwe Azure Cosmos-account.
+
+1. Selecteer in het menu **Azure Portal** of de startpaginade optie **Een resource maken**.
+2. Zoek op de pagina **Nieuw** naar **Azure Cosmos DB** en selecteer deze.
+3. Selecteer op de pagina Azure Cosmos DB de **optie Maken**.
+4. **Voer** op de pagina Azure Cosmos DB-account maken de **basisinstellingen in** voor het nieuwe Azure Cosmos-account.
 
 
 **Hoe zet ik deze dienst aan?**
@@ -90,6 +127,13 @@ Volledig beheerde databaseservice. Automatisch, geen aanraking, onderhoud, patch
 Voordelige opties voor onvoorspelbare of sporadische werkbelastingen van elke grootte of schaal, zodat ontwikkelaars eenvoudig aan de slag kunnen zonder capaciteit te plannen of te beheren.
 Serverless model biedt stekelige werkbelastingen automatische en responsieve service om verkeerssprongen op aanvraag te beheren.
 Automatisch inrichten van inrichtende doorvoer wordt automatisch en direct de capaciteit voor onvoorspelbare werkbelastingen geschaald, met behoud van SLA's.
+
+
+**Azure Cosmos DB** is beschikbaar in twee verschillende **capaciteitsmodi**: **Provisioned throughput** (=inrichtende doorvoer) en **Serverless** (=serverloos). 
+U kunt in beide modi exact dezelfde databasebewerkingen uitvoeren, maar de manier waarop u een factuur voor deze bewerkingen krijgt, is ingrijpend anders. 
+
+<img width="957" alt="CosmosDB Provisioned Throughput   Serverless" src="https://user-images.githubusercontent.com/95620804/149094203-59899858-a645-46d7-9c8b-5401145a0465.png">
+
 
 **Hoe kan ik deze dienst koppelen aan andere resources?**
 
