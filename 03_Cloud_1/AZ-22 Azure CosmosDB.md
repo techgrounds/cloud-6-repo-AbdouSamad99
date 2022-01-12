@@ -58,6 +58,7 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
   Lokaal redundante opslag (LRS) repliceert uw gegevens drie keer binnen één datacenter in de primaire regio.
   
   In het volgende diagram ziet u hoe uw gegevens worden gerepliceerd in één datacenter met LRS:
+  
   ![locally-redundant-storage](https://user-images.githubusercontent.com/95620804/149097168-ed61af9e-6479-4863-9fc6-9bf0aec57c2c.png)
 
 
@@ -67,15 +68,16 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
   raadt Microsoft aan ZRS te gebruiken in de primaire regio en deze ook te repliceren naar een secundaire regio.
   
   In het volgende diagram ziet u hoe uw gegevens worden gerepliceerd in de beschikbaarheidszones in de primaire regio met ZRS:
+  
   ![zone-redundant-storage](https://user-images.githubusercontent.com/95620804/149097224-4ed2f56f-a95b-4a6b-aa19-3ca6681a32cb.png)
 
-  
 
 - **Geo-redundant Storage:** GEO-redundante opslag (GRS) worden uw gegevens driemaal synchroon gekopieerd op één fysieke locatie in het primaire gebied met behulp van LRS.
   Vervolgens worden uw gegevens asynchroon gekopieerd naar één fysieke locatie in het secundaire gebied. 
   In het secundaire gebied worden uw gegevens driemaal synchroon gekopieerd met LRS.
   
   In het volgende diagram ziet u hoe uw gegevens worden gerepliceerd met GRS of RA-GRS:
+  
   ![geo-redundant-storage](https://user-images.githubusercontent.com/95620804/149097627-a6b2adbc-3de6-4def-802a-f66fdb93d2cd.png)
 
   
@@ -84,6 +86,7 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
   In het secundaire gebied worden uw gegevens driemaal synchroon gekopieerd met LRS.
   
   In het volgende diagram ziet u hoe uw gegevens worden gerepliceerd met GRS of RA-GRS:  
+  
   ![geo-zone-redundant-storage](https://user-images.githubusercontent.com/95620804/149097800-c877023f-864f-4d8c-a3cc-c89f46c911e1.png)
 
   
@@ -105,11 +108,13 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
 - Stap 1  
   <img width="655" alt="Stap 1 Kies API bij maken van Cosmos DB" src="https://user-images.githubusercontent.com/95620804/149123053-0e4946af-52f0-445f-82f5-41ff81aa86e8.png">
 
-- Stap 2  **Capacity Mode:** Gekozen voor **Serverless** (goedkoper) en bij **Backup storage redundancy:** gekozen voor **Locally-redundant backup storage**
+- Stap 2  **Capacity Mode:** Gekozen voor **Serverless** (goedkoper) 
+  en bij **Backup storage redundancy:** gekozen voor **Locally-redundant backup storage**
+  
   <img width="427" alt="Stap 2 Create Cosmos DB Account" src="https://user-images.githubusercontent.com/95620804/149123069-da93f98a-863b-45a5-9c98-0c7c3b790773.png">
   
 
-https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal
+  _https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal_
 
 ### Belangrijkste voordelen
 Gegarandeerde snelheid op elke schaal
@@ -142,7 +147,7 @@ Voordelige opties voor onvoorspelbare of sporadische werkbelastingen van elke gr
 Serverless model biedt stekelige werkbelastingen automatische en responsieve service om verkeerssprongen op aanvraag te beheren.
 Automatisch inrichten van inrichtende doorvoer wordt automatisch en direct de capaciteit voor onvoorspelbare werkbelastingen geschaald, met behoud van SLA's.
 
-
+**Beschikbare Capaciteits Mode voor Azure Cosmos DB:**
 **Azure Cosmos DB** is beschikbaar in twee verschillende **capaciteitsmodi**: **Provisioned throughput** (=inrichtende doorvoer) en **Serverless** (=serverloos). 
 U kunt in beide modi exact dezelfde databasebewerkingen uitvoeren, maar de manier waarop u een factuur voor deze bewerkingen krijgt, is ingrijpend anders. 
 
