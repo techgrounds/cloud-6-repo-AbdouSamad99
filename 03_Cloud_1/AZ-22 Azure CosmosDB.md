@@ -2,9 +2,16 @@
 
 **Azure Cosmos DB** is de eigen, wereldwijd gedistribueerde databaseservice met meerdere modellen "voor het beheren van gegevens op planeetschaal", 
 gelanceerd in mei 2017. Het is **schema-onafhankelijk**, **horizontaal schaalbaar** en over het algemeen geclassificeerd als een **NoSQL-database**.
+Met **Azure Cosmos DB** kunt u uw database zodanig configureren dat deze wereldwijd in alle gewenste Azure-regio's wordt gedistribueerd en beschikbaar is. 
+U kunt latentie minimaliseren door gegevens dicht bij uw gebruikers te plaatsen.
+
+Met Azure Cosmos DB worden uw gegevens transparant gerepliceerd in alle regio's die aan uw Azure Cosmos DB-account zijn gekoppeld. 
+Het biedt een enkele systeeminstallatiekopie van uw wereldwijd gedistribueerde Azure Cosmos DB-database en containers waarin gegevens lokaal 
+kunnen worden gelezen en geschreven door uw toepassing.
 
 **Azure Cosmos DB** is een volledig beheerde NoSQL-database voor moderne app-ontwikkeling. Responstijden met één cijfer in milliseconden en automatische en 
 directe schaalbaarheid garanderen snelheid op elke schaal. Bedrijfscontinuïteit is verzekerd met beschikbaarheid met SLA-backed en beveiliging op ondernemingskwaliteit.
+
 
 **Azure Cosmos DB** is een wereldwijd gedistribueerde multimodeldatabaseservice. De service is vanaf de basis ontworpen voor wereldwijde distributie en horizontaal schalen.
 Kortom, Azure Cosmos DB is de wereldwijd gedistribueerde databaseservice voor meerdere modellen van Microsoft. Met Azure Cosmos DB kunt u snel databases, 
@@ -135,9 +142,6 @@ U kunt in beide modi exact dezelfde databasebewerkingen uitvoeren, maar de manie
 <img width="957" alt="CosmosDB Provisioned Throughput   Serverless" src="https://user-images.githubusercontent.com/95620804/149094203-59899858-a645-46d7-9c8b-5401145a0465.png">
 
 
-**Hoe kan ik deze dienst koppelen aan andere resources?**
-
-
 
 
 ### Gebruikte bronnen
@@ -145,8 +149,7 @@ U kunt in beide modi exact dezelfde databasebewerkingen uitvoeren, maar de manie
 2. https://www.tottadatalab.nl/2017/10/11/wat-betekent-nosql/
 3. https://intercept.cloud/nl/nieuws/duidelijkheid-over-de-azure-sla/
 4. https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal
-5. 
-6. 
+5. https://docs.microsoft.com/nl-nl/azure/cosmos-db/throughput-serverless
 
 
 
