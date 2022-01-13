@@ -132,7 +132,8 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
   
   
   
-
+  _https://www.sqlservercentral.com/articles/creating-a-azure-cosmos-db-account_
+  
   _https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal_
 
 ### Belangrijkste voordelen
@@ -180,7 +181,8 @@ U kunt in beide modi exact dezelfde databasebewerkingen uitvoeren, maar de manie
 2. https://www.tottadatalab.nl/2017/10/11/wat-betekent-nosql/
 3. https://intercept.cloud/nl/nieuws/duidelijkheid-over-de-azure-sla/
 4. https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal
-5. https://docs.microsoft.com/nl-nl/azure/cosmos-db/throughput-serverless
+5. https://www.sqlservercentral.com/articles/creating-a-azure-cosmos-db-account
+6. https://docs.microsoft.com/nl-nl/azure/cosmos-db/throughput-serverless
 
 
 
