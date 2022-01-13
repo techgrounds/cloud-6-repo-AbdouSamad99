@@ -72,7 +72,7 @@ Hoe kan ik deze dienst koppelen aan andere resources?
 1. https://docs.microsoft.com/nl-nl/azure/azure-functions/
 2. https://docs.microsoft.com/nl-nl/azure/azure-functions/functions-overview
 3. https://youtu.be/8-jz5f_JyEQ
-4. 
+4. https://docs.microsoft.com/en-us/learn/modules/explore-azure-functions/
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
