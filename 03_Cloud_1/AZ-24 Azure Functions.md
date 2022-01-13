@@ -63,8 +63,6 @@ U richt zich op de stukken code die voor u het belangrijkst zijn en Azure Functi
 
 
 
-
-
 Hoe kan ik deze dienst koppelen aan andere resources?
 
 
@@ -75,7 +73,7 @@ Hoe kan ik deze dienst koppelen aan andere resources?
 4. https://docs.microsoft.com/en-us/learn/modules/explore-azure-functions/
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+
