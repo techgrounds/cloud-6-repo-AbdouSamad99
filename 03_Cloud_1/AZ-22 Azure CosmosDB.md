@@ -112,6 +112,23 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
   en bij **Backup storage redundancy:** gekozen voor **Locally-redundant backup storage**
   
   <img width="427" alt="Stap 2 Create Cosmos DB Account" src="https://user-images.githubusercontent.com/95620804/149123069-da93f98a-863b-45a5-9c98-0c7c3b790773.png">
+
+- Stap 3 CosmosDb is gemaakt
+  
+  <img width="785" alt="Stap 3 Create Cosmos DB Account" src="https://user-images.githubusercontent.com/95620804/149299540-4f23cd7f-4ef2-418e-aabf-e07be51de4a9.png">
+
+- STap 4 Database ID en Container aanmaken 
+  <img width="960" alt="Stap 4 Create New Container in CosmosDB" src="https://user-images.githubusercontent.com/95620804/149299603-8ca50cfa-030f-48f5-bf27-829543c5d2d6.png">
+
+- Stap 5 Via een voorbeeld-app kun je verbinding instellen met de CosmosDb
+  Een platform kiezen Zoals: -.NET -Xamarin -Java -Node.js -Python
+
+  <img width="541" alt="Stap 5 Verbinding instellen CosmosDB" src="https://user-images.githubusercontent.com/95620804/149299658-80350ad7-9cf6-4b11-b9aa-aa3a9f199bde.png">
+
+  
+  
+  
+  
   
 
   _https://docs.microsoft.com/nl-nl/azure/cosmos-db/sql/create-cosmosdb-resources-portal_
