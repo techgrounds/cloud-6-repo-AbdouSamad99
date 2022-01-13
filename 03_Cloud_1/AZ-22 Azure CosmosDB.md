@@ -105,7 +105,9 @@ een hoge beschikbaarheid van 99,999 procent met multihoming waar ook ter wereld.
 
 **Hoe zet ik deze dienst aan?**
 
-- Stap 1  
+- Stap 1  Cosmos DB biedt API's voor SQL **(een Core-API=een kern-API, Cassandra, MongoDB, Gremlin en Azure Table Storage)** om te werken met uw gegevens 
+  die zijn opgeslagen in uw Cosmos-database. Eenmaal een API gekozen dan kun je dit na het aanmaken van je CosmosDB account niet meer wijzigingen. (Zie foto)
+  
   <img width="655" alt="Stap 1 Kies API bij maken van Cosmos DB" src="https://user-images.githubusercontent.com/95620804/149123053-0e4946af-52f0-445f-82f5-41ff81aa86e8.png">
 
 - Stap 2  **Capacity Mode:** Gekozen voor **Serverless** (goedkoper) 
