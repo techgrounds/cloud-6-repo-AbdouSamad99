@@ -100,6 +100,7 @@ van klant exemplaren met native VNet-ondersteuning. (Zie foto)
 
 ![SQL Managed Instance](https://user-images.githubusercontent.com/95620804/149351952-c0792ae4-a326-43a3-aff5-77c525d5e0f1.png)
 
+
 **Typen database op Azure**
 <img width="960" alt="Azure Database-Producten" src="https://user-images.githubusercontent.com/95620804/149339913-b7389190-6225-4ad6-b464-c81f35e0453a.png">
 
