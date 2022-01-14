@@ -53,8 +53,9 @@ Stap 4: Na het maken van Storage Account kun je Azure File Share aanmaken
 
 ### Ervaren problemen
 
-Heel erg duur. Ik heb waarschijnlijk tijdens het configureren een onnodige (overbodige) dure optie gekozen.
+Heel erg duur. Ik heb waarschijnlijk tijdens het configureren een onnodige (overbodige) dure optie gekozen. 
+Resourcegroup verwijderd om de kosten niet verder op te laten lopen. Maar de kosten bleven maar oplopen.
 
 ### Resultaat
 
-Resourcegroup verwijderd om de kosten niet verder op te laten lopen.
+Casper heeft gemaild naar Microsoft. Blijkbaar had ik Provisioned Storage Account aangemaakt (Premium versie). Deze kosten hoeven niet betaald te worden. 
