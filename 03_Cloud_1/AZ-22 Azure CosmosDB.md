@@ -2,6 +2,7 @@
 
 **Azure Cosmos DB** is de eigen, wereldwijd gedistribueerde databaseservice met meerdere modellen "voor het beheren van gegevens op planeetschaal", 
 gelanceerd in mei 2017. Het is **schema-onafhankelijk**, **horizontaal schaalbaar** en over het algemeen geclassificeerd als een **NoSQL-database**.
+
 Met **Azure Cosmos DB** kunt u uw database zodanig configureren dat deze wereldwijd in alle gewenste Azure-regio's wordt gedistribueerd en beschikbaar is. 
 U kunt latentie minimaliseren door gegevens dicht bij uw gebruikers te plaatsen.
 
