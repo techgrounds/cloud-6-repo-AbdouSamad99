@@ -57,6 +57,20 @@ De containerinstallatiekopie wordt de eenheid die we gebruiken om onze toepassin
   en deze in een container te verzenden om ze op elk moment in te zetten. Er zijn ook verschillende componenten beschikbaar in Docker. 
   Docker voor Mac draait Docker-container op Mac OS. 
 
+- **Containergroep:** Een containergroep is een verzameling containers die op dezelfde hostcomputer worden gepland. De containers in een containergroep delen een
+  levenscyclus, resources, lokaal netwerk en opslagvolumes. Het is qua concept vergelijkbaar met een pod in Kubernetes.
+  
+  In het volgende diagram ziet u een voorbeeld van een containergroep die meerdere containers bevat **(Zie Foto)**:
+  - Deze voorbeeldcontainergroep:
+    - Is gepland op een enkele hostcomputer.
+    - Is een DNS-naamlabel toegewezen.
+    - Geeft één openbaar IP-adres weer, met één zichtbare poort.
+    - Bestaat uit twee containers. De ene container luistert op poort 80, terwijl de andere luistert op poort 5000.
+    - Bevat twee Azure-bestandsshares als volumekoppelingen en elke container koppelt een van de shares lokaal aan.
+    
+    ![container-groups-example](https://user-images.githubusercontent.com/95620804/149777485-3d7dd526-a613-49b7-a3f6-68232788584c.png)
+
+  
 
 # Opdracht
 
@@ -74,8 +88,8 @@ Over het algemeen biedt een container een draagbare werkomgeving om de ontwikkel
 Een standaardpakket met software, ook wel een container genoemd, bundelt de code van een applicatie samen met de gerelateerde configuratiebestanden en bibliotheken en met de
 afhankelijkheden die nodig zijn om de app te laten draaien. Hierdoor kunnen ontwikkelaars en IT-professionals applicaties naadloos in verschillende omgevingen implementeren.
 
-Containers worden de voorkeursmethode voor het verpakken, implementeren en beheren van cloudtoepassingen. **Azure Container Instances** is de snelste en meest eenvoudige methode
-voor het uitvoeren van een container in Azure, waarbij het niet nodig is om virtuele machines te beheren of het serviceniveau te verhogen.
+Containers worden de voorkeursmethode voor het verpakken, implementeren en beheren van cloudtoepassingen. **Azure Container Instances** is de snelste en 
+meest eenvoudige methode voor het uitvoeren van een container in Azure, waarbij het niet nodig is om virtuele machines te beheren of het serviceniveau te verhogen.
 
 **Azure Container Instances** is een ideale oplossing voor elk scenario dat kan werken in geïsoleerde containers, met inbegrip van eenvoudige toepassingen, 
 taakautomatisering en het bouwen van taken. 
@@ -88,7 +102,7 @@ automatisch schalen en gecoördineerde toepassingsupgrades, raden wij Azure Kube
 
 **Hoe groot mag mijn containerimage zijn?**
 
-De maximale grootte voor een implementeerbare containerinstallatiekopie op Azure Container Instances is 15 GB. 
+De maximale grootte voor een implementeerbare containerinstallatiekopie op Azure Container Instances is **15 GB**. 
 
 ## Prijzen voor Azure Container Instances:
 - Geen kosten vooraf
@@ -97,7 +111,8 @@ De maximale grootte voor een implementeerbare containerinstallatiekopie op Azure
 
 
 ## Hoe maak ik een container in azure
-Gebruik **Azure Container Instances** om snel en eenvoudig serverloze Docker-containers uit te voeren in Azure. Een toepassing implementeren in een containerinstantie op aanvraag, wanneer u geen volledig indelingsplatform voor containers nodig hebt zoals Azure Kubernetes Service. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/container-instances/container-instances-quickstart-portal) **om docker-container uit te voeren.**
+Gebruik **Azure Container Instances** om snel en eenvoudig serverloze Docker-containers uit te voeren in Azure. Een toepassing implementeren in een containerinstantie op
+aanvraag, wanneer u geen volledig indelingsplatform voor containers nodig hebt zoals Azure Kubernetes Service. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/container-instances/container-instances-quickstart-portal) **om docker-container uit te voeren.**
 
 
 ## Zullen containers de virtuele machines ooit vervangen?
@@ -105,7 +120,6 @@ Gebruik **Azure Container Instances** om snel en eenvoudig serverloze Docker-con
 Dat is niet heel waarschijnlijk. Virtuele machines bieden nog steeds een sterkere vorm van isolatie, en zijn volgens sommigen makkelijker te beheren in grote hoeveelheden.
 Daarnaast is de oude technologie waarop veel bedrijven nog steunen, niet geschikt om in containers te plaatsen, terwijl ze wel verplaatst kunnen worden 
 met behulp van virtuele machines. De twee technologieën zullen elkaar in de toekomst eerder aanvullen dan uitsluiten.
-
 
 
 ## Vergelijkingen van container-opties
@@ -159,8 +173,6 @@ diagnose, configuratiebeheer, servicedetectie, CI/CD-integratie, blauwgroene imp
 is Azure Spring Cloud een ideale optie.
 
 
-
-
 **Verschil tussen Docker en Container:**
 
 1. -  **Docker** is een softwareplatform voor het maken, implementeren en beheren van gevirtualiseerde toepassingscontainers op een gemeenschappelijk besturingssysteem 
@@ -191,6 +203,7 @@ is Azure Spring Cloud een ideale optie.
 6. https://azure.microsoft.com/nl-nl/overview/what-is-a-container/#overview
 7. https://docs.microsoft.com/nl-nl/azure/container-instances/container-instances-quickstart-portal
 8. https://docs.microsoft.com/en-us/azure/container-apps/compare-options
+9. https://business.techpulse.be/achtergrond/168686/qa-wat-zijn-containers/
 
 
 # Ervaren problemen
