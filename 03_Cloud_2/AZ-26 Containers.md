@@ -40,7 +40,8 @@ De containerinstallatiekopie wordt de eenheid die we gebruiken om onze toepassin
   **Kubernetes (uitgesproken 'koe-ber-net-ies') is opensource-software voor implementatie en beheer van containers op schaal**; 
   het is tevens Grieks voor **stuurman** of loods. Met Kubernetes, ook wel **'k8s' of 'k-eights'** genoemd, kunt u sneller apps in containers bouwen, leveren en schalen.
   
-  **Kubernetes** is een snel evoluerend platform dat op containers gebaseerde applicaties en de bijbehorende netwerk- en opslagcomponenten beheert. [**Klik hier**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads) **voor extra info.**
+  **Kubernetes** is een snel evoluerend platform dat op containers gebaseerde applicaties en de bijbehorende netwerk- en opslagcomponenten beheert.
+  [**Klik hier**](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads) **voor extra info.**
     
   - **Waarom Kubernetes gebruiken?**
 
@@ -60,7 +61,7 @@ De containerinstallatiekopie wordt de eenheid die we gebruiken om onze toepassin
 - **Containergroep:** Een containergroep is een verzameling containers die op dezelfde hostcomputer worden gepland. De containers in een containergroep delen een
   levenscyclus, resources, lokaal netwerk en opslagvolumes. Het is qua concept vergelijkbaar met een pod in Kubernetes.
   
-  In het volgende diagram ziet u een voorbeeld van een containergroep die meerdere containers bevat **(Zie Foto)**:
+  In het volgende diagram ziet u een voorbeeld van een containergroep die meerdere containers bevat **(Zie Foto)**: [**Klik hier**](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-container-groups) **voor extra info.**
   - Deze voorbeeldcontainergroep:
     - Is gepland op een enkele hostcomputer.
     - Is een DNS-naamlabel toegewezen.
