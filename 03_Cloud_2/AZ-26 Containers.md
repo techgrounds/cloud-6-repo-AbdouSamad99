@@ -1,4 +1,4 @@
-# [Onderwerp]
+# Containers
 
 Een container is een losjes geïsoleerde omgeving die ons in staat stelt softwarepakketten te bouwen en uit te voeren. Deze softwarepakketten bevatten zowel de code als alle afhankelijkheden die nodig zijn om toepassingen snel en stabiel in elke computeromgeving uit te voeren. Deze pakketten worden containerinstallatiekopieën genoemd.
 
@@ -62,7 +62,7 @@ automatisch schalen en gecoördineerde toepassingsupgrades, raden wij Azure Kube
 - Facturering per seconde
 
 
-## Hoe maak ik een 
+## Hoe maak ik een container is azure
 Gebruik **Azure Container Instances** om snel en eenvoudig serverloze Docker-containers uit te voeren in Azure. Een toepassing implementeren in een containerinstantie op aanvraag, wanneer u geen volledig indelingsplatform voor containers nodig hebt zoals Azure Kubernetes Service. {**Klik hier**](https://docs.microsoft.com/nl-nl/azure/container-instances/container-instances-quickstart-portal) **om docker-container uit te voeren.**
 
 
