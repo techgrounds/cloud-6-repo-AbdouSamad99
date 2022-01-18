@@ -29,3 +29,11 @@ kan kwalificeren als operationele uitgave. U betaalt bijvoorbeeld voor een diens
 - Schaalkosten op basis van gebruik/vraag in plaats van vaste hardware of capaciteit: plan voor back-upverkeer en noodherstelverkeer om de benodigde bandbreedte te bepalen.
 - Facturering op gebruikers- of organisatieniveau: wanneer u een speciale cloudservice gebruikt, kunt u betalen op basis van serverhardware en -gebruik.
 
+# TCO:
+
+**TCO = Total Cost of Ownership**
+- De som van Capex en Opex wordt ook wel de Total Cost of Ownership (TCO) genoemd. 
+
+## Bron:
+1. https://www.kwdrm.nl/publicaties-en-blog/2019/erp-implementeren-hoe-verdelen-kosten-over-opex-capex/
+
