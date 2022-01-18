@@ -115,6 +115,28 @@ De maximale grootte voor een implementeerbare containerinstallatiekopie op Azure
 Gebruik **Azure Container Instances** om snel en eenvoudig serverloze Docker-containers uit te voeren in Azure. Een toepassing implementeren in een containerinstantie op
 aanvraag, wanneer u geen volledig indelingsplatform voor containers nodig hebt zoals Azure Kubernetes Service. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/container-instances/container-instances-quickstart-portal) **om docker-container uit te voeren.**
 
+- Stap 1 maken Azure Container Instance in de Azure Portal
+- Stap 2 maken Azure Container Instance
+
+<img width="462" alt="Stap 1 maken Azure Container Instance" src="https://user-images.githubusercontent.com/95620804/149903848-b3c49493-3eea-46de-9baa-ae717cdbae88.png"> <img width="430" alt="Stap 2 maken Azure Container Instance" src="https://user-images.githubusercontent.com/95620804/149903869-b86c0d4c-0295-43d2-ab47-2fa7ec7897a7.png">
+
+- Stap 3 DNS name moet accountname zijn die je hebt opgegeven
+- Stap 4 Validation passed
+
+<img width="418" alt="Stap 3 DNS name moet accountname zijn" src="https://user-images.githubusercontent.com/95620804/149904431-86d38976-9625-4ba1-a3ad-af0ebd9bc68c.png"> <img width="365" alt="Stap 4 Validation passed" src="https://user-images.githubusercontent.com/95620804/149904441-bc0ed6bc-7be0-4921-bdf7-88b25b4ee4f2.png">
+
+- Stap 5 Status running van Container instances **(je betaalt per seconde)**
+
+<img width="793" alt="Stap 5 Status running van Container instances" src="https://user-images.githubusercontent.com/95620804/149904645-b65cd2af-b238-45c3-937b-8646f70b0290.png"> 
+
+- Stap 6 FQDN van mijn container werkt in de browser
+
+<img width="611" alt="Stap 6 FQDN van mijn container werkt in de browser" src="https://user-images.githubusercontent.com/95620804/149904654-a520f8db-7b59-4072-b341-93cf3b7992c8.png">
+
+- Stap 7 Niet vergeten te verwijderen
+
+<img width="584" alt="Stap 7 Niet vergeten te verwijderen" src="https://user-images.githubusercontent.com/95620804/149904810-3c1df482-fe14-4b75-a472-65d4dbbbf855.png">
+
 
 ## Zullen containers de virtuele machines ooit vervangen?
 
