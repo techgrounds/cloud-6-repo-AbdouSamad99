@@ -19,12 +19,12 @@ Het analyseert uw resourceconfiguratie en gebruiks-telemetrie en raadt vervolgen
 Het **Advisor-dashboard** geeft gepersonaliseerde aanbevelingen weer voor al uw abonnementen. U kunt filters toepassen om aanbevelingen voor specifieke abonnementen 
 en resourcetypen weer te geven. 
 
-- De aanbevelingen zijn onderverdeeld in vijf categorieën:
-  - Reliability
-  - Security
-  - Performance
-  - Cost
-  - Operational Excellence
+- De aanbevelingen zijn onderverdeeld in **vijf categorieën:**
+  - **Reliability**
+  - **Security**
+  - **Performance**
+  - **Cost**
+  - **Operational Excellence**
 
 - **Reliability (=Betrouwbaarheid) (voorheen High Availability genoemd):** Om de continuïteit van uw bedrijfskritische applicaties te waarborgen en te verbeteren.
   Zie Aanbevelingen voor betrouwbaarheid van adviseurs voor meer informatie. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-high-availability-recommendations) **voor extra info.**
