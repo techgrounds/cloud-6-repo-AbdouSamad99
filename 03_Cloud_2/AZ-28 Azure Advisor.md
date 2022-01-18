@@ -27,11 +27,11 @@ en resourcetypen weer te geven.
   - **Operational Excellence**
 
 - **Reliability (=Betrouwbaarheid) (voorheen High Availability genoemd):** Om de continuïteit van uw bedrijfskritische applicaties te waarborgen en te verbeteren.
-  Zie Aanbevelingen voor betrouwbaarheid van adviseurs voor meer informatie. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-high-availability-recommendations) **voor extra info.**
+  [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-high-availability-recommendations) **voor extra info.**
 - **Security (=Beveiliging):** om bedreigingen en kwetsbaarheden te detecteren die kunnen leiden tot beveiligingsinbreuken.
-  Zie Advisor Security-aanbevelingen voor meer informatie. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-security-recommendations) **voor extra info.**
-- **Performance (=Prestaties):** om de snelheid van uw applicaties te verbeteren. Zie aanbevelingen voor Advisor Performance voor meer informatie. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-performance-recommendations) **voor extra info.**
-- **Cost (Kosten):** om uw totale Azure-uitgaven te optimaliseren en te verminderen. Zie Aanbevelingen voor adviseurskosten voor meer informatie. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-cost-recommendations) **voor extra info.**
+  [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-security-recommendations) **voor extra info.**
+- **Performance (=Prestaties):** om de snelheid van uw applicaties te verbeteren. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-performance-recommendations) **voor extra info.**
+- **Cost (Kosten):** om uw totale Azure-uitgaven te optimaliseren en te verminderen. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-cost-recommendations) **voor extra info.**
 - **Operational Excellence (=Operationele uitmuntendheid):** om u te helpen bij het bereiken van efficiëntie van processen en workflows,
   beheersbaarheid van resources en best practices voor implementatie. [**Klik hier**](https://docs.microsoft.com/nl-nl/azure/advisor/advisor-operational-excellence-recommendations) **voor extra info.**
 
