@@ -9,21 +9,26 @@ online zelfhulpdocumentatie, whitepapers en community-ondersteuningsforums.
 
 **Microsoft biedt vier Support Plans (=ondersteuningsplannen) die u technische ondersteuning kunnen bieden:**
 
-- **Basis:**  beschikbaar voor alle Microsoft Azure-accounts, dit is het enige gratis abonnement en heeft geen actieve ondersteuning van Azure, 
+- **Basic:**  =Basis: beschikbaar voor alle Microsoft Azure-accounts, dit is het enige gratis abonnement en heeft geen actieve ondersteuning van Azure, 
   de gebruiker heeft toegang tot communityforums, zelfhulpdocumentatie, enz. en kan zoveel ondersteuningstickets aanvragen als nodig is.
 
-- **Ontwikkelaar:**  het beste aanbevolen voor proef- en niet-productieomgevingen . Dit plan biedt actieve ondersteuning van Azure in de vorm van toegang tot 
-  ondersteuningstechnici via e-mail tijdens standaard kantooruren. De responstijd van Microsoft voor dit abonnement is binnen acht uur .
+- **Developer:**  Developer=Ontwikkelaar: het beste aanbevolen voor proef- en niet-productieomgevingen . Dit plan biedt actieve ondersteuning van Azure in de vorm van toegang
+  tot ondersteuningstechnici via e-mail tijdens standaard kantooruren. De responstijd van Microsoft voor dit abonnement is binnen acht uur .
 
 - **Standaard:**  het beste aanbevolen voor productieomgevingen met werkbelasting. Dit plan is een upgrade van het ontwikkelaarsplan en biedt ondersteuning 
   in de vorm van 24×7 toegang tot ondersteuningstechnici via e-mail en telefoon . De responstijd van Microsoft voor dit abonnement is binnen een uur .
 
 - **Professional Direct:** Absoluut noodzakelijk voor bedrijfskritieke omgevingen, dit plan biedt ook 24/7 technische ondersteuning met een responstijd van één uur, 
   maar omvat ook operationele ondersteuning, training en proactieve begeleiding van een ProDirect-leveringsmanager.
+  
+  **De 4 aangeboden Support Plans in my Azure Portal**
+  
+  <img width="960" alt="Support Plans in mijn Azure Portal" src="https://user-images.githubusercontent.com/95620804/149922428-01f9de0c-7b84-44ae-9d5b-5a9de071dce6.png">
 
-Als u een ondernemingsovereenkomst met Microsoft hebt, kunt u elk van deze abonnementen kopen, behalve het Ontwikkelaarsabonnement, en de rekening wordt opgenomen in de ondernemingsovereenkomst.
-
-_Bron: https://k21academy.com/microsoft-azure/az-900/az-900-azure-support-options/_
+  Als u een ondernemingsovereenkomst met Microsoft hebt, kunt u elk van deze abonnementen kopen, behalve het Ontwikkelaarsabonnement, 
+  en de rekening wordt opgenomen in de ondernemingsovereenkomst.
+  
+  _Bron: https://k21academy.com/microsoft-azure/az-900/az-900-azure-support-options/_
 
 # Key-terms
 
@@ -40,7 +45,17 @@ _Bron: https://k21academy.com/microsoft-azure/az-900/az-900-azure-support-option
 
 ## Hoe maak ik een Azure Support request?
 
-[Klik hier](https://docs.microsoft.com/nl-nl/azure/azure-portal/supportability/how-to-create-azure-support-request) **voor het maken van een Azure-ondersteuningsaanvraag.**)
+Als u een **Azure Support request** (=ondersteuningsaanvraag) wilt maken, gaat u naar **Help + Support** (=ondersteuning) in **Azure Portal.** Zie Foto!
+
+- Stap 1 Support plan Vraagteken en dan Help + Support klikken
+
+  <img width="302" alt="Stap 1 Support plan Vraagteken en dan Help + Support klikken" src="https://user-images.githubusercontent.com/95620804/149921570-baa6fc79-5314-474e-8cb0-55d2c4fcacb9.png">
+- Stap 2 Klik op Create a Support request
+  
+  <img width="692" alt="Stap 2 Klik op Create a Support request" src="https://user-images.githubusercontent.com/95620804/149921579-413ad919-0444-4d2c-966a-fb8df7dd3964.png">
+
+
+[Klik hier](https://docs.microsoft.com/nl-nl/azure/azure-portal/supportability/how-to-create-azure-support-request) **voor het maken van een Azure-ondersteuningsaanvraag.**
 
 Ondersteuning voor facturering en abonnementsbeheer is opgenomen voor alle Azure-klanten in markten waar Azure wordt aangeboden. 
 Technische ondersteuning is beschikbaar voor klanten die een Support Plan =ondersteuningsplan hebben aangeschaft. Voor sommige services is de ondersteuning mogelijk niet
