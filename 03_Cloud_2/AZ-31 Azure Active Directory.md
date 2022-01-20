@@ -116,7 +116,8 @@ uw gebruikers veiliger met hun apps te verbinden.
 
 <img width="631" alt="Azure Active Directory (4 Beschikbare Edities)" src="https://user-images.githubusercontent.com/95620804/150315277-8e05180b-079f-4da0-a97f-1859026a032d.png">
 
-- **Tabel Azure Active Directory (belangrijkste rollen en hun bijdragen)**
+- **Tabel Azure Active Directory: belangrijkste rollen en hun bijdragen (Zie foto)**
+
   <img width="473" alt="Tabel Azure Active Directory (belangrijkste rollen en hun bijdragen)" src="https://user-images.githubusercontent.com/95620804/150319231-562aec0e-b911-48d0-90b5-59b2a66b3947.png">
 
 
