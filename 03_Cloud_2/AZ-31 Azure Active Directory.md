@@ -75,6 +75,9 @@ de productiviteit verhoogt en u in staat stelt om naleving te garanderen. En u k
 - **Microsoft-account (ook MSA genoemd):**	Persoonlijke accounts die toegang verlenen tot uw consumentgerichte producten en cloudservices van Microsoft, 
   bijvoorbeeld Outlook, OneDrive, Xbox LIVE en Microsoft 365. Uw Microsoft-account wordt gemaakt en opgeslagen in het accountsysteem voor consumentidentiteiten van Microsoft,
   dat wordt beheerd door Microsoft.
+  
+- **IDaaS:** staat voor 'Identity as a Service'. Hiermee wordt gedoeld op een authenticatie infrastructuur welke wordt onderhouden en gehost door 
+  een cloud service provider. Via IDaaS wordt IAM functionaliteit naar de cloud gebracht.
 
 
 # Opdracht
@@ -97,7 +100,18 @@ Het Azure Active Directory -beheercentrum kunt u een **User, Group, Enterprice A
 
 <img width="437" alt="Azure Active Directory (geen rechten om User toe te voegen)" src="https://user-images.githubusercontent.com/95620804/150328807-61cccea1-ebb8-4d57-b1a4-ef669567b986.png">
 
+## Wat is het verschil tussen X en andere gelijksoortige diensten?
 
+**Active Directory vergelijken met Azure Active Directory**
+
+Microsoft heeft **Active Directory Domain Services** in Windows 2000 geïntroduceerd om organisaties de mogelijkheid te bieden meerdere on-premises infrastructuuronderdelen 
+en -systemen te beheren met **één identiteit per gebruiker**.
+
+**Azure AD** gaat hiermee naar het volgende niveau door organisaties een **IDaaS-oplossing (Identity as a Service)** te bieden voor al hun apps in de cloud en on-premises.
+**De afkorting IDaaS staat voor 'Identity as a Service':** Hiermee wordt gedoeld op een authenticatie infrastructuur welke wordt onderhouden en gehost door 
+een cloud service provider. Via IDaaS wordt IAM functionaliteit naar de cloud gebracht.
+
+[**Klik hier**](https://docs.microsoft.com/nl-nl/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad) **voor uitgebreide verschillen.**
 
 ## Hoe kan ik deze dienst koppelen aan andere resources?
 
@@ -129,6 +143,7 @@ uw gebruikers veiliger met hun apps te verbinden.
 3. https://www.microsoft.com/en-ww/security/business/identity-access-management/azure-ad-pricing?rtc=1&market=af
 4. https://docs.microsoft.com/nl-nl/azure/active-directory/manage-apps/migration-resources
 5. https://docs.microsoft.com/en-us/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365?view=o365-worldwide
+6. [IDAAS](https://www.kennisportal.com/kennisitems/wanneer-is-idaas-interessant-voor-uw-organisatie/#:~:text=De%20afkorting%20IDaaS%20staat%20voor,functionaliteit%20naar%20de%20cloud%20gebracht.)
 
 
 
