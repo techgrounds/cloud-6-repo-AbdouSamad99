@@ -25,10 +25,7 @@ Alle gegevens die worden verzameld door **Azure Monitor**, kunnen worden onderve
   maar ook als logboeken, zodat alles kan worden gecombineerd voor analysedoeleinden.
 
 
-
-
 # Key-terms
-
 
 
 
@@ -50,14 +47,17 @@ platform verzameld. Zodra u een Azure-abonnement maakt en resources zoals virtue
 
 ## Hoe kan ik deze dienst koppelen aan andere resources?
 
-**Hoe Azure Monitor werkt**
-**Azure Monitor** verzamelt telemetrische bewakingsgegevens van diverse on-premises en Azure-bronnen. Beheerhulpprogramma's, zoals die in
-**Azure Security Center** en **Azure Automation**,** pushen** ook **logboekgegevens naar Azure Monitor**. 
+### Hoe Azure Monitor werkt
+
+**Azure Monitor** verzamelt telemetrische bewakingsgegevens van diverse on-premises en Azure-bronnen. 
+Beheerhulpprogramma's, zoals die in **Azure Security Center** en **Azure Automation**, **pushen** ook **logboekgegevens naar Azure Monitor**. 
+
 De service verzamelt deze telemetrische gegevens en slaat ze op in een archief voor logboekgegevens dat voor **kosten en prestaties is geoptimaliseerd.** 
+
 **Analyseer data** (=gegevens), stel **alerts** (=waarschuwingen) in, ontvang **end-to-end weergaven** van uw toepassingen en maak gebruik van 
 met **machine learning** verkregen inzichten zodat u snel problemen kunt identificeren en oplossen. [**Klik hier**](https://azure.microsoft.com/nl-nl/services/monitor/#features) **voor extra info.**
 
-- Azure Monitor (Hoe werkt het) FOTO!
+- **Hoe Azure Monitor werkr (ZIE FOTO)**
 
   ![Azure Monitor (Hoe werkt het)](https://user-images.githubusercontent.com/95620804/150367339-b5d91ee7-76d0-4f3a-8add-a55ebc174c86.jpg)
 
