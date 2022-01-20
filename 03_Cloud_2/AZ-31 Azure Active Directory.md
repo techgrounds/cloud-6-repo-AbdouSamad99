@@ -133,6 +133,9 @@ uw gebruikers veiliger met hun apps te verbinden.
 
 # Ervaren problemen
 
+Azure Active Directory (Beperkte rechten). Administrator kan meer rechten geven.
+
+<img width="686" alt="Azure Active Directory (Beperkte rechten)" src="https://user-images.githubusercontent.com/95620804/150330835-1d1b8dea-f284-4192-96a7-6b9f01ecab52.png">
 
 # Resultaat
 
