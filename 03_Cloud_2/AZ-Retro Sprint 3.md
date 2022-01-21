@@ -1,4 +1,4 @@
-# Retro van Group 1 van Sprint 3
+# Retro van Groep 1 van Sprint 3
 
 1. Shikha
 2. Ahmed
