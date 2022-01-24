@@ -138,6 +138,7 @@
 - to determine: Bepalen
 - invoices: Facturen
 - distinct: Verschillende
+- Scope: Domein, bereik, omvang
 
 
 ### Resultaat
