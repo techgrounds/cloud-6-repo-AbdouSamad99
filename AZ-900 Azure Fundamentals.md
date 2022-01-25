@@ -111,6 +111,121 @@
     - A credit to use in the first 12 months.
     - Free access to certain software developer tools.
 
+## Azure compute services
+
+Azure compute is an on-demand computing service for running cloud-based applications. It provides computing resources such as disks, processors, memory, networking, and
+operating systems. The resources are available on-demand and can typically be made available in minutes or even seconds. 
+You pay only for the resources you use, and only for as long as you're using them.
+
+- **Virtual machines**
+  
+  Virtual machines are software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. 
+  VMs host an operating system, and you can install and run software just like a physical computer.
+  
+- **Azure Virtual Machines**
+
+  With Azure Virtual Machines, you can create and use VMs in the cloud. Virtual Machines provides infrastructure as a service (IaaS) in the form of a virtualized server 
+  and can be used in many ways. Just like a physical computer, you can customize all of the software running on the VM. VMs are an ideal choice when you need:
+  
+  - Total control over the operating system (OS) and environment.
+  - The ability to run custom software.
+  - To use custom hosting configurations.
+
+- **VM Image**
+  
+  An image is a template used to create a VM. These templates already include an OS and often other software, like development tools or web hosting environments.
+  You can create and provision (=inrichten) a VM in minutes when you select a preconfigured VM image.
+
+- **Virtual machine scale sets**
+  
+  Virtual machine scale sets are an Azure compute resource that you can use to deploy and manage a set of identical VMs. 
+  With all VMs configured the same, virtual machine scale sets are designed to support true autoscale. 
+
+- **Examples of when to use VMs:**
+  
+  - During testing and development.
+  - When running applications in the cloud.
+  - When extending (=uitbreiden) your datacenter to the cloud.
+  - During disaster recovery. 
+
+- **Move to the cloud with VMs**
+  
+  VMs are also an excellent choice when you move from a physical server to the cloud (also known as **lift and shift**). 
+  You can create an image of the physical server and host it within a VM with little or no changes. 
+  Just like a physical on-premises server, you must maintain the VM. You update the installed OS and the software it runs.
+  
+- **What are virtual machine scale sets?**
+  
+  Virtual machine scale sets let you create and manage a group of identical, load-balanced VMs. Scale sets allow you to centrally manage, configure, 
+  and update a large number of VMs in minutes to provide highly available applications. The number of VM instances can automatically increase or decrease in response 
+  to demand or a defined schedule. 
+
+- **Containers and Kubernetes**
+  
+  Container Instances and Azure Kubernetes Service are Azure compute resources that you can use to deploy and manage containers. 
+  Containers are lightweight, virtualized application environments. They're designed to be quickly created, scaled out, and stopped dynamically. 
+  You can run multiple instances of a containerized application on a single host machine.
+
+- **App Service**
+  
+  With Azure App Service, you can quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform.
+  App Service is a platform as a service (PaaS) offering.
+
+- **Functions**
+  
+  Functions are ideal when you're concerned only about the code running your service and not the underlying platform or infrastructure. 
+  They're commonly used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, 
+  and when that work can be completed quickly, within seconds or less.
+
+- **Azure App Service**
+  
+  App Service enables you to build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of 
+  your choice without managing infrastructure. This **platform as a service (PaaS)** environment allows you to focus on the website and API logic while Azure 
+  handles the infrastructure to run and scale your web applications.
+
+- **Types of app services**
+
+  With App Service, you can host most common app service styles like:
+  - Web apps
+  - API apps
+  - WebJobs
+  - Mobile apps
+
+- **When to use Azure Container Instances or Azure Kubernetes Service**
+- 
+  While virtual machines are an excellent way to reduce costs versus the investments that are necessary for physical hardware, they're still limited to a single operating
+  system per virtual machine. If you want to **run multiple instances of an application on a single host machine**, **containers are an excellent choice**.
+
+- **Containers**
+  
+  Containers are a virtualization environment. Containers are lightweight and designed to be created, scaled out, and stopped dynamically. 
+  Containers are designed to allow you to respond to changes on demand. With containers, you can quickly restart in case of a crash or hardware interruption. 
+  One of the most **popular container engines is Docker**, which is **supported by Azure**.
+
+- **Manage containers**
+  
+  Containers are managed through a **container orchestrator**, which can start, stop, and scale out application instances as needed. 
+  There are two ways to manage both Docker and Microsoft-based containers in Azure: 
+  - Azure Container Instances 
+  - and Azure Kubernetes Service (AKS).
+
+- **Azure Container Instances**
+  
+  Azure Container Instances offers the fastest and simplest way to run a container in Azure without having to manage any virtual machines or adopt any additional services.
+  It's a **platform as a service (PaaS)** offering that allows you to upload your containers, which it runs for you.
+
+- **Azure Kubernetes Service**
+  
+  The task of automating, managing, and interacting with **a large number of containers** is known as orchestration. 
+  Azure Kubernetes Service is **a complete orchestration service for container**s with distributed architectures and large volumes of containers.
+
+
+
+
+
+
+
+
 
 
 
@@ -139,6 +254,8 @@
 - invoices: Facturen
 - distinct: Verschillende
 - Scope: Domein, bereik, omvang
+- Endorsed distributions: goedgekeurde distributies
+- provision: inrichten
 
 
 ### Resultaat
