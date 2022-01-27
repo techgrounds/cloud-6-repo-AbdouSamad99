@@ -499,7 +499,8 @@ and with your on-premises client computers. You can think of an Azure network as
   
   **Azure Cosmos DB is flexible**. At the **lowest level**, Azure Cosmos DB **stores data in atom-record-sequence (ARS) format**. 
   The data is then abstracted and projected as an API, which you specify when you're creating your database. 
-  Your choices include **SQL, MongoDB, Cassandra, Tables, and Gremlin.**
+  Your choices include **SQL, MongoDB, Cassandra, Tables, and Gremlin.** 
+  Azure Cosmos DB supports SQL, MongoDB, Cassandra, Tables, and Gremlin APIs.
 
 - **Azure SQL Database**
   
@@ -518,7 +519,7 @@ and with your on-premises client computers. You can think of an Azure network as
   The Microsoft Data Migration Assistant can generate assessment reports that provide recommendations to help guide you through required changes 
   prior to performing a migration. 
   
-- Azure Database for MySQL
+- **Azure Database for MySQL**
   
   Azure Database for MySQL is a relational database service in the cloud, and it's based on the MySQL Community Edition database engine, versions 5.6, 5.7, and 8.0. 
   With it, you have a 99.99 percent availability SLA service level agreement from Azure, powered by a global network of Microsoft-managed datacenters. 
@@ -534,6 +535,8 @@ and with your on-premises client computers. You can think of an Azure network as
     - Ability to protect sensitive data at-rest and in-motion.
     - Automatic backups.
     - Enterprise-grade security and compliance.
+  
+  **Azure Database for MySQL** is the logical choice for existing **LAMP stack** applications.
 
 - **Azure Database for PostgreSQL**
   
@@ -621,6 +624,128 @@ and with your on-premises client computers. You can think of an Azure network as
     setting the dial for how much power you need. You only pay for your job when it's running, making it more cost-effective.
 
 
+- **IoT?**
+  
+  Internet of Things or IoT refers to a collection of managed and platform services across edge and cloud that connect, monitor and control billions of IoT assets.
+  IoT enables devices to gather and then relay information for data analysis. Smart devices are equipped with sensors that collect data. 
+  A few common sensors that measure attributes of the physical world include:
+  
+  - Environmental sensors that capture temperature and humidity levels.
+  - Barcode, QR code, or optical character recognition (OCR) scanners.
+  - Geo-location and proximity sensors.
+  - Light, color, and infrared sensors.
+  - Sound and ultrasonic sensors.
+  - Motion and touch sensors.
+  - Accelerometer and tilt sensors.
+  - Smoke, gas, and alcohol sensors.
+  - Error sensors to detect when there's a problem with the device.
+  - Mechanical sensors that detect anomalies or deformations.
+  - Flow, level, and pressure sensors for measuring gasses and liquids.
+  
+  
+ By using **Azure IoT services**, devices that are equipped with these kinds of sensors and that can connect to the internet could send their sensor readings to 
+ a specific endpoint in Azure via a message. The message's data is then collected and aggregated, and it can be converted into reports and alerts. 
+ Alternately, all devices could be updated with new firmware to fix issues or add new functionality by sending software updates from Azure IoT services to each device.
+ 
+ The data that's collected from these devices could be combined with Azure AI services to help you predict:
+ 
+ -  When machines need proactive maintenance.
+ -  When inventories will need to be replenished and new product ordered from vendors.
+ -  Many services can assist and drive end-to-end solutions for IoT on Azure.
+
+- **Azure IoT Hub**
+  
+  Azure IoT Hub is a managed service that's hosted in the cloud and that acts as a central message hub for bi-directional communication between your IoT application and 
+  the devices it manages. You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between millions of IoT devices and 
+  a cloud-hosted solution back end. You can connect virtually any device to your IoT hub.
+  
+  The IoT Hub service supports communications both from the device to the cloud and from the cloud to the device.
+
+  **IoT Hub monitoring** helps you **maintain the health** of your solution by tracking events such as device creation, device failures, and device connections.
+  
+  If you merely (=slechts) want to **connect to your remote devices** to receive telemetry and occasionally push updates, and **you don't need any reporting** capabilities, 
+  you might **prefer** to implement **Azure IoT Hub** by itself.
+  
+- **Azure IoT Central**
+
+  Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices. 
+  The visual user interface (UI) makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages. 
+  To help you get up and running quickly, IoT Central provides starter templates for common scenarios across various industries, such as retail, energy, healthcare, 
+  and government. You then customize the design starter templates directly in the UI by choosing from existing themes or creating your own custom theme, 
+  setting the logo, and so on. 
+  
+  If you want a **pre-built customizable user interface** with which you can view and control your **devices remotely**, you might prefer to **start with IoT Central**. 
+  With this solution, **you can control a single device or all devices at once**, and you can set up alerts for certain conditions, such as a device failure.
+
+- **Azure Sphere**
+  
+  Azure Sphere creates an end-to-end, highly secure IoT solution for customers that encompasses everything from the hardware and operating system on the device to 
+  the secure method of sending messages from the device to the message hub. Azure Sphere has built-in communication and security features for internet-connected devices.
+  
+  ![2-identify-product-options-02-d830e12a](https://user-images.githubusercontent.com/95620804/151367652-a6f1dce0-1821-4f53-91f5-d06797f9f0f6.png)
+  
+  When **security is a critical** consideration in your product's design, the best product option is **Azure Sphere**, which provides 
+  a comprehensive end-to-end solution for IoT devices.
+  **Azure Sphere** ensures a **secure channel of communication** between the device and Azure by controlling everything from the hardware to 
+  the operating system and the authentication process. 
+
+## AI service
+
+- **AI**
+  
+  Artificial Intelligence (AI) is a category of computing that adapts and improves its decision-making ability over time based on its successes and failures. 
+  Microsoft Azure provides several AI solutions to choose from, each one depending on the problem you're trying to solve.
+  
+  **API:** application programming interfaces, or APIs. Programmers use APIs to interact with the functionality that's contained in code libraries.
+  **Web API:** An API that's accessible from servers that accept requests via HTTP.
+  **Web API endpoint:** The location of the code library.
+  **REST API:** The design of the URL style that's used to expose the API's functionality.
+  
+  **AI** is a broad (=brede) classification of computing that allows a software system to perceive its environment and take action that maximizes its chance of 
+  successfully achieving its goals. A goal of AI is to create a software system that's able to adapt, or learn something on its own without being explicitly programmed 
+  to do it.
+  
+  - **There are two basic approaches (=basisbenaderingen) to AI:**
+    
+    - _Deep learning:_ The first is to employ a deep learning system that's modeled on the neural network of the human mind, 
+      enabling it to discover, learn, and grow through experience.
+    - _Machine Learning:_ The second approach is machine learning, a data science technique that uses existing data to train a model, 
+      test it, and then apply the model to new data to forecast future behaviors, outcomes, and trends.
+    
+    Forecasts or predictions from machine learning can make apps and devices smarter. 
+    Machine learning is also used to detect credit card fraud by analyzing each new transaction and using what it has learned from 
+    analyzing millions of fraudulent transactions.
+
+- **Azure Machine Learning**
+  
+  **Azure Machine Learning** is a platform for making predictions. It consists of tools and services that allow you to connect to data to train and test models 
+  to find one that will most accurately predict a future result. 
+  
+  **Choose Azure Machine Learning when** your data scientists **need complete control** over the **design and training** of an algorithm using your own data.
+  **Choose Azure Machine Learning** when you need to **analyze data to predict future outcomes**. 
+  **Choose Azure Machine Learning** when you need your app **predict future outcomes** based on private historical data.
+
+- **Azure Cognitive Services**
+
+  **Azure Cognitive Services** provides **prebuilt machine learning models** that enable applications **to see, hear, speak, understand,** and even begin to **reason**. 
+  Use Azure Cognitive Services to solve general problems, such as analyzing text for emotional sentiment or analyzing images **to recognize objects or faces**.
+  
+  While **Azure Machine Learning requires** you **to bring your own data and train models** over that data, **Azure Cognitive Services**, 
+  for the most part, provides **pretrained models** so that you can bring in your live data to get predictions on.
+  
+  Use Azure Cognitive Services when it comes to general purpose tasks, such as performing speech to text, integrating with search, or identifying the objects in an image. 
+  Use Azure Cognitive Services when you need a service that can understand the content and meaning of images, video, or audio, 
+  or that can translate text into a different language
+  
+  The **Azure Cognitive Services Personalizer** service watches your users' actions within an application. You can use **Personalizer** to predict their behavior 
+  and provide relevant experiences as it identifies usage patterns. 
+  Use the **Azure Cognitive Services Personalizer** when you need to predict user behavior or provide users with personalized recommendations in your app.
+
+- **Azure Bot Service**
+  
+  Azure Bot Service and Bot Framework are platforms for **creating virtual agents** that **understand and reply to questions** just **like a human**.
+  Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case. 
+  Namely, it creates a virtual agent that can intelligently **communicate with humans.** 
 
 
 
