@@ -8,6 +8,9 @@
   This protocol enables dynamic routing between your on-premises network and services running in the Microsoft cloud.
 - **SSDs:** _**solid-state drives**_ (SSDs)
 - **HDDs:** traditional spinning _**hard disk drives**_ (HDDs)
+- **LAMP-Stack:** is de verzamelnaam voor Linux, Apache, MySQL (tegenwoordig vaak MariaDB) en PHP. De term Stack verwijst hier naar 
+  de gelaagde structuur van deze verzameling, waarbij Linux de basis vormt, Apache en MariaDB de laag daarboven vormen en PHP als bovenste laag dient.
+- 
 
 ## 1. Cloud Computing
 - **What is cloud computing?**
@@ -425,7 +428,6 @@ and with your on-premises client computers. You can think of an Azure network as
 
   Your storage account will contain all of your Azure Storage data objects, such as blobs, files, and disks.
   
-  
 
 - **Azure Blob Storage**
 
@@ -434,7 +436,7 @@ and with your on-premises client computers. You can think of an Azure network as
   Blob Storage can manage thousands of simultaneous uploads, massive amounts of video data, constantly growing log files, 
   and can be reached from anywhere with an internet connection.
   
-  Blobs aren't limited to common file formats. A blob could contain gigabytes of binary data streamed from a scientific instrument, 
+  **Blobs aren't limited to common file formats**. A blob could contain gigabytes of binary data streamed from a scientific instrument, 
   an encrypted message for another application, or data in a custom format for an app you're developing. 
   
   Blob Storage is ideal for:
@@ -471,6 +473,156 @@ and with your on-premises client computers. You can think of an Azure network as
   - **Hot access tier:** Optimized for storing data that is accessed frequently (for example, images for your website).
   - **Cool access tier:** Optimized for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers).
   - **Archive access tier:** Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
+
+## Azure database and analytics services
+
+- Azure Cosmos DB 
+- Azure SQL Database 
+- Azure SQL Managed Instance
+- Azure Database for MySQL
+- Azure Database for PostgreSQL
+- Azure Synapse Analytics
+- Azure HDInsight
+- Azure Databricks
+- Azure Data Lake Analytics
+
+**Azure database and analytics services**
+
+- **Azure Cosmos DB**
+  
+  Azure Cosmos DB is a globally distributed, multi-model database service. You can **elastically** and **independently scale** throughput and storage **across any number** of 
+  Azure **regions worldwide**. You can take advantage of **fast**, **single-digit-millisecond data access** by using any one of several popular APIs. 
+  Azure Cosmos DB provides comprehensive (=uitgebreide) SLA=  **service level agreements** for throughput, **latency**, **availability**, and **consistency guarantees**.
+  
+  **Azure Cosmos DB** supports **schema-less data**, which lets you build highly responsive and **"Always On"** applications to support constantly changing data.
+  You can use this feature to store data that's updated and maintained by users around the world.
+  
+  **Azure Cosmos DB is flexible**. At the **lowest level**, Azure Cosmos DB **stores data in atom-record-sequence (ARS) format**. 
+  The data is then abstracted and projected as an API, which you specify when you're creating your database. 
+  Your choices include **SQL, MongoDB, Cassandra, Tables, and Gremlin.**
+
+- **Azure SQL Database**
+  
+  **Azure SQL Database** is a **relational database based on the latest stable version of the Microsoft SQL Server database engine.** 
+  SQL Database is a high-performance, reliable, fully managed, and secure database. You can use it to build data-driven applications and websites in 
+  the programming language of your choice, without needing to manage infrastructure.
+  
+  **Azure SQL Database** is a **platform as a service (PaaS) database engine**. It handles most of the database management functions, such as upgrading, patching, backups, 
+  and monitoring, without user involvement. SQL Database provides 99.99 percent availability. 
+  
+  **Microsoft handles** all updates to the SQL and operating system code. You **don't** have to **manage** the **underlying infrastructure**.
+  
+- **Migrate your Existing SQL server Database with AZURE DATABASE MIGRATION SERVICE**
+  
+  You can migrate your **existing SQL Server databases** with minimal downtime by **using the Azure Database Migration Service.** 
+  The Microsoft Data Migration Assistant can generate assessment reports that provide recommendations to help guide you through required changes 
+  prior to performing a migration. 
+  
+- Azure Database for MySQL
+  
+  Azure Database for MySQL is a relational database service in the cloud, and it's based on the MySQL Community Edition database engine, versions 5.6, 5.7, and 8.0. 
+  With it, you have a 99.99 percent availability SLA service level agreement from Azure, powered by a global network of Microsoft-managed datacenters. 
+  This helps keep your app running 24/7. With every Azure Database for MySQL server, 
+  you take **advantage of built-in security, fault tolerance, and data protection that you would otherwise have to buy or design, build, and manage.**
+  With **Azure Database for MySQ**L, you can use point-in-time restore to **recover a server** to an **earlier state**, as far back **as 35 days**.
+  
+  - **Azure Database for MySQL delivers:**
+    
+    - Built-in high availability with no additional cost.
+    - Predictable performance and inclusive, pay-as-you-go pricing.
+    - Scale as needed, within seconds.
+    - Ability to protect sensitive data at-rest and in-motion.
+    - Automatic backups.
+    - Enterprise-grade security and compliance.
+
+- **Azure Database for PostgreSQL**
+  
+  **Azure Database for PostgreSQL** is **a relational database service** in the cloud. The server software is **based** on the **community version** of 
+  the **open-source PostgreSQL database engine.** Your familiarity with tools and expertise with PostgreSQL is applicable when you're using Azure Database for PostgreSQL.
+
+  Azure Database for PostgreSQL is available in **two deployment options:** 
+  
+  - Single Server
+  - Hyperscale (Citus).
+
+  - **1. Single Server**
+  
+    The Single Server deployment option delivers:
+    
+    - Built-in high availability with no additional cost (99.99 percent SLA).
+    - Predictable performance and inclusive, pay-as-you-go pricing.
+    - Vertical scale as needed, within seconds.
+    - Monitoring and alerting to assess your server.
+    - Enterprise-grade security and compliance.
+    - Ability to protect sensitive data at-rest and in-motion.
+    - Automatic backups and point-in-time-restore for up to 35 days.
+
+  - The **Single Server** deployment option offers **three pricing tiers:** 
+  
+    - Basic
+    - General Purpose
+    - Memory Optimized. 
+
+  - **2. Hyperscale (Citus)**
+    
+    The Hyperscale (Citus) option **horizontally scales queries** across **multiple machines** by using sharding. Its query engine parallelizes incoming SQL queries 
+    across these servers for faster responses on large datasets.
+    
+    Applications built for PostgreSQL **can run distributed** queries **on Hyperscale (Citus)** with standard connection libraries and minimal changes.
+
+- **Azure SQL Managed Instance**
+  
+  **Azure SQL Managed Instance** is a scalable cloud data service that provides the broadest SQL Server database engine compatibility with all the benefits of 
+  a fully managed platform as a service (PaaS). Depending on your scenario, Azure SQL Managed Instance might offer more options for your database needs.
+  
+  Like Azure SQL Database, Azure SQL Managed Instance is a platform as a service (PaaS) database engine, which means that your company will be able to take advantage 
+  of the best features of moving your data to the cloud in a fully-managed environment. It has a 99.99% uptime service level agreement (SLA).
+  
+  **Azure SQL Database** and **Azure SQL Managed Instance** offer many of the same features; however, Azure SQL Managed Instance provides several options 
+  that might not be available to Azure SQL Database.
+
+  Azure SQL Managed Instance makes it easy **to migrate** your on-premises data on SQL Server to the cloud **using** the **Azure Database Migration Service (DMS)** or 
+  native backup and restore. 
+
+- **big data and analytics**
+  
+  - **Big data:**
+  
+  Data comes in all types of forms and formats. When we talk about big data, we're referring to large volumes of data. 
+  This amount of data becomes increasingly hard to make sense of and to base decisions on. 
+  The volumes are so large that traditional forms of processing and analysis are no longer appropriate (=geschikt).
+  
+  Open-source cluster technologies have been developed, over time, to try to deal with these large datasets. 
+  **Microsoft Azure supports** a broad range of technologies and **services to provide big data and analytic solutions**, including:
+  - Azure Synapse Analytics
+  - Azure HDInsight
+  - Azure Databricks
+  - Azure Data Lake Analytics.
+  
+  - **Azure Synapse Analytics**
+  
+  **Azure Synapse Analytics** (formerly Azure SQL Data Warehouse) is **a limitless analytics service that brings together enterprise data warehousing and big data analytics.** 
+  You can query data on your terms by using either serverless or provisioned resources at scale. You have a unified experience to ingest, prepare, manage, and 
+  serve data for immediate business intelligence and machine learning needs.
+
+  - **Azure HDInsight**
+    
+    **Azure HDInsight is a fully managed**, open-source analytics service for enterprises. It's a cloud service that makes it easier, faster, 
+    and more cost-effective **to process massive amounts of data.** 
+  
+  - **Azure Databricks**
+    
+    **Azure Databricks** helps you **unlock insights** from all your data and build artificial intelligence solutions.
+  
+  - **Azure Data Lake Analytics**
+    
+    **Azure Data Lake Analytics** is an on-demand analytics job service that **simplifies big data**. Instead of deploying, configuring, and tuning hardware, 
+    you write queries to transform your data and extract valuable insights. The analytics service can handle jobs of any scale instantly by 
+    setting the dial for how much power you need. You only pay for your job when it's running, making it more cost-effective.
+
+
+
+
 
 
 
@@ -512,6 +664,10 @@ and with your on-premises client computers. You can think of an Azure network as
 - to link: Koppelen, verbinden
 - persistently: blijvend, permanent
 - performance tiers: prestatieniveaus
+- comprehensive: uitgebreide
+- to assess: beoordelen, vaststellen
+- CTO: Chief Technology Officer (CTO) Hoofd Techniek
+- a spike: een piek
 - 
 
 
