@@ -747,6 +747,146 @@ and with your on-premises client computers. You can think of an Azure network as
   Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case. 
   Namely, it creates a virtual agent that can intelligently **communicate with humans.** 
 
+## Azure serverless technology! (Azure Functions & Azure Logic Apps)
+
+- **Serverless computing**
+  Serverless computing is a term used to describe an execution environment that's set up and managed for you. You merely specify what you want to happen by writing code 
+  or connecting and configuring components in a visual editor, and then specify the actions that trigger your functionality, such as a timer or an HTTP request. 
+  Best of all, you never have to worry about an outage, your code can scale instantly to meet demand, and you pay based only on the actual usage of your code.
+  
+  **Serverless computing** is a cloud-hosted execution environment that **runs your code** but abstracts the underlying hosting environment. 
+  The term serverless computing is a misnomer. After all, there is **a server** (or a group of servers) that **executes your code or desired functionality.**
+  
+  The key idea is that **you're not responsible for setting up or maintaining the server.** You **don't have to worry about scaling it** when there's increased demand, 
+  and you don't have to worry about outages (=storingen). The cloud vendor takes care of all maintenance and scaling concerns for you.
+  
+  **How serverless computing works!**
+  
+  1. **You create an instance of the service, and you then add your code. No infrastructure configuration or maintenance is required, or even allowed.** 
+  2. **You configure your serverless apps to respond to events.** 
+  3. **The serverless app runs only when it's triggered by an event.** 
+  4. **Scaling and performance are handled automatically, and you're billed only for the resources you use. You don't even need to reserve resources.**
+
+  **Serverless computing** is ordinarily used to handle **back-end scenarios.** It's **not used for user-facing systems** but, rather, it **works** in the **background.**
+
+- **Azure Functions**
+  
+  With the Azure Functions service, you can host a single method or function by using a popular programming language in the cloud that runs in response to an event. 
+  An example of an event might be an HTTP request, a new message on a queue, or a message on a timer.
+  
+  Because of its atomic nature, **Azure Functions can serve many purposes** in an application's design. 
+  **Functions** can **be written** in many common **programming languages**, such as **C#, Python, JavaScript, Typescript, Java, and PowerShell.**
+  
+  The Azure Functions solution is ideal when you're concerned only with the code that's running your service and not the underlying platform or infrastructure. 
+  You use Azure Functions most commonly when you need to perform **work in response to an event.** 
+  You do this often via a **REST request, timer, or message from another Azure service.**
+  
+  Azure Functions **scales automatically,** and **charges accrue** (=brengt kosten in rekening) **only when a function is triggered**.
+  An Azure function is a **stateless environment**. 
+  A function behaves as if it's **restarted every time it responds to an event.** 
+  This feature is ideal for processing incoming data. 
+  And **if state is required**, the function can be **connected to an Azure storage account**.
+  
+  Azure Functions can **perform orchestration tasks** by using an extension called **"Durable Functions".**
+
+- **Azure Logic Apps**
+  
+  Azure Logic Apps is designed in a web-based designer and can execute logic that's triggered by Azure services without writing any code. 
+  **You build an app by linking triggers to actions with CONNECTORS**. **A trigger is an event** (such as a timer) that **causes an app to execute**, 
+  then a new message to be sent to a queue, or an HTTP request. **An action is a task or step that can execute.** 
+  
+  **Logic Apps** is a low-code/no-code development platform hosted as a cloud service. The service helps you automate and orchestrate tasks, business processes, 
+  and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations. 
+  Logic Apps simplifies how you design and build scalable solutions, whether in the cloud, on-premises, or both. 
+  This solution covers **app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) integration.**
+  
+  To build enterprise integration solutions with Azure Logic Apps, you can **choose** from a **growing gallery of over 200 connectors.** 
+  The **gallery** includes services such as S**alesforce, SAP, Oracle DB, and file shares.**
+  
+  If you **can't find the action or connector** you need, you **can build your own by using custom code.**
+  
+  - **Difference between the two services:**
+  
+    You can call Azure Functions from Azure Logic Apps, and vice versa. The primary difference between the two services is their intent. 
+    **Azure Functions is a serverless compute service**, and **Azure Logic Apps is intended to be a serverless orchestration service.** 
+  
+  - **Azure Functions & Logic Apps are priced differently.**
+   
+    - **Azure Functions** pricing is based on the **number of executions and the running time** of each execution. 
+    - **Logic Apps** pricing is based on the **number of executions** and the **type of connectors** that it utilizes.
+
+ -  **Using Azure Funtions & Azure Logic Apps together:**
+  
+  If you have existing automated tasks written in an imperative programming language. So, If you already have your orchestration or business logic expressed in:
+  C#, Java, Python, or another popular programming language, it might be easier to **port your code into** the **body of an Azure Functions** function app **than to re-create it by using Azure Logic Apps.**
+  
+## The best tools to help organizations build better solutions
+
+- **Azure DevOps Services**
+  
+  **Azure DevOps Services is a suite of services** that address every stage of the software development lifecycle:
+  
+  - **Azure Repos** is a centralized source-code repository where software development, DevOps engineering, and documentation professionals 
+    can publish their code for review and collaboration.
+  - **Azure Boards** is an agile project management suite that includes Kanban boards, reporting, and tracking ideas and work from high-level epics to work items and issues.
+  - **Azure Pipelines** is a CI/CD pipeline automation tool.
+  - **Azure Artifacts** is a repository for hosting artifacts, such as compiled source code, which can be fed into testing or deployment pipeline steps.
+  - **Azure Test Plans** is an automated test tool that can be used in a CI/CD pipeline to ensure quality before a software release.
+  
+  **Azure DevOps** is a mature tool (=volwassen hulpmiddel) with a large feature set (grote functieset) that began as on-premises server software 
+  and evolved into (uitgegroeid tot) a **software as a service (SaaS)** offering from Microsoft.
+
+- **GitHub and GitHub Actions**
+  
+  **GitHub** is arguably the world's most popular code repository for open-source software. 
+  Git is a decentralized source-code management tool, and GitHub is a hosted version of Git that serves as the primary remote. 
+  GitHub builds on top of Git to provide related services for coordinating work, reporting and discussing issues, providing documentation, and more. 
+  
+  **GitHub Actions** enables workflow automation with triggers for many lifecycle events. One such example would be **automating a CI/CD toolchain.**
+  
+  **A toolchain** is a **combination of software tools** that aid in the delivery, development, and management of software applications throughout 
+  a system's development lifecycle. The output of one tool in the toolchain is the input of the next tool in the toolchain.
+  
+  **Both Azure DevOps and GitHub allow public and private code repositories.** 
+  - **GitHub** has a long history with public repositories and is trusted by tens of thousands of open-source project owners. 
+  - **GitHub** is a lighter-weight tool than Azure DevOps, with a focus on individual developers contributing to the open-source code. 
+  - **Azure DevOps,** on the other hand, **is more focused on enterprise development**, with **heavier project-management and planning tools**, and finer-grained access control.
+  
+- **Azure DevTest Labs**
+  Azure DevTest Labs provides an automated means of managing the process of building, setting up, and tearing down virtual machines (VMs) that contain 
+  builds of your software projects. This way, developers and testers can perform tests across a variety of environments and builds. 
+  And this capability isn't limited to VMs. Anything you can deploy in Azure via an ARM template can be provisioned through DevTest Labs.
+  Suppose you need to test a new feature on an old version of an operating system. Azure DevTest Labs can set up everything automatically upon request.
+
+  - **If you need to automate and manage test-lab creation.**
+    
+    If your aim is to automate the creation and management of a test lab environment, consider **choosing Azure DevTest Labs.**
+    
+  - **If you are building open-source software.**
+    
+    Although Azure DevOps can publish public code repositories, **GitHub has long been the preferred host for open-source software.** 
+    If you're building open-source software, you would likely **choose GitHub** if for **no other reasons than its visibility and general acceptance** by the open-source development community.
+    
+  - **What level of granularity (=detailniveau) do you need for permissions?**
+    
+    **GitHub** works on a **simple model of read/write permissions** to every feature. 
+    **Azure DevOps** has a **much more granular (=meer gedetailleerd) set of permissions** that allow organizations to refine who is able to perform most operations across the entire toolset.
+
+  - **How sophisticated (=geavanceerd) does your project management and reporting need to be?**
+    
+    Project management and reporting is the area where **Azure DevOps excels** (=uitmunt). 
+    **Azure DevOps is highly customizable**, which allows an administrator to add custom fields to capture metadata and other information alongside each work item.
+
+  - **How tightly (=nauw) do you need to integrate with third-party tools (=tools van derde)?**
+    
+    It's likely that most vendors (=verkopers) that create DevOps tools create hooks or APIs that can be used by **both Azure Pipelines and GitHub Actions.**
+    
+    
+
+
+
+
+
 
 
 
@@ -793,7 +933,12 @@ and with your on-premises client computers. You can think of an Azure network as
 - to assess: beoordelen, vaststellen
 - CTO: Chief Technology Officer (CTO) Hoofd Techniek
 - a spike: een piek
-- 
+- accurate: nauwkeurig
+- inventory: boedel, inventaris
+- outages: storingen
+- sophisticated: geavanceerd
+- granularity: detail
+- tightly: nauw
 
 
 ### Resultaat
