@@ -171,16 +171,108 @@
     Ensure that services are functioning and can be accessed only by authorized users. Denial-of-service attacks are designed to degrade the availability of a system,
     affecting its users.
 
+- **What's Azure Firewall?**
+  
+  **Azure Firewall** is a managed, cloud-based network security service that helps p**rotect resources in your Azure virtual networks**. 
+  A virtual network is similar (=vergelijkbaar) to a traditional network that you'd operate in your own datacenter. It's a fundamental building block for your private network
+  that enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+  
+  Here's a diagram that shows a basic Azure Firewall implementation:
+  
+  ![3-firewall-overview-large](https://user-images.githubusercontent.com/95620804/151858618-f5821a37-92b6-4832-b9c4-5b2990739503.png)
 
+  Azure Firewall is a **stateful firewall**. 
+  
+  **A stateful firewall** analyzes the complete context of a network connection, not just an individual packet of network traffic. 
+  Azure Firewall features (=biedt) high availability and unrestricted (=onbeperkt) cloud scalability.
+  
+  Azure Firewall provides a central location to create, enforce, and log application and network connectivity policies across subscriptions and virtual networks. 
+  Azure Firewall **uses a static (unchanging) public IP address** for your virtual network resources, which enables outside firewalls to identify traffic coming from 
+  your virtual network. The service is integrated with Azure Monitor to enable logging and analytics.
+  
+  **Azure Firewall provides many features, including:**
+  
+  - Built-in high availability.
+  - Unrestricted cloud scalability.
+  - Inbound and outbound filtering rules.
+  - Inbound Destination Network Address Translation (DNAT) support.
+  - Azure Monitor logging.
+  - You typically deploy Azure Firewall on a central virtual network to control general network access.
+  
+  **With Azure Firewall, you can configure:**
+  
+  - Application rules that define **fully qualified domain names (FQDNs)** that can be accessed from a **subnet**.
+  - Network rules that define source address, protocol, destination port, and destination address.
+  - **Network Address Translation (NAT)** rules that define destination IP addresses and ports to translate inbound requests.
 
+- **What are DDoS attacks?**
 
+  (DDoS) A distributed denial of service attack attempts to overwhelm and exhaust (=uitputten) an application's resources, making the application slow or 
+  unresponsive (=reageert niet) to legitimate users. DDoS attacks can target any resource that's publicly reachable (=bereikbaar) through the internet, including websites.
 
+  - **What is Azure DDoS Protection?**
+  
+  Azure DDoS Protection (Standard) helps protect your Azure resources from DDoS attacks.
+  
+  When you combine Azure DDoS Protection with recommended application design practices, you help provide a defense against DDoS attacks. 
+  Azure DDoS Protection uses the scale and elasticity of Microsoft's global network to bring DDoS mitigation (=verzachting) capacity to every Azure region. 
+  The DDoS Protection service helps protect your Azure applications by analyzing and discarding DDoS traffic at the Azure network edge, 
+  before it can affect your service's availability.
+  
+  This diagram shows network traffic flowing into Azure from both customers and an attacker:
+  
+  ![4-distributed-denial-service](https://user-images.githubusercontent.com/95620804/151860980-63173e33-bd3b-4c78-adc8-eae2ebd28bee.png)
 
-
-
-
-
-
+  - **What service tiers are available to DDoS Protection?**
+  
+  DDoS Protection provides these service tiers:
+  
+  **Basic:**  The Basic service tier is automatically enabled for free as part of your Azure subscription.
+  
+  **Standard:** The Standard service tier provides additional mitigation capabilities that are tuned specifically to Azure Virtual Network resources. 
+  DDoS Protection Standard is relatively easy to enable and requires no changes to your applications.
+  The Standard tier provides always-on traffic monitoring and real-time mitigation of common network-level attacks. 
+  It provides the same defenses that Microsoft's online services use.
+  
+  - **What kinds of attacks can DDoS Protection help prevent?**
+  
+  The **Standard service tier** can help prevent:
+  
+  - **Volumetric attacks**
+  
+  The goal of this attack is to flood the network layer with a substantial amount of seemingly legitimate traffic.
+  
+  - **Protocol attacks**
+  
+  These attacks render a target inaccessible by exploiting a weakness in the **layer 3 and layer 4 protocol** stack.
+  
+  - **Resource-layer (application-layer) attacks (only with web application firewall)**
+  
+  These attacks target web application packets to disrupt the transmission of data between hosts. You need a web application firewall (WAF) to protect against L7 attacks.
+  **DDoS Protection Standard** protects the **WAF** from volumetric and protocol attacks.
+  
+- network security groups?
+  **Azure Firewall and Azure DDoS Protection** can help control what traffic can come from **outside sources**.
+  
+  **A network security group** enables you to filter network traffic to and from Azure resources **within an Azure virtual network**. 
+  You can think of NSGs like an **internal firewall**. An NSG can contain multiple inbound and outbound security rules that enable you to filter traffic to 
+  and from resources by source and destination IP address, port, and protocol.
+  
+  - **Secure the perimeter layer**
+    
+    The perimeter layer is about protecting your organization's resources from network-based attacks. Identifying these attacks, alerting the appropriate security teams, 
+    and eliminating their impact are important to keeping your network secure. 
+    To do this:
+    - Use Azure DDoS Protection to filter large-scale attacks before they can cause a denial of service for users.
+    - Use perimeter firewalls with Azure Firewall to identify and alert on malicious attacks against your network.
+  
+  - **Summary:**
+    
+    - Azure Firewall is a managed, cloud-based network security service that helps protect resources in Azure virtual networks.
+    - An Azure virtual network is similar to a traditional network that you'd operate in your own datacenter. 
+    - It enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+    - A network security group (NSG) enables you to filter network traffic to and from Azure resources within a virtual network.
+    - Azure DDoS Protection helps protect Azure resources from DDoS attacks.
 
 
 
@@ -201,7 +293,11 @@
 
 - security posture: beveiligingshouding
 - malicious: kwaadaardig, opzettelijk
-- 
+- unrestricted: onbeperkt
+- unresponsive: reageert niet
+- exhaust: uitputten
+- reachable: bereikbaar
+- mitigation: verzachting
 
 
 
