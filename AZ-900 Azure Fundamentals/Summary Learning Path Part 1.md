@@ -881,11 +881,199 @@ and with your on-premises client computers. You can think of an Azure network as
     
     It's likely that most vendors (=verkopers) that create DevOps tools create hooks or APIs that can be used by **both Azure Pipelines and GitHub Actions.**
     
+## The best tools for managing and configuring your Azure environment
+
+There are two broad categories of management tools: visual tools and code-based tools:
+
+1. Visual tools
+2. Code-based tools
+
+- **Visual tools:** Visual tools provide full, visually friendly access to all the functionality of Azure. However, visual tools might be less useful 
+  when you're trying to set up a large deployment of resources with interdependencies and configuration options.
+
+- **Code-based tools:** When you're attempting to **quickly set up and configure Azure resources**, **a code-based tool** is usually the **better choice**. 
+  Although it might **take time to understand the right commands and parameters at first**, after they've been entered, **they can be saved into files and used repeatedly**
+  as needed. Also, the code that performs setup and configuration **can be stored, versioned, and maintained** along with application source code in 
+  **a source code-management tool** such as **Git**. This approach to managing hardware and cloud resources, which developers use when they write application code,
+  is referred to as **infrastructure as code (IaC)**.
+
+- **infrastructure as code (IaC):** Infrastructure as Code (IaC) is the management of infrastructure (networks, virtual machines, load balancers, and connection topology) 
+  in a descriptive model, using the same versioning as DevOps team uses for source code. Like the principle that the same source code generates the same binary, 
+  an IaC model generates the same environment every time it is applied. [**klik hier**](https://docs.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code) **voor extra info.**
+  
+  Infrastructure-as-code, of programmeerbare infrastructuur betekent het definiëren van infrastructuur door middel van code. 
+  Infrastructuur wordt beschreven als objecten met eigenschappen. Infrastructuur als code is het proces van het beheren en inrichten van computerdatacenters via
+  machineleesbare definitiebestanden, in plaats van fysieke hardwareconfiguratie of interactieve configuratietools. 
+  **De voordelen** van deze programmeerbare infrastructuur zit 'm vooral in de **kosten, snelheid en betrouwbaarheid**.
+  
+- There are two approaches to infrastructure as code (IaC): **imperative code** and **declarative code**.
+  
+  - **Imperative code:** Imperative code (=dwingende code) details (=omschrijft) each individual step that should be performed to achieve a desired outcome. 
+  - **Declarative code:** Declarative code details (=omschrijft) only a desired outcome (=gewenste resultaat), and it allows an interpreter (=tolk) to decide how to best achieve that outcome. This distinction (=onderscheid) is important because tools that are based on declarative code can provide (=bieden) a more robust approach to deploying (=inzetten) dozens or hundreds of resources simultaneously and reliably (=betrouwbaar).
+
+- **The Azure portal:**
+
+  By using the Azure portal, **a web-based user interface**, you can **access virtually every feature** of Azure. The Azure portal provides a friendly, **graphical UI** to
+  view all the services you're using, create new services, configure your services, and view reports. The Azure portal is how **most users first experience Azure**. 
+  But, as your Azure usage grows, you'll likely choose a more repeatable (=herhaalbare) code-centric (=codegerichte) approach (=benadering) to managing your Azure resources.
+
+- **The Azure mobile app:**
+  
+  The Azure mobile app provides **iOS and Android access** to your **Azure resources** when you're away from your computer. 
+  - With it, you can:
+    1. Monitor **the health** and **status** of your Azure resources.
+    2. Check for **alerts**, **quickly diagnose** and fix issues, and **restart a web app or virtual machine** (VM).
+    3. **Run the Azure CLI or Azure PowerShell commands** to manage your Azure resources.
+
+- **Azure PowerShell:**
+  
+  Azure PowerShell is a shell with which developers and DevOps and IT professionals **can execute commands called cmdlets** (pronounced command-lets). 
+  These commands call(roepen) the **Azure Rest API** to perform every possible management task in Azure. 
+  (=Deze opdrachten roepen de Azure Rest-API aan om elke mogelijke beheertaak in Azure uit te voeren.)
+  
+  Cmdlets can be executed independently or combined into a script file and executed together to orchestrate:
+    - The routine setup, teardown, and maintenance of a single resource or multiple connected resources.
+    - the deployment of an entire infrastructure, which might contain dozens or hundreds of resources, from imperative code.
+    - Capturing the commands in a script makes the **process repeatable and automatable**.
+
+  **Azure PowerShell** is **available** for **Windows, Linux, and Mac,** and you can **access it in a web browser via Azure Cloud Shell**.
+
+- **The Azure CLI:**
+  
+  The Azure CLI command-line interface is an executable program with which a developer, DevOps professional, or IT professional can execute commands in Bash. 
+  The commands call the Azure Rest API to perform every possible management task in Azure. You can run the commands independently or combined into a script and 
+  executed together for the routine setup, teardown, and maintenance of a single resource or an entire environment.
+  
+  In many respects, the Azure CLI is almost identical to Azure PowerShell in what you can do with it. Both run on Windows, Linux, and Mac, and can be accessed in a web
+  browser via Cloud Shell. The **primary difference is the syntax (zinsbouw) you use**. If you're already proficient (=bedreven/bekwaam) in PowerShell or Bash, 
+  you can use the tool you prefer.
+
+- **Azure Resource Manager templates (ARM templates):**
+  
+  Although it's possible to write imperative code in Azure PowerShell or the Azure CLI to set up and tear down one Azure resource or orchestrate an infrastructure 
+  comprising (=bestaande uit) hundreds of resources, there's a better way to implement this functionality.
+  
+  By using Azure Resource Manager templates (ARM templates), **you can describe the resources you want to use in a declarative JSON format.** 
+  The **benefit** is that **the entire ARM template is verified before any code is executed** to ensure that the resources will be created and connected correctly. 
+  The template then orchestrates the creation of those resources in parallel. That is (d.w.z.), if you need 50 instances of the same resource, 
+  all 50 instances are created at the same time.
+  
+  Ultimately, the developer, DevOps professional, or IT professional **needs only to define the desired state and configuration of each resource in the ARM template**, 
+  and the template does the rest. **Templates can even execute PowerShell and Bash scripts** before or after the resource has been set up.
+  
+- **Best choise:**
+  - **One-off scenarios:** ARM templates aren't intended for one-off (=eenmalige) scenarios, it's possible to use them for this purpose. 
+    However, for one-off scenarios, you may prefer more agile tools **like PowerShell, Azure CLI scripts, or the Azure portal**.
     
+- **you need a way to repeatedly set up one or more resources and ensure that all the dependencies are created in the proper order.**
+  - ARM templates define your application's infrastructure requirements for a repeatable deployment that is done in a consistent manner. 
+    A validation step ensures that all resources can be created in the proper order based on dependencies, in parallel, and idempotent.
+    It's entirely possible to use either PowerShell or the Azure CLI to set up all the resources for a deployment. However, there's **no validation step** in these tools. 
 
+- **When you're scripting, do you come from a Windows administration or Linux administration background?**
+  - **Powershell:** If you or your cloud administrators come from a **Windows administration background**, it's likely you'll **prefer PowerShell**. 
+  - **Azure CLI:** If you or your cloud administrators come from a **Linux administration background**, it's likely you'll **prefer the Azure CLI**. 
+  
+  In practice, **either tool** can be used to perform most **one-off** (=eenmalige) administration tasks.
+  
+- Use the **Azure portal** to visually understand and manage your cloud environment
+  If you need to perform one-off management, administrative, or reporting actions. The **Azure portal** is the **best choice**.
 
+## Choose the best monitoring service for visibility, insight, and outage mitigation
 
+- There are **three primary Azure monitoring offerings**, each of which is aimed at a specific audience and use case and provides a diverse set of tools,
+  services, programmatic APIs, and more:
+  - **Azure Advisor**
+  - **Azure Monitor**
+  - **Azure Service Health**
 
+- **Azure Advisor:**
+  **Azure Advisor** **evaluates your Azure resources** and **makes recommendations** to help improve:
+  **reliability, security, and performance, achieve operational excellence, and reduce costs.** 
+  Azure Advisor is designed to help you **save time on cloud optimization**. The recommendation service includes suggested actions you can take right away, 
+  postpone, or dismiss.
+  
+  When you're in the Azure portal, the Azure Advisor dashboard displays personalized **recommendations for all your subscriptions**, and you **can use filters** 
+  to select recommendations for **specific subscriptions, resource groups, or services**. 
+  
+  - The recommendations are divided (=verdeeld) into **five categories**:
+    
+    - **Reliability (=betrouwbaarheid):** Used to ensure and improve the continuity of your business-critical applications.
+    - **Security:** Used to detect threats and vulnerabilities that might lead to security breaches.
+    - **Performance (=prestatie):** Used to improve the **speed** of your applications.
+    - **Cost:** Used to optimize and reduce your overall Azure spending.
+    - **Operational Excellence (=Operationele uitmuntendheid):** Used to help you achieve process and workflow **efficiency**, resource manageability, and deployment best practices.
+
+- **Azure Monitor:**
+  **Azure Monitor is a platform for collecting, analyzing, visualizing, and potentially taking action based on the metric and logging data from 
+  your entire Azure and on-premises environment.**
+  
+  The following diagram illustrates just how comprehensive Azure Monitor is.
+  
+  ![2-identify-product-options-01](https://user-images.githubusercontent.com/95620804/151793207-76be8f9c-a432-45fc-9725-42fe6cabf46e.png)
+  
+  - On the left is a list of the sources of logging and metric data that can be **collected at every layer** in your application architecture, 
+    from application to operating system and network.
+    
+  - In the center, you can see how the **logging and metric data is stored** in central repositories.
+  
+  - On the right, the **data is used in a number of ways**. You can view real-time and historical performance across each layer of your architecture, 
+    or aggregated and detailed information. The data is displayed at different levels for different audiences. 
+    You can view high-level reports on the Azure Monitor Dashboard or create custom views by using Power BI and Kusto queries.
+
+  Additionally, **you can use the data to help you react to critical events in real time**, through alerts delivered to teams via SMS, email, and so on.
+  Or you can use thresholds (=drempels) to trigger autoscaling functionality to scale up or down to meet the demand.
+  
+  Some popular products such as **Azure Application Insights**, **a service for sending telemetry information from application source code to Azure**, 
+  uses Azure Monitor under the hood. With Application Insights, your application developers can take advantage of the powerful data-analysis platform in Azure Monitor 
+  to gain deep insights into an application's operations and diagnose errors without having to wait for users to report them.
+  
+- **Azure Service Health:**
+  **Azure Service Health provides a personalized view of the health of the Azure services, regions, and resources you rely on.** 
+  The **status.azure.com** website, which **displays only major issues** that broadly affect Azure customers, doesn't provide the full picture. 
+  
+  But **Azure Service Health** displays **both major and smaller, localized issues** that affect you. Service issues are rare (=zeldzaam), but it's important to be prepared
+  for the unexpected. You **can set up alerts** that help you triage (=opsporen) outages and planned maintenance. 
+  After an outage, Service Health provides official incident reports, called **root cause analyses (RCAs)**, which you can share with stakeholders (=belanghebbende).
+  
+  - **Service Health helps you keep an eye on several event types:**
+    
+    - **Service issues** are problems in Azure, such as outages, that affect you right now. You can drill down (=inzoomen) to the affected services, regions, updates from
+      your engineering teams, and find ways to share and track the latest information.
+      
+    - **Planned maintenance** events can affect your availability. You can drill down to the affected services, regions, and details to show how an event will affect you 
+      and what you need to do. Most of these events occur without any impact to you and aren't shown here. In the rare case that a reboot is required, 
+      Service Health allows you to choose when to perform the maintenance to minimize the downtime.
+      
+    - **Health advisories** are issues that require you to act to avoid service interruption, including service retirements and breaking changes. 
+      Health advisories are announced far in advance to allow you to plan.
+
+- **Do you need to analyze how you're using Azure to reduce costs, improve resilience (=veerkracht,elasticiteit), or harden your security?**
+  
+  Choose **Azure Advisor** when you're looking for an analysis of your deployed resources. Azure Advisor analyzes the configuration and usage of your resources and 
+  provides suggestions on how to optimize for reliability, security, performance, costs, and operations based on experts' best practices.
+
+- **Do you want to monitor Azure services or your usage(=gebruik) of Azure?**
+  
+  **Azure Service Health:** If you want to keep tabs on Azure itself, especially the services and regions you depend on, you want to **choose Azure Service Health**. 
+  You can view the current status of the Azure services you rely on, upcoming planned outages, and services that will be sunset. 
+  You can set up alerts that help you stay on top of incidents and upcoming downtime without having to visit the dashboard regularly.
+  Use Azure Service Health to set up alerts that are **specific to Azure outages that affect all Azure customers.** 
+  
+  
+  **Azure Monitor:** However, if you want to keep track of the performance or issues **related to your specific VM or container instances, databases, your applications, 
+  and so on**, you want to visit **Azure Monitor** and create reports and notifications to help you understand how your services are performing or diagnose issues related 
+  to **your Azure usage**.
+  
+- **Do you want to measure custom events alongside other usage metrics?**
+  
+  **Azure Monitor:** Choose **Azure Monitor** when you want to **measure custom events alongside other collected telemetry data.** 
+  Custom events, such as those added in the source code of your software applications, could help identify and diagnose why your application is behaving a certain way.
+  
+- **Do you need to set up alerts for outages or when autoscaling is about to deploy new instances?**
+  
+  **Azure Monitor:** Here again, you would use **Azure Monitor** to **set up alerts for key events** that are **related to your specific resources**.
+  Use Azure Monitor to set up alerts for outages and other events that affect **only your specific resources.**
 
 
 
@@ -939,6 +1127,26 @@ and with your on-premises client computers. You can think of an Azure network as
 - sophisticated: geavanceerd
 - granularity: detail
 - tightly: nauw
+- provide: (aanbieden, voorzien, zorgen voor)
+- reliable: betrouwbaar
+- simultaneously: gelijktijdig
+- code-centric: codegerichte
+- Deployment: implementatie, inzet
+- comprising: bestaande uit
+- extensively: uitgebreid, veelvuldig
+- determine: vaststellen, bepalen
+- outage: onderbreking, foutmelding
+- intermittently: met tussenpozen, periodieke
+- resilient: veerkrachtig, elstisch, zich snel herstellend
+- resilience: veerkracht, elasticiteit
+- mitigation: beperking, verzachting
+- insight: inzicht
+- postpone: uitstellen
+- devide: verdelen
+- rare: zeldzaam, schaars, ongewoon
+- triage: opsoren
+- stakeholders: belanghebbende
+
 
 
 ### Resultaat
