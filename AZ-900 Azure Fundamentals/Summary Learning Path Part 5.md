@@ -268,11 +268,88 @@
     - **Resource tags **provide extra information, or metadata, about your resources.
     - **Azure Policy** is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources.
     - **Azure Blueprints** enables you to define a repeatable set of governance tools and standard Azure resources that your organization requires.
-      
-      
-      
 
+- **Compliance** In general, compliance (=nakoming) means to adhere to a law, standard, or set of guidelines. 
+- **Regulatory compliance** refers to the discipline and process of ensuring that a company follows the laws that governing bodies enforce.
 
+- **Microsoft Privacy Statement**
+  
+  The Microsoft Privacy Statement explains what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
+  
+  The privacy statement covers all of Microsoft's services, websites, apps, software, servers, and devices. This list ranges from enterprise and server products to devices
+  that you use in your home to software that students use at school.
+
+- **Online Services Terms**
+  
+  The **Online Services Terms (OST)** is a legal agreement between Microsoft and the customer. The OST details the obligations by both parties with respect to 
+  the processing and security of customer data and personal data. The OST applies specifically to Microsoft's online services that you license through a subscription,
+  including Azure, Dynamics 365, Office 365, and Bing Maps.
+
+- **Data Protection Addendum**
+  
+  The Data Protection Addendum (DPA) further defines the data processing and security terms for online services. 
+  These terms include:
+  
+  - Compliance with laws.
+  - Disclosure of processed data.
+  - Data Security, which includes security practices and policies, data encryption, data access, customer responsibilities, and compliance with auditing.
+  - Data transfer, retention, and deletion.
+
+- **Explore the Trust Center**
+  
+  The Trust Center showcases Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, 
+  and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support 
+  and resources for the legal and compliance community.
+  
+  **The Trust Center provides:**
+  
+  - **In-depth information** about **security, privacy, compliance offerings, policies, features, and practices** across Microsoft cloud products.
+  - Additional resources for each topic.
+  - **Links to** the **security, privacy**, and **compliance blogs** and **upcoming events**.
+    
+    The Trust Center is a great resource for other people in your organization who might play a role in security, privacy, and compliance. 
+    These people include business managers, risk assessment and privacy officers, and legal compliance teams.
+  
+- **Azure compliance documentation**
+  
+  The Azure compliance documentation provides you with detailed documentation about legal and regulatory standards and compliance on Azure.
+  
+  **Here you find compliance offerings across these categories:**
+  
+  - Global
+  - US government
+  - Financial services
+  - Health
+  - Media and manufacturing
+  - Regional
+  
+  There are also additional compliance resources, such as audit reports, privacy information, compliance implementations and mappings, and white papers and analyst reports.
+  Country and region privacy and compliance guidelines are also included. Some resources might require you to be signed in to your cloud service to access them.
+  
+  [**Klik hier**](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home) **voor Complince Regulatory.**
+  
+- Examine **PCI DSS** compliance
+  
+  [klik hier](https://docs.microsoft.com/en-us/azure/compliance/offerings/offering-pci-dss)
+  
+  **The Payment Card Industry (PCI)** **Data Security Standards (DSS)** is a global information security standard designed to prevent fraud through increased 
+  control of credit card data.
+
+- Azure Government
+  
+  **Azure Government** is a separate instance of the Microsoft Azure service. It addresses (=gaat over) the security and compliance needs of US federal agencies, 
+  state and local governments, and their solution providers. Azure Government offers physical isolation from non-US government deployments and provides screened US personnel.
+  [**Klik hier**](https://azure.microsoft.com/en-us/global-infrastructure/government/) **voor extra onfo.**
+
+- **Azure China 21Vianet**
+  
+  **Azure China 21Vianet** is operated by **21Vianet**. **It's a physically separated instance of cloud services located in China**. 
+  Azure China 21Vianet is independently operated and transacted by Shanghai Blue Cloud Technology Co., Ltd. ("21Vianet"), 
+  a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd.
+  
+  According to the China Telecommunication Regulation, providers of cloud services, infrastructure as a service (IaaS) and platform as a service (PaaS), 
+  must have value-added (=waarde-tegoed) telecom permits. Only locally registered companies with less than 50 percent foreign investment qualify for these permits. 
+  To comply (=voldoen aan) with this regulation, the Azure service in China is operated by 21Vianet, based on the technologies licensed from Microsoft.
 
 
 
@@ -300,6 +377,9 @@
 - approved: goedgekeurd
 - cloud governance: CloudBeheer
 - restricting: beperken
+- adheres: Houdt zich aan
+- compliance: nakoming, naleving
+- 
 
 
 
