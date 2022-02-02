@@ -335,7 +335,7 @@
   **The Payment Card Industry (PCI)** **Data Security Standards (DSS)** is a global information security standard designed to prevent fraud through increased 
   control of credit card data.
 
-- Azure Government
+- **Azure Government**
   
   **Azure Government** is a separate instance of the Microsoft Azure service. It addresses (=gaat over) the security and compliance needs of US federal agencies, 
   state and local governments, and their solution providers. Azure Government offers physical isolation from non-US government deployments and provides screened US personnel.
