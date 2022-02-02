@@ -165,8 +165,133 @@
   - **Azure documentation:** Then, use the **Azure documentation** to map your current infrastructure to cloud services. 
   - **Pricing calculator:** Use the **Pricing calculator** to get a more accurate (=nauwkeurig) picture of what it would cost to run your existing workloads on Azure.
 
+## What are service-level agreements (SLAs)?
 
+- **A service-level agreement (SLA):**
+  
+  A service-level agreement (SLA) is a formal agreement between a service company and the customer. For Azure, this agreement defines the performance standards 
+  that Microsoft commits to for you, the customer.
 
+- **Why are SLAs important?**
+  
+  Understanding the SLA for each Azure service you use helps you understand what guarantees you can expect.
+  
+  When you build applications on Azure, the availability of the services that you use affect your application's performance. 
+  Understanding the SLAs involved can help you establish the SLA you set with your customers.
+  
+- **Where can I access SLAs for Azure services?**
+  
+  You can access SLAs from Service Level Agreements **webiste**. [**Click here for SLA-Site**(https://azure.microsoft.com/en-us/support/legal/sla/)
+  You **don't need an Azure subscription** to review service SLAs.
+  
+- **How do percentages relate to total downtime?**
+  
+  **Downtime** refers to the **time duration** that the service is **unavailable**.
+  
+  The difference between 99.9 percent and 99.99 percent might seem minor, but it's important to understand what these numbers mean in terms of total downtime.
+  
+  Here's a table to give you a sense of how total downtime decreases as the SLA percentage increases from 99 percent to 99.999 percent:
+
+  <img width="589" alt="SLA % monthtly" src="https://user-images.githubusercontent.com/95620804/152159123-81fe8859-7297-4664-a2a3-488053c62fe6.png">
+
+- **What are service credits?**
+  
+  A service credit is the percentage of the fees you paid that are credited back to you according to the claim approval process.
+  
+  An SLA describes how Microsoft responds when an Azure service fails to perform to its specification. For example, you might receive a discount on your Azure bill 
+  as compensation when a service fails to perform according to its SLA.
+  
+- **SLA for free services?**
+  
+  **Free products** typically **don't have an SLA.**
+  
+  For example, many Azure services provide a free or shared tier that provides more limited functionality. 
+  Services like **Azure Advisor are always free**. The SLA for Azure Advisor states that because it's free, it **doesn't have a financially backed (=ondersteunende) SLA**.
+
+- **How do I know when there's an outage (=storing)?**
+  
+  [**Azure status page site**](https://status.azure.com/status) provides a global view of the health of Azure services and regions. 
+  If you suspect there's an outage (=storing), this is often a good place to start your investigation.
+  
+  **Azure status** provides an RSS feed of changes to the health of Azure services that you can subscribe to.
+  From the **Azure status page**, you can also **access Azure Service Health**.
+  
+  **Azure Service Health:** This provides a **personalized view** of the health of the Azure services and regions that you're using, **directly** from the **Azure portal**.
+
+- **How can I request a service credit from Microsoft?**
+  
+  Typically, you need to file (=indienen) a claim with Microsoft to receive a service credit. 
+  If you purchase Azure services from a Cloud Solution Provider (CSP) partner, your CSP typically manages the claims process.
+  
+  Each SLA specifies the **timeline** by which you must submit your claim and when Microsoft processes your claim. 
+  For many services, you **must** submit your **claim by the end of the calendar month following the month** in which the incident occurred.
+  
+- **Application SLA:**
+  
+  An application SLA defines the SLA requirements for a specific application. This term typically refers to an application that you build on Azure.
+
+- **Usage patterns**
+  
+  Usage patterns define when and how users access your application.
+
+- **Combine SLAs to compute the composite SLA**
+  
+  After you've identified the SLA for the individual workloads in the Special Orders application, you might notice that those SLAs are not all the same. 
+  How does this affect our overall application SLA requirement of 99.9 percent? To work that out, you'll need to do some math.
+  
+  **SEE PHOTO 1 & 2**
+  
+  Photo1
+  
+  ![image](https://user-images.githubusercontent.com/95620804/152167059-7b4ec355-d00e-426c-ad4d-4e8f20b458f8.png)
+  
+  Photo 2
+  
+  <img width="616" alt="4-special-orders-architecture" src="https://user-images.githubusercontent.com/95620804/152167476-17d365d2-0f19-40ed-b1e9-0e6914d3b1b6.png">
+
+- **What is the service lifecycle?**
+  
+  The service lifecycle defines how every Azure service is released for public use. 
+  
+  1.  very Azure service starts in the development phase. In this phase, the Azure team collects and defines its requirements, and begins to build the service.
+  2.  Next, the service is released to the public preview phase. During this phase, the public can access and experiment with it and provide real-world feedback. 
+      Your feedback helps Microsoft improve services. More importantly, providing feedback gives you the opportunity to request new or different capabilities so that 
+      services better meet your needs.
+  3.  After a new Azure service has been validated and tested, it's released to all customers as a production-ready service. This is known as general availability (GA).
+ 
+  **NOTE!** **All preview-specific** terms and conditions are **excluded** from the s**ervice level agreements** and limited warranty.
+
+- **How can I access preview services?**
+
+  You can access preview services from the Azure portal.
+
+- **How can I provide (=geven) feedback on the Azure portal?**
+  
+  You can provide feedback:
+  
+  From any of the 124 forums for Azure services, go to the [**Azure feedback community ideas page**](https://feedback.azure.com/d365community)
+  https://feedback.azure.com/d365community
+  
+  OR From the **Feedback tab** in the **Azure portal**. (See Photo)
+  
+  ![5-azure-portal-feedback](https://user-images.githubusercontent.com/95620804/152170477-cfe9d251-12d8-48fb-94d3-1d4ef0588e84.png)
+
+- **How can I stay updated on the latest announcements?**
+  
+  **The Azure updates** page provides information about the latest updates to Azure products, services, and features, and product roadmaps and announcements.
+  **The Azure updates** page: https://azure.microsoft.com/en-us/updates/
+  
+  [**From the Azure updates page**](https://azure.microsoft.com/en-us/updates/), **you can:**
+  
+  - View details about all Azure updates.
+  - See which updates are now available, in preview, or in development.
+    
+    ![5-azure-updates-filter](https://user-images.githubusercontent.com/95620804/152173636-d2662a45-f4a4-4be7-9409-5f9f169ce4e8.png)
+  
+  - Browse updates by product category or update type.
+  - Search for updates by keyword.
+  - Subscribe to an RSS feed to receive notifications.
+  - Access the Microsoft Connect page to read Azure product news and announcements.
 
 
 
@@ -191,7 +316,10 @@
 - adjust: aanpassen
 - Recall: bedenk
 - accurate: nauwkeurige
-- 
+- be eligible: in aanmerking komen
+- backed: ondersteunende
+- patterns: Patronen
+- enhanced: verbeterde, versterkte
 
 
 ### Resultaat
