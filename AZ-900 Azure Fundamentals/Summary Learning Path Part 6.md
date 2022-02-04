@@ -342,8 +342,8 @@
 - provide: biedt, voorziet, verstrekt
 - provisioning: inrichten
 - determine: vaststellen
--  allocation and deallocation: toewijzen en ongedaan maken/vrijgeven/loskoppelen
--  allocate: toewijzen
+- allocation and deallocation: toewijzen en ongedaan maken/vrijgeven/loskoppelen
+- allocate: toewijzen
 - invoke: aanroepen
 - define: bepalen, definiëren, omschrijven
 - to perform: uitvoeren, verrichten, doen, presteren
@@ -352,6 +352,10 @@
 - spans: omvat
 - amend: wijzigen, verbeteren
 - pane: deelvenster
+- comprehensive: uitgebreide
+- capabilities: mogelijkheden
+- form: formulier
+- 
 -  
 
 
