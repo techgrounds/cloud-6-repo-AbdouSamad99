@@ -320,6 +320,39 @@
 - backed: ondersteunende
 - patterns: Patronen
 - enhanced: verbeterde, versterkte
+- an ever-expanding: een steeds groter wordende
+- range: variëren 
+- gain: krijgen, verkrijgen
+- familiarize you: je vertrouwd maken
+- curated: samengestelde
+- hands-on experience: Praktische ervaring
+- appliances: huishoudelijke apparaten
+- expanding:  uitbreidende
+- commitment: toewijding, verbintenis, verplichting
+- compliance: naleving, nakoming
+- feasible: haalbaar, uitvoerbaar
+- resiliency: veerkracht, elasticiteit
+- resilient to: bestand tegen, veerkrachtig tegen
+- fiber-optic: glasvezel
+- dispose: weggooien
+- Scope: Domein, omvang, bereik, strekking
+- does not apply: is niet van toepassing
+- extending: uitbreiden
+- provisioning: bevoorrading
+- provide: biedt, voorziet, verstrekt
+- provisioning: inrichten
+- determine: vaststellen
+-  allocation and deallocation: toewijzen en ongedaan maken/vrijgeven/loskoppelen
+-  allocate: toewijzen
+- invoke: aanroepen
+- define: bepalen, definiëren, omschrijven
+- to perform: uitvoeren, verrichten, doen, presteren
+- to expedite: versnellen, bespoedigen
+- divide: verdelen, opdelen
+- spans: omvat
+- amend: wijzigen, verbeteren
+- pane: deelvenster
+-  
 
 
 ### Resultaat
