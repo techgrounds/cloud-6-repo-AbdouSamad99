@@ -327,6 +327,7 @@
 - curated: samengestelde
 - hands-on experience: Praktische ervaring
 - appliances: huishoudelijke apparaten
+- appliances: apparaten
 - expanding:  uitbreidende
 - commitment: toewijding, verbintenis, verplichting
 - compliance: naleving, nakoming
@@ -355,6 +356,10 @@
 - comprehensive: uitgebreide
 - capabilities: mogelijkheden
 - form: formulier
+- aims at: is gericht naar
+- acquiring: verkrijgen
+- Restrict: beperk
+- remediate: herstellen
 - 
 -  
 
