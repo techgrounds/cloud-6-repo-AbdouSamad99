@@ -360,6 +360,9 @@
 - acquiring: verkrijgen
 - Restrict: beperk
 - remediate: herstellen
+- offset: compenseren
+- europian government entity: europese overheidsinstantie
+- united states government entity: overheidsinstantie van de Verenigde Staten
 - 
 -  
 
