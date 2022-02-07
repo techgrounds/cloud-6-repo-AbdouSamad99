@@ -364,6 +364,7 @@
 - europian government entity: europese overheidsinstantie
 - united states government entity: overheidsinstantie van de Verenigde Staten
 - eligible for: in aanmerking komen voor
+- **Compliance:** vakterm voor **de naleving van alle wet- en regelgeving in een organisatie.**
 - 
 -  
 
