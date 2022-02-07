@@ -43,7 +43,9 @@ Everyone will use the same version of Python, and the same IDE. This way, it wil
 ### Gebruikte bronnen
 
 1. https://www.python.org/downloads/release/python-3102/
-2. 
+2. https://www.youtube.com/watch?v=9o4gDQvVkLU
+3. [Python for beginners](https://www.youtube.com/watch?v=b093aqAZiPU)
+4. 
 
 
 
