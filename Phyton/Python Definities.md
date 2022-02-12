@@ -6,8 +6,12 @@
 - indentation: verwijst naar de **spatie(s)** aan het begin van een coderegel
 - multiline: meerdere regels
 - quotes: aanhalingstekens " " "
+- single quotation marks: enkele aanhalingstekens  'hello'
+- double quotation marks: dubbele aanhalingstekens  "hello"
 - case-sensitive: hoofdlettergevoelig  a  A  b B
 - underscore: laag streepje _ _ _ _
+- equal sign: gelijkteken, = teken
+- 
 - 
 - 
 
@@ -32,8 +36,8 @@ In Python, the data type is set when you assign a value to a variable:
 Example	Data Type:
 
 - x = "Hello World"	                                **str**	
-- x = 20	                                          **int**	
-- x = 20.5	                                        **float**	
+- x = 20	                                          **int**	= integer (geheel getal)
+- x = 20.5	                                        **float**	= floating point number
 - x = 1j	                                          **complex**	
 - x = ["apple", "banana", "cherry"]	                **list**	
 - x = ("apple", "banana", "cherry")	                **tuple**	
