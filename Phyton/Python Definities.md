@@ -11,11 +11,12 @@
 - case-sensitive: hoofdlettergevoelig  a  A  b B
 - underscore: laag streepje _ _ _ _
 - equal sign: gelijkteken, = teken
+- Square brackets: Vierkante haken [   ]
+- backslash: \
+- Devide: Delen door /
 - 
 - 
 - 
-
-
 
 ### Python data types, categories:
 
