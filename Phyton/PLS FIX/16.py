@@ -32,10 +32,10 @@ while win == False and tries < 7:
 		print("Please type an integer")
 
 # 
-if win == False:
+if win == False: #Change this into... if win == False and tries > 7:
 	print("Game over! You took more than seven tries")
 	
 	
 
-#Dont see anything to change it
+
 	
