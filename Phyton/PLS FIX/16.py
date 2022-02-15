@@ -34,3 +34,8 @@ while win == False and tries < 7:
 # 
 if win == False:
 	print("Game over! You took more than seven tries")
+	
+	
+
+#Dont see anything to change it
+	
