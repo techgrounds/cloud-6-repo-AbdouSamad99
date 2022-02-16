@@ -1,5 +1,5 @@
-# [Onderwerp]
-[Geef een korte beschrijving van het onderwerp]
+# Data types and comments
+
 
 ## Key-terms
 [Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
