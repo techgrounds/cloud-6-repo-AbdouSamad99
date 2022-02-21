@@ -1,5 +1,5 @@
 @description('Specifies the location for resources.')
-param location string = 'eastus'
+param location string = resourceGroup().location
 
 resource storageAccount 'Microsoft.Storage/storageaccounts@2019-06-01' = {
   name: 'toylaunchstorage20222022'
