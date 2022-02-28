@@ -176,3 +176,109 @@ param cosmosDBAccountLocations array = [
     locationName: 'westeurope'
   }
 ]
+
+
+// (@) Paramter Decorators are added above your parameter, like this:
+
+@description('The number of App Service plan instances.')
+@minValue(1)
+@maxValue(10)
+param appServicePlanInstanceCount int = 1
+
+// Parameter files are created by using the JavaScript Object Notation (JSON) language
+// $schema helps Azure Resource Manager to understand that this file is a parameter file.
+// contentVersion is a property that you can use to keep track of significant changes in your parameter file if you want. Usually, it's set to its default value of 1.0.0.0.
+// The parameters section lists each parameter and the value you want to use. 
+// The parameter value must be specified as an object. The object has a property called value that defines the actual parameter value to use.
+// This is how the parameter file (JSON) looks like:
+
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appServicePlanInstanceCount": {
+      "value": 3
+    },
+    "appServicePlanSku": {
+      "value": {
+        "name": "P1v3",
+        "tier": "PremiumV3"
+      }
+    },
+    "cosmosDBAccountLocations": {
+      "value": [
+        {
+          "locationName": "australiaeast"
+        }
+        {
+          "locationName": "southcentralus"
+        }
+        {
+          "locationName": "westeurope"
+        }
+      ]
+    }
+  }
+}
+
+// When creating a new deployment using New-AzResourceGroupDeployment cmdlet, you specify the name of the parameter file you want to use with -TemplateParameterFile argument:
+
+New-AzResourceGroupDeployment `
+  -TemplateFile main.bicep `
+  -TemplateParameterFile main.parameters.json
+
+// The @secure decorator can be applied to string and object parameters that might contain secret values.
+// Azure won't make the parameter values available in the deployment logs.
+// If you enter in Azure PowerShell the values during the deployment, the terminal won't display the text on your screen.
+// Teh parameters hasn't a default value specified. It's good to avoid specifying default values for usernames, passwords, and other secrets. 
+
+@secure()
+param sqlServerAdministratorLogin string
+
+@secure()
+param sqlServerAdministratorPassword string
+
+
+// You can integrate your Bicep templates with Key Vault by using a parameter file with a reference to a Key Vault secret.
+// Instead of specifying a value for each of the parameters, this file has a reference object, which contains details of the key vault and secret.
+// Here's a parameter file (JSON) that uses Key Vault references to look up the SQL logical server administrator login and password to use:
+
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "sqlServerAdministratorLogin": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets"
+        },
+        "secretName": "sqlAdminLogin"
+      }
+    },
+    "sqlServerAdministratorPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets"
+        },
+        "secretName": "sqlAdminLoginPassword"
+      }
+    }
+  }
+}
+
+// Modules enable you to create reusable Bicep files that encapsulate a set of resources.
+// modules are used to deploy parts of your solution.
+// in this Bicep file, the Key Vault is referenced by using the existing keyword.
+// This tells Biceps the Key Vault already exists, and this is just a reference to that vault. Bicep won't redeploy it.
+// Example Bicep file that deploys a module and provides the value of the ApiKey secret parameter by taking it directly from Key Vault:
+
+resource keyVault 'Microsoft.KeyVault/vaults@2021-04-01-preview' existing = {
+  name: keyVaultName
+}
+
+module applicationModule 'application.bicep' = {
+  name: 'application-module'
+  params: {
+    apiKey: keyVault.getSecret('ApiKey')
+  }
+}
