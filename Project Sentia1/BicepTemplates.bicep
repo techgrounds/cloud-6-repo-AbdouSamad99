@@ -282,3 +282,4 @@ module applicationModule 'application.bicep' = {
     apiKey: keyVault.getSecret('ApiKey')
   }
 }
+
