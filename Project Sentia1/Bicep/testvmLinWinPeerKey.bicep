@@ -1,3 +1,6 @@
+// VM LIN, VM Win, Vnet1, Vnet2, Subnet1, Subnet2, Peering1, Peering2, Storage Account,
+// KeyVault, Create Key, NetWork Security Group
+
 //// parameters for linux /////
 
 @description('The name of you Lin Virtual Machine.')
@@ -44,6 +47,10 @@ param subnetNameLin string = 'LinSubnet' /// You can change the name
 
 @description('Name of the Network Security Group')
 param NSGnameLin string = 'Linux-NSG'
+
+//remove below the // if you want a param for customData (add in OsProfile in resource vmLin)
+//@description('BashScript for Customdata for Linux VM')
+//param CustomDataBash string = loadFileAsBase64('Bashscript/customdataApache.sh')
 
 //// parameters for VM windows ////
 
@@ -319,6 +326,7 @@ resource vmLin 'Microsoft.Compute/virtualMachines@2020-06-01' = {
       computerName: vmNameLin
       adminUsername: adminUsernameLin
       adminPassword: adminPasswordOrKey
+      //customData: CustomDataBash (you can add this if you made Param for customData)
       linuxConfiguration: ((authenticationType == 'password') ? null : linuxConfiguration)
     }
   }
