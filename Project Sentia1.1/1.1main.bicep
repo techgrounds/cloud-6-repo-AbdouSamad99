@@ -70,9 +70,9 @@ module Adminserver 'admin-serv.bicep' = {
 }
 
 // Module storage and encryption
-module STG_KeyEncrypt 'Strg-KeyEncrp.bicep'= {
+module STG_KeyEncrypt 'Key-Strg-Access.bicep'= {
   scope: RSG_Project
-  name: 'mod-Strg-KeyEncrp'
+  name: 'mod-Key-Strg-Access'
   params:{
     location: location    
     policyoperation:'add'
