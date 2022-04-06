@@ -1,3 +1,4 @@
+
 # Cost Management + Billing
 
 **Introductie:**
@@ -114,4 +115,3 @@ Casper legt ons het volgende uit:
 Cloud Pass is in Microsoft taal. Maar overal waar Cloud Pass staat in de opdrachten betekent gewoon je account/subscription.
 
 ### Resultaat
-

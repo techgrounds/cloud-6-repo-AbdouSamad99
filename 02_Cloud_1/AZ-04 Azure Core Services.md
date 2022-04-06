@@ -1,3 +1,4 @@
+
 # Azure Core Services
 
 Je kan dit document zien als een soort gids naar je AZ-900 certificering. Hierin staan de services die je in wat meer detail moet kennen.
@@ -384,8 +385,4 @@ taakautomatisering en het bouwen van taken. [**Klik hier**](https://docs.microso
 ### Resultaat
 
 ["Skills Measured" document voor Microsoft Azure Fundamentals - AZ-900](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3VwUY)
-
-
-
-
 

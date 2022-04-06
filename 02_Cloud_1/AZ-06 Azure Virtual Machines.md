@@ -1,3 +1,4 @@
+
 # Azure Virtual Machines
 
 De Service waarmee je VMs kan maken in Azure heet (zeer toepasselijk) Azure Virtual Machines. Je kan deze VMs gebruiken voor alles waar je een fysieke server voor zou

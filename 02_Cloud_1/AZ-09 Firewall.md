@@ -1,3 +1,4 @@
+
 # Azure Firewall
 
 - Introductie:
@@ -19,10 +20,12 @@ Zoals je eerder geleerd hebt zijn er twee soorten firewalls: **stateless, en sta
   - Azure documentatie
 
 
+
 ## Key-terms
 [Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
 
 ## Opdracht
+
 
 - Zet een webserver aan.
 - Zorg dat de poorten voor zowel SSH als HTTP geopend zijn.
@@ -62,6 +65,7 @@ Zoals je eerder geleerd hebt zijn er twee soorten firewalls: **stateless, en sta
 
 1. https://docs.microsoft.com/nl-nl/azure/firewall/tutorial-hybrid-ps
 2. 
+
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]

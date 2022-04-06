@@ -1,3 +1,4 @@
+
 # Azure Global Infrastructure
 
 Alles in de cloud, van servers tot networking, is virtualized. Als klant van een cloud provider hoef je je geen zorgen te maken over
@@ -81,3 +82,4 @@ Geen Problemen.
 
 ### Resultaat
 Zie opdrachten!
+

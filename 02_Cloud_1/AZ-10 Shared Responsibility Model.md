@@ -1,3 +1,4 @@
+
 # Shared Responsibility Model
 ### Introductie:
 

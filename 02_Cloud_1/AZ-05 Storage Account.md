@@ -1,3 +1,4 @@
+
 # Azure Storage Account
 
 Om data op te slaan in Azure heb je een Azure Storage Account nodig. In een Storage Account staan alle Azure Storage data objects als blobs, files, disks en tables.
@@ -103,7 +104,6 @@ De beschikbare typen schijven zijn Ultra Disks, Premium SOLID-State Drives (SSD)
 
 ### Ervaren problemen
 Hoe Zorg je ervoor dat alleen jij toegang hebt tot de data in je Azure Storage Account?
-
 
 ### Resultaat
 [Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]

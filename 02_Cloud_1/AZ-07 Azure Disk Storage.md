@@ -1,3 +1,4 @@
+
 # Azure Disk Storage
 
 ### **Introductie:**
@@ -105,8 +106,6 @@ Als je een external device (inclusief een Data Disk) wilt gebruiken op Linux, mo
 4. https://docs.ukcloud.com/articles/azure/azs-how-add-managed-disks-portal.html?tabs=tabid-a
 5. https://help.ubuntu.com/community/InstallingANewHardDrive
 6. 
-
-
 
 
 ### Ervaren problemen

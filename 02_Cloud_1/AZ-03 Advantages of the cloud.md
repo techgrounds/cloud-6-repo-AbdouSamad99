@@ -1,3 +1,4 @@
+
 # Advantages of the cloud
 
 Azure noemt 6 voordelen van cloud computing. Dit zijn basiseigenschappen die de cloud interessant maken voor bedrijven.
