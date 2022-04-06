@@ -1,0 +1,51 @@
+#1. Ga naar folder met de naam "templates" (kan je aanpassen)
+cd.. templates
+
+#2. aanmelden bij uw Azure-account.
+Connect-AzAccount
+
+#3. Standaard-Subscription (Abdousamad Bounanaa) instellen voor alle Azure PowerShell opdrachten die je in deze sessie wilt uirvoeren
+$context = Get-AzSubscription -SubscriptionName Abdousamad Bounanaa
+Set-AzContext $context
+
+#4. Verkrijg de Subscription-id en Tenant-id.. de id verschijnt in de 2e Kolom
+Get-AzSubscription
+
+#5. Om de huidige Subscription te wijzigen dan vervang je in de code {Your subscription ID}door jouw verkregen ID bij stap 4 zonder {}
+$context = Get-AzSubscription -SubscriptionId {Your subscription ID}
+Set-AzContext $context
+#p.s. als je al in de door uw gewenste subscription zit in powershell dan kun je stap 4&5 overslaan
+
+#6. Standaardresourcegroep instellen (...zonder []....)
+Set-AzDefault -ResourceGroupName [Naam van uw ResourceGroup]
+
+#7. Deploy uw Bicep Template naar Azure (naam template = main.bicep)
+New-AzResourceGroupDeployment -TemplateFile main.bicep
+
+#8. Veriffieer je deployment via Azure Portal of via command in powershell: (zonder [])
+Get-AzResourceGroupDeployment -ResourceGroupName [Naam van je ResourceGroup] | Format-Table
+
+#9. Deploy uw Bicep Template samen met Parameter file (JSON) (filenaam kan wijzigen)
+New-AzResourceGroupDeployment `
+  -TemplateFile main.bicep `
+  -TemplateParameterFile main.parameters.dev.json
+
+#Decompile from JSON to Bicep {filenaam kan wijzigen)
+az bicep decompile --file main.json
+
+#Command om resourcegroup te deployen als je een Create_Resource bicepTemplate hebt
+New-AzSubscriptionDeployment -TemplateFile 'ProjectRG.bicep' -Location "westeurope"
+
+# Get OBJECT ID
+az ad signed-in-user show --query objectId
+
+## Option 2: Create and export your public certificate with its private key
+## https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-self-signed-certificate
+## Step 1
+$cert = New-SelfSignedCertificate -Subject "CN={certificateName}" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256    ## Replace {certificateName}
+## Step 2
+Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateName}.cer"   ## Specify your preferred location and replace {certificateName}
+## Step 3
+$mypwd = ConvertTo-SecureString -String "{myPassword}" -Force -AsPlainText  ## Replace {myPassword}
+## Step 4
+Export-PfxCertificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{privateKeyName}.pfx" -Password $mypwd   ## Specify your preferred location and replace {privateKeyName}
