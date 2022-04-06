@@ -1,6 +1,6 @@
 // To deploy all the modules you deploy this 1.1main.bicep file with the following command in Powershell (see below) // 
 // in Poweshell>> az deployment sub create --location westeurope --template-file main.bicep
-// Succeeded all modules after deployment
+// it will deploy all the modules
 
 targetScope = 'subscription'
 param environment string = 'V1.1' // you can change the name
