@@ -226,9 +226,10 @@ resource applicationGateways 'Microsoft.Network/applicationGateways@2020-11-01' 
         }
       }
     ]
-    sslCertificates: [
+    ssl
+    icates: [
       {
-        name: 'sslcert_name' // it was 'certificate.p12' but it give an error message that password invalid is
+        name: 'sslcert_name'
         properties: {
           data:loadFileAsBase64('./Certificaat/SSLabdousamadPFX.pfx')
           password:'Souani18'
