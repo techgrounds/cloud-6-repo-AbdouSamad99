@@ -1,5 +1,6 @@
 //Generating a self-signed certificate using OpenSSL: click below url
 //https://www.ibm.com/docs/en/api-connect/2018.x?topic=overview-generating-self-signed-certificate-using-openssl
+// or use Putty to generate a SSL-certificate
 
 param location string = resourceGroup().location
 param vmss_name string = 'vmss'
