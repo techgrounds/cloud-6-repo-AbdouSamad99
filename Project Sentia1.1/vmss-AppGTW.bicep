@@ -298,7 +298,7 @@ resource applicationGateways 'Microsoft.Network/applicationGateways@2020-11-01' 
           }
           protocol: 'Https'
           sslCertificate: {
-            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates', applicationGateways_name, 'sslcert_name') // 'sslcert_name' it was 'certificate.p12'
+            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates', applicationGateways_name, 'sslcert_name')
           }
           hostNames: []
           requireServerNameIndication: false
