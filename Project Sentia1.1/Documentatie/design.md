@@ -3,5 +3,4 @@
 - **Design Diagram:**
 
 
-
-![2version1 1](https://user-images.githubusercontent.com/95620804/162270428-95d4abeb-4683-4d87-ba7b-c5461975c3f3.png)
+![version1 1](https://user-images.githubusercontent.com/95620804/162440688-f730d59a-9e08-47e8-ac0c-50de6776e0c0.png)
